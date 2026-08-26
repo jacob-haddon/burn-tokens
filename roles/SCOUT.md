@@ -8,9 +8,10 @@ Discover and propose **high-value, genuine research frontiers and open-source vu
 ## 🚫 Hard Instant-Rejection Filter (Score = 0 / 25)
 
 An instant rejection MUST be given if a proposal:
-1. **[01-oss-sentinel] Upstream Duplicate Check**: An open Pull Request already exists on GitHub fixing the issue (MUST run `python3 scripts/check_upstream.py <repo> <query>`).
-2. **[03-open-lean-missions] Textbook Duplicate**: Formulates basic textbook algebra (Euclidean algorithm, basic CRT, modular inverse, prime divisibility) or duplicates Mathlib without citing a fresh 2024–2026 arXiv preprint.
-3. **[02-counterexample-observatory] Trivial Bounds**: Proposes bounded searches on already fully classified finite sequences.
+1. **[01-oss-sentinel] Active HEAD Reproducibility Gate**: Fails to deterministically reproduce on current upstream `master`/`HEAD`. If the bug is already fixed in master or was rendered obsolete by a recent commit $\to$ **Score = 0 (Instant Reject)**.
+2. **[01-oss-sentinel] Upstream PR Deduplication Gate**: An open Pull Request already exists on GitHub fixing the issue (MUST run `python3 scripts/check_upstream.py <repo> <query>`) $\to$ **Score = 0 (Duplicate PR)**.
+3. **[03-open-lean-missions] Textbook Duplicate**: Formulates basic textbook algebra or duplicates Mathlib without citing a fresh 2024–2026 arXiv preprint.
+4. **[02-counterexample-observatory] Trivial Bounds**: Proposes bounded searches on already fully classified finite sequences.
 
 ---
 

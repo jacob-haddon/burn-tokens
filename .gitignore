@@ -27,3 +27,10 @@ venv/
 projects/*/work/scratch_*
 projects/*/data/tmp_*
 projects/01-oss-sentinel/targets/*
+
+# Ephemeral test scratch files
+/test_*
+/poc_*
+*.bin
+*.out
+*.tmp
