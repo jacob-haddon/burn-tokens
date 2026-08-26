@@ -1,6 +1,6 @@
-# 📜 Modular Inverse (Lean 4 Formalization)
+# 📜 Chinese Remainder (Lean 4 Formalization)
 
-Standalone, machine-checked Lean 4 formalization of **Modular Inverse** proved from first principles with **0 `sorry`** declarations.
+Standalone, machine-checked Lean 4 formalization of **Chinese Remainder** proved from first principles with **0 `sorry`** declarations.
 
 ---
 
@@ -8,28 +8,24 @@ Standalone, machine-checked Lean 4 formalization of **Modular Inverse** proved f
 
 ### Principal Definitions
 - `def ModEq`
-- `def IsModInverse`
+- `def crtRaw`
 - `def extGcdFuel`
-- `def extGcd`
-- `def modInverse`
+- `def crtSolve`
 
 ### Machine-Checked Theorems (0 `sorry`)
 - `theorem modEq_refl`
 - `theorem modEq_symm`
 - `theorem modEq_trans`
 - `theorem modEq_add`
-- `theorem modEq_mul`
-- `theorem mod_inverse_of_bezout`
-- `theorem mod_inverse_congr`
-- `theorem unique_residue`
-- `theorem mod_inverse_unique`
-- `theorem mod_inverse_pos`
-- `theorem mod_inv_symm`
-- `theorem mod_inv_prod`
-- `theorem test_inv_3_7`
-- `theorem test_inv_5_11`
-- `theorem test_inv_7_13`
-- `theorem test_inv_2_6`
+- `theorem modEq_sub`
+- `theorem crtRaw_mod_left`
+- `theorem crtRaw_mod_right`
+- `theorem simultaneous_modEq_product`
+- `theorem crt_unique`
+- `theorem crt_test_3_5`
+- `theorem crt_test_7_11`
+- `theorem crt_test_2_3`
+- `theorem crt_test_5_7`
 
 ---
 
