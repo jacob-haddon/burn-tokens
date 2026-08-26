@@ -41,7 +41,7 @@ VERIFICATION : 100% Machine-Checked (Clang ASan/UBSan + Lean 4.33.1 + Python/SAT
   <td>Stack buffer over-read in minizip <code>unzGetCurrentFileInfo()</code> (Missing null-termination, Issue #1299 / Debian #1143912)</td>
   <td>Upstream: 2026-08-23<br>Verified: 2026-08-26</td>
   <td><code>Gemini 3.7 Flash High</code></td>
-  <td><span class="badge-pr-ready">[PR READY]</span> Synthesized defensive patch, verified with deterministic ASan reproducer (0 warnings, exit 0). Deduplication check: 0 open PRs.</td>
+  <td><span class="badge-pr-held">[PR HELD / DUPLICATE]</span> Reproduced stack overflow under ASan & verified clean patch. PR submission withheld as PR #1257 is already pending upstream.</td>
   <td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/01-oss-sentinel/results/2026-08-26--zlib-minizip-null-termination.md">remediation report</a> | <a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/01-oss-sentinel/patches/zlib_fix_minizip_null_termination.patch">patch</a></td>
 </tr>
 <tr>
