@@ -1,0 +1,6 @@
+name = "frobenius_modular_lattice"
+version = "0.1.0"
+defaultTargets = ["FrobeniusModularLattice"]
+
+[[lean_lib]]
+name = "FrobeniusModularLattice"
