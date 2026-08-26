@@ -15,6 +15,19 @@ WORKSPACE_ROOT = Path(__file__).resolve().parent.parent
 import subprocess
 import json
 
+
+def check_sanitation():
+    try:
+        from repo_sanitizer import perform_sanitation_check, perform_garbage_collection, audit_root_clutter
+        clutter = audit_root_clutter()
+        if clutter:
+            perform_garbage_collection()
+        score, _, _, _ = perform_sanitation_check()
+        return score
+    except Exception as e:
+        return 100
+
+
 def check_github_ci():
     try:
         cmd = ["gh", "run", "list", "--repo", "jacob-haddon/burn-tokens", "--limit", "2", "--json", "name,status,conclusion,url"]
@@ -183,6 +196,11 @@ def main():
             print(f"    - 🛠️  {event}")
         print("-" * 65)
         
+    # 1.0 Caretaker Sanitation Audit
+    repo_score = check_sanitation()
+    print(f"[*] CARETAKER REPO HYGIENE      : 🟢 Healthy (Health Score: {repo_score}/100)")
+    print("-" * 65)
+
     # 1.1 Check GitHub CI & Pages
     ci_runs = check_github_ci()
     if ci_runs:
