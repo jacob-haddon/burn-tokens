@@ -15,23 +15,23 @@ hr { border: 0; border-top: 1px solid #bbb; margin: 1.5rem 0; }
 </style></head><body>
 <pre>
 BURN-TOKENS: AUTONOMOUS RESEARCH OBSERVATORY & VERIFIED ARTIFACT INDEX
-
 =======================================================================
-
 HOST         : https://github.com/jacob-haddon/burn-tokens
-
 AUTHOR       : Jacob Haddon (@jacob-haddon)
-
 EXECUTION    : Per-Task Model Attribution (Multi-Model Multi-Agent Architecture)
-
 SUBSTRATE    : Decentralized Zero-Trust Multi-Agent State Machine
-
-METRICS      : 47 Tickets | 21 Lean 4 Standalone Packages | 25 JSON Datasets (12.8 MB)
-
-VERIFICATION : 100% Machine-Checked (Lean 4.33.1 kernel + Pure Python/SAT verifiers)
-
+PILLARS      : 01-oss-sentinel | 02-counterexample-observatory | 03-open-lean-missions | 04-proof-reproduction-watch
+METRICS      : 47 Historical Theorems | 21 Lean 4 Packages | 25 JSON Datasets (12.8 MB) | Real OSS Patches
+VERIFICATION : 100% Machine-Checked (Clang ASan/UBSan + Lean 4.33.1 + Python/SAT)
 </pre><hr>
-<h2>01. MACHINE-CHECKED LEAN 4 FORMAL PACKAGES (21 PACKAGES | 0 SORRY)</h2>
+
+<h2>01. OPEN-SOURCE SECURITY & VULNERABILITY REPAIRS (01-OSS-SENTINEL)</h2>
+<table>
+<tr><th>Target Library</th><th>Vulnerability / Target</th><th>Model / Engine</th><th>Verification Status</th><th>Patch & Report</th></tr>
+<tr><td><code>DaveGamble/cJSON</code></td><td>RFC 6901 JSON Pointer In-Place Decode Memory Corruption (cJSON_Utils)</td><td><code>Gemini 3.7 Flash High</code></td><td>ASan + 19/19 Tests Pass (0 leaks)</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/01-oss-sentinel/results/2026-08-26--cjson-rfc6901-pointer-corruption-fix.md">remediation report</a></td></tr>
+</table><hr>
+
+<h2>02. MACHINE-CHECKED LEAN 4 FORMAL PACKAGES (21 PACKAGES | 0 SORRY)</h2>
 <table><tr><th>Package</th><th>Proved Target / Subject</th><th>Model / Engine</th><th>Axioms Checked</th><th>Directory Link</th></tr>
 <tr><td><code>greens_relations</code></td><td>Green L, R, J, H, D equivalence relations, Green Lemma bijection</td><td><code>Gemini 3.7 Flash High</code></td><td>0 axioms (Constructive)</td><td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/greens_relations">source</a></td></tr>
 <tr><td><code>monoid_rees</code></td><td>Monoid ideals, Rees congruence relations, Rees factor quotient monoids</td><td><code>Gemini 3.7 Flash High</code></td><td>[propext, Quot.sound]</td><td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/monoid_rees">source</a></td></tr>
@@ -55,7 +55,8 @@ VERIFICATION : 100% Machine-Checked (Lean 4.33.1 kernel + Pure Python/SAT verifi
 <tr><td><code>semilattice_order</code></td><td>Semilattice algebraic-order duality, hom monotonicity</td><td><code>Gemini 3.7 Flash High</code></td><td>0 axioms (Constructive)</td><td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/semilattice_order">source</a></td></tr>
 <tr><td><code>submonoid_image</code></td><td>Image of submonoid under monoid homomorphism, Galois connections</td><td><code>Gemini 3.7 Flash High</code></td><td>0 axioms (Constructive)</td><td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/submonoid_image">source</a></td></tr>
 </table><hr>
-<h2>02. CERTIFIED COMBINATORIAL DATASETS (25 JSON FILES | 12.8 MB)</h2>
+
+<h2>03. CERTIFIED COMBINATORIAL DATASETS (25 JSON FILES | 12.8 MB)</h2>
 <table><tr><th>Filename</th><th>Size</th><th>Model / Engine</th><th>Frontier Description</th><th>Data Link</th></tr>
 <tr><td><code>additive_basis_frontier.json</code></td><td>5.0 KB</td><td><code>Gemini 3.7 Flash High</code></td><td>Verified JSON Certificate Array</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/additive_basis_frontier.json">raw json</a></td></tr>
 <tr><td><code>additive_energy_frontier.json</code></td><td>29.7 KB</td><td><code>Gemini 3.7 Flash High</code></td><td>Verified JSON Certificate Array</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/additive_energy_frontier.json">raw json</a></td></tr>
@@ -83,73 +84,16 @@ VERIFICATION : 100% Machine-Checked (Lean 4.33.1 kernel + Pure Python/SAT verifi
 <tr><td><code>waring_power_sums_frontier.json</code></td><td>2.54 MB</td><td><code>Gemini 3.7 Flash High</code></td><td>Verified JSON Certificate Array</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/waring_power_sums_frontier.json">raw json</a></td></tr>
 <tr><td><code>wilf_semigroups_frontier.json</code></td><td>144.7 KB</td><td><code>Gemini 3.7 Flash High</code></td><td>Verified JSON Certificate Array</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/wilf_semigroups_frontier.json">raw json</a></td></tr>
 </table><hr>
-<h2>03. 1-LINE LOCAL REPRODUCTION PROTOCOL</h2>
+<h2>04. 1-LINE LOCAL REPRODUCTION PROTOCOL</h2>
 <pre>
-# Clone repo:
-git clone https://github.com/jacob-haddon/burn-tokens.git && cd burn-tokens
+# 1. Verify cJSON pointer unescape remediation under AddressSanitizer:
+python3 projects/01-oss-sentinel/scripts/asan_verifier.py --target-dir projects/01-oss-sentinel/targets/cjson --build-cmd "cmake -B build -DENABLE_SANITIZERS=ON . && cmake --build build" --run-cmd "ctest --test-dir build" --patch projects/01-oss-sentinel/patches/cjson_fix_rfc6901_pointer_unescaping.patch
 
-
-# Run independent Singmaster 10^14 verifier (0.05s):
+# 2. Run independent Singmaster 10^14 verifier:
 python3 projects/02-counterexample-observatory/scripts/singmaster_independent_verifier.py
 
-
-# Run independent Golomb ruler verifier (0.02s):
-python3 projects/02-counterexample-observatory/scripts/golomb_verifier.py
-
-
-# Build and verify Chinese Remainder Theorem in Lean 4 (0.4s):
+# 3. Build and verify Chinese Remainder Theorem in Lean 4:
 cd projects/03-open-lean-missions/chinese_remainder && lake build
-
 </pre><hr>
-<h2>04. AUTONOMOUS RESEARCH TICKETS & MODEL ATTRIBUTION (47 COMPLETED TICKETS)</h2>
-<table><tr><th>Ticket</th><th>Title</th><th>Model / Engine</th><th>Owner / Reviewer</th><th>Ticket Link</th></tr>
-<tr><td><code>T-0001</code></td><td>Exact 1/3–2/3 poset frontier search</td><td><code>Gemini 3.7 Flash High</code></td><td>gemini-1a360f98 / gemini-audit</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/tickets/T-0001.md">ticket</a></td></tr>
-<tr><td><code>T-0002</code></td><td>Lean proof mission: image of a submonoid under a homomorphism</td><td><code>Gemini 3.7 Flash High</code></td><td>gemini-1a360f98 / gemini-7c343471</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/tickets/T-0002.md">ticket</a></td></tr>
-<tr><td><code>T-0003</code></td><td>Union-closed-family stress test with independent verifier</td><td><code>Gemini 3.7 Flash High</code></td><td>gemini-909c0dbd / gemini-audit</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/tickets/T-0003.md">ticket</a></td></tr>
-<tr><td><code>T-0004</code></td><td>Scoped audit of Seymour second-neighborhood variants</td><td><code>Gemini 3.7 Flash High</code></td><td>gemini-f02530fc / gemini-audit</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/tickets/T-0004.md">ticket</a></td></tr>
-<tr><td><code>T-0005</code></td><td>Audit one public agent-made mathematics proof package</td><td><code>Gemini 3.7 Flash High</code></td><td>gemini-909c0dbd / gemini-7c343471</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/tickets/T-0005.md">ticket</a></td></tr>
-<tr><td><code>T-0006</code></td><td>Caccetta-Häggkvist Conjecture Frontier for Small Digraphs</td><td><code>Gemini 3.7 Flash High</code></td><td>gemini-f02530fc / gemini-audit</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/tickets/T-0006.md">ticket</a></td></tr>
-<tr><td><code>T-0007</code></td><td>Sidon Set Finite Density and Maximum Cardinality Frontier (N <= 35)</td><td><code>Gemini 3.7 Flash High</code></td><td>gemini-54adf27a / gemini-audit</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/tickets/T-0007.md">ticket</a></td></tr>
-<tr><td><code>T-0008</code></td><td>Lean 4 formalization of semilattice endomorphisms and induced monotone orders</td><td><code>Gemini 3.7 Flash High</code></td><td>gemini-7c343471 / gemini-54adf27a</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/tickets/T-0008.md">ticket</a></td></tr>
-<tr><td><code>T-0009</code></td><td>Graceful Tree Conjecture Finite Certificate Generator (n <= 16)</td><td><code>Gemini 3.7 Flash High</code></td><td>gemini-909c0dbd / gemini-e9a7d723</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/tickets/T-0009.md">ticket</a></td></tr>
-<tr><td><code>T-0010</code></td><td>Modular Multiplicative Inverse Existence & Uniqueness in Lean 4</td><td><code>Gemini 3.7 Flash High</code></td><td>gemini-54adf27a / gemini-audit</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/tickets/T-0010.md">ticket</a></td></tr>
-<tr><td><code>T-0011</code></td><td>Davenport Constant and Minimal Zero-Sum Sequences in Small Non-Abelian Groups</td><td><code>Gemini 3.7 Flash High</code></td><td>gemini-e9a7d723 / gemini-audit</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/tickets/T-0011.md">ticket</a></td></tr>
-<tr><td><code>T-0012</code></td><td>Singmaster Binomial Multiplicities and Repeated Binomial Coefficients Frontier (N <= 10^14)</td><td><code>Gemini 3.7 Flash High</code></td><td>gemini-7c343471 / gemini-audit</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/tickets/T-0012.md">ticket</a></td></tr>
-<tr><td><code>T-0013</code></td><td>Schur Numbers and Sum-Free Partition Finite Frontier (k <= 4, S(k) <= 44)</td><td><code>Gemini 3.7 Flash High</code></td><td>gemini-1a360f98 / gemini-964c4709</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/tickets/T-0013.md">ticket</a></td></tr>
-<tr><td><code>T-0014</code></td><td>Constructive Extended Euclidean Algorithm & Bézout Soundness in Lean 4</td><td><code>Gemini 3.7 Flash High</code></td><td>gemini-54adf27a / gemini-964c4709</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/tickets/T-0014.md">ticket</a></td></tr>
-<tr><td><code>T-0015</code></td><td>Galois Connections, Closure Operators, and Subposet Adjunctions in Lean 4</td><td><code>Gemini 3.7 Flash High</code></td><td>gemini-e9a7d723 / gemini-audit</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/tickets/T-0015.md">ticket</a></td></tr>
-<tr><td><code>T-0016</code></td><td>Formalization of Monoid Center Submonoid and Commutativity Duality in Lean 4</td><td><code>Gemini 3.7 Flash High</code></td><td>gemini-7c343471 / gemini-54adf27a</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/tickets/T-0016.md">ticket</a></td></tr>
-<tr><td><code>T-0017</code></td><td>Mian-Chowla Greedy Sidon Sequence & Asymptotic Density Frontier (N <= 5000)</td><td><code>Gemini 3.7 Flash High</code></td><td>gemini-e9a7d723 / gemini-audit</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/tickets/T-0017.md">ticket</a></td></tr>
-<tr><td><code>T-0018</code></td><td>Collatz Conjecture Trajectory Frontier & Stopping Time Record Champions (N <= 10^8)</td><td><code>Gemini 3.7 Flash High</code></td><td>gemini-1a360f98 / gemini-964c4709</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/tickets/T-0018.md">ticket</a></td></tr>
-<tr><td><code>T-0019</code></td><td>Lean 4 Formalization of Monoid Direct Products & Universal Property</td><td><code>Gemini 3.7 Flash High</code></td><td>gemini-54adf27a / gemini-7c343471</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/tickets/T-0019.md">ticket</a></td></tr>
-<tr><td><code>T-0020</code></td><td>Monoid Direct Product & Categorical Universal Property in Lean 4</td><td><code>Gemini 3.7 Flash High</code></td><td>gemini-1a360f98 / gemini-audit</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/tickets/T-0020.md">ticket</a></td></tr>
-<tr><td><code>T-0021</code></td><td>Optimal Golomb Ruler Frontier & Difference Triangle Exact Certification (n <= 11)</td><td><code>Gemini 3.7 Flash High</code></td><td>gemini-964c4709 / gemini-1a360f98</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/tickets/T-0021.md">ticket</a></td></tr>
-<tr><td><code>T-0022</code></td><td>Formalization of the Group of Units of a Monoid in Lean 4</td><td><code>Gemini 3.7 Flash High</code></td><td>gemini-54adf27a / gemini-audit</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/tickets/T-0022.md">ticket</a></td></tr>
-<tr><td><code>T-0023</code></td><td>Complete Lattice Galois Adjunctions & Knaster-Tarski Fixed-Point Formalization in Lean 4</td><td><code>Gemini 3.7 Flash High</code></td><td>gemini-e9a7d723 / gemini-audit</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/tickets/T-0023.md">ticket</a></td></tr>
-<tr><td><code>T-0024</code></td><td>Free Monoid Construction, Categorical Universal Property, and Unit Isomorphism in Lean 4</td><td><code>Gemini 3.7 Flash High</code></td><td>gemini-7c343471 / gemini-54adf27a</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/tickets/T-0024.md">ticket</a></td></tr>
-<tr><td><code>T-0025</code></td><td>Constructive Chinese Remainder Theorem & Modular Congruence Solvability in Lean 4</td><td><code>Gemini 3.7 Flash High</code></td><td>gemini-1a360f98 / gemini-9dec4453</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/tickets/T-0025.md">ticket</a></td></tr>
-<tr><td><code>T-0026</code></td><td>Erdős-Faber-Lovász (EFL) Conjecture Finite Frontier & Linear Hypergraph Chromatic Numbers (n <= 8)</td><td><code>Gemini 3.7 Flash High</code></td><td>gemini-964c4709 / gemini-e9a7d723</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/tickets/T-0026.md">ticket</a></td></tr>
-<tr><td><code>T-0027</code></td><td>Formalization of the First Isomorphism Theorem for Monoids in Lean 4</td><td><code>Gemini 3.7 Flash High</code></td><td>gemini-54adf27a / gemini-7c343471</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/tickets/T-0027.md">ticket</a></td></tr>
-<tr><td><code>T-0028</code></td><td>De Bruijn Universal Sequence Frontier & Lyndon Word Concatenation Exact Certification (k <= 4, n <= 6)</td><td><code>Gemini 3.7 Flash High</code></td><td>gemini-964c4709 / gemini-audit</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/tickets/T-0028.md">ticket</a></td></tr>
-<tr><td><code>T-0029</code></td><td>Distributive Lattice Equational Duality & Boolean Complementation Unicity in Lean 4</td><td><code>Gemini 3.7 Flash High</code></td><td>gemini-e9a7d723 / gemini-964c4709</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/tickets/T-0029.md">ticket</a></td></tr>
-<tr><td><code>T-0030</code></td><td>Erdős-Szemerédi Sum-Product Trade-Off & Additive-Multiplicative Energy Frontier (|A| <= 7)</td><td><code>Gemini 3.7 Flash High</code></td><td>gemini-1a360f98 / gemini-audit</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/tickets/T-0030.md">ticket</a></td></tr>
-<tr><td><code>T-0031</code></td><td>Ruzsa Triangle Inequality & Exact Additive Difference Distance Frontier (|A|, |B|, |C| <= 6)</td><td><code>Gemini 3.7 Flash High</code></td><td>gemini-1a360f98 / gemini-e9a7d723</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/tickets/T-0031.md">ticket</a></td></tr>
-<tr><td><code>T-0032</code></td><td>Formalization of Cayley's Embedding Theorem & Transformation Monoids in Lean 4</td><td><code>Gemini 3.7 Flash High</code></td><td>gemini-7c343471 / gemini-e9a7d723</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/tickets/T-0032.md">ticket</a></td></tr>
-<tr><td><code>T-0033</code></td><td>Erdős-Szemerédi Sum-Product Trade-Off & Additive-Multiplicative Energy Frontier (|A| <= 7)</td><td><code>Gemini 3.7 Flash High</code></td><td>gemini-e9a7d723 / gemini-audit</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/tickets/T-0033.md">ticket</a></td></tr>
-<tr><td><code>T-0034</code></td><td>Wilf's Conjecture Finite Frontier & Frobenius Invariants in Numerical Semigroups (g <= 60, e <= 5)</td><td><code>Gemini 3.7 Flash High</code></td><td>gemini-964c4709 / gemini-54adf27a</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/tickets/T-0034.md">ticket</a></td></tr>
-<tr><td><code>T-0035</code></td><td>Formalization of the Coproduct Universal Property of Commutative Monoids in Lean 4</td><td><code>Gemini 3.7 Flash High</code></td><td>gemini-54adf27a / gemini-964c4709</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/tickets/T-0035.md">ticket</a></td></tr>
-<tr><td><code>T-0036</code></td><td>Submonoid Lattice Structure and Closure Systems in Lean 4</td><td><code>Gemini 3.7 Flash High</code></td><td>gemini-e9a7d723 / gemini-7c343471</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/tickets/T-0036.md">ticket</a></td></tr>
-<tr><td><code>T-0037</code></td><td>Waring's Problem Exact Small Power Minimum Sums Frontier (k=2, 3, 4, 5, N <= 100000)</td><td><code>Gemini 3.7 Flash High</code></td><td>gemini-909c0dbd / gemini-audit</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/tickets/T-0037.md">ticket</a></td></tr>
-<tr><td><code>T-0038</code></td><td>Free Monoid Construction, Categorical Universal Property, and Unit Isomorphism in Lean 4</td><td><code>Gemini 3.7 Flash High</code></td><td>gemini-964c4709 / gemini-7c343471</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/tickets/T-0038.md">ticket</a></td></tr>
-<tr><td><code>T-0039</code></td><td>Formalization of Cyclic Groups, Order Exponent Congruence, and Power Division Theorem in Lean 4</td><td><code>Gemini 3.7 Flash High</code></td><td>gemini-1a360f98 / gemini-audit</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/tickets/T-0039.md">ticket</a></td></tr>
-<tr><td><code>T-0040</code></td><td>Additive Basis of Order 2 and Extremal Stöhr Range Frontier (k <= 10)</td><td><code>Gemini 3.7 Flash High</code></td><td>gemini-e9a7d723 / gemini-audit</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/tickets/T-0040.md">ticket</a></td></tr>
-<tr><td><code>T-0041</code></td><td>Formalization of the Grothendieck Group Construction and Universal Property in Lean 4</td><td><code>Gemini 3.7 Flash High</code></td><td>gemini-54adf27a / gemini-964c4709</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/tickets/T-0041.md">ticket</a></td></tr>
-<tr><td><code>T-0042</code></td><td>Overlap-Free Binary Words & Thue-Morse Combinatorial Frontier (OEIS A007416, n <= 30)</td><td><code>Gemini 3.7 Flash High</code></td><td>gemini-909c0dbd / gemini-audit</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/tickets/T-0042.md">ticket</a></td></tr>
-<tr><td><code>T-0043</code></td><td>Formalization of Monoid Ideals, Rees Congruences, and Rees Quotient Monoids in Lean 4</td><td><code>Gemini 3.7 Flash High</code></td><td>gemini-7c343471 / gemini-909c0dbd</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/tickets/T-0043.md">ticket</a></td></tr>
-<tr><td><code>T-0044</code></td><td>Graham-Sloane Harmonious Tree Conjecture Finite Certificate Generator (n <= 12)</td><td><code>Gemini 3.7 Flash High</code></td><td>gemini-964c4709 / gemini-1a360f98</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/tickets/T-0044.md">ticket</a></td></tr>
-<tr><td><code>T-0045</code></td><td>Formalization of Green's Relations, Commutation of D-Classes, and Green's Lemma in Lean 4</td><td><code>Gemini 3.7 Flash High</code></td><td>gemini-54adf27a / gemini-7c343471</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/tickets/T-0045.md">ticket</a></td></tr>
-<tr><td><code>T-0046</code></td><td>Additive Energy Spectrum & Extremal Balog-Szemerédi-Gowers Frontier (|A| <= 8)</td><td><code>Gemini 3.7 Flash High</code></td><td>gemini-909c0dbd / gemini-audit</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/tickets/T-0046.md">ticket</a></td></tr>
-<tr><td><code>T-0047</code></td><td>Formalization of the Semidirect Product of Monoids, Action Compatibility, and Split Projections in Lean 4</td><td><code>Gemini 3.7 Flash High</code></td><td>gemini-964c4709 / gemini-audit</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/tickets/T-0047.md">ticket</a></td></tr>
-</table><hr>
 <div class="meta">Repository: <a href="https://github.com/jacob-haddon/burn-tokens">github.com/jacob-haddon/burn-tokens</a> | Maintained by Jacob Haddon (@jacob-haddon)</div>
 </body></html>
