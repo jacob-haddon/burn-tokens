@@ -1,0 +1,72 @@
+diff --git a/src/pack_unpack.c b/src/pack_unpack.c
+index 5447005..e2edec7 100644
+--- a/src/pack_unpack.c
++++ b/src/pack_unpack.c
+@@ -735,6 +735,10 @@ static int unpack(scanner_t *s, json_t *root, va_list *ap, const char *key) {
+ 
+             if (!(s->flags & JSON_VALIDATE_ONLY)) {
+                 int *target = va_arg(*ap, int *);
++                if (!target) {
++                    set_error(s, "<args>", json_error_null_value, "NULL integer argument");
++                    return -1;
++                }
+                 if (root)
+                     *target = (int)json_integer_value(root);
+             }
+@@ -751,6 +755,10 @@ static int unpack(scanner_t *s, json_t *root, va_list *ap, const char *key) {
+ 
+             if (!(s->flags & JSON_VALIDATE_ONLY)) {
+                 json_int_t *target = va_arg(*ap, json_int_t *);
++                if (!target) {
++                    set_error(s, "<args>", json_error_null_value, "NULL integer argument");
++                    return -1;
++                }
+                 if (root)
+                     *target = json_integer_value(root);
+             }
+@@ -767,6 +775,10 @@ static int unpack(scanner_t *s, json_t *root, va_list *ap, const char *key) {
+ 
+             if (!(s->flags & JSON_VALIDATE_ONLY)) {
+                 int *target = va_arg(*ap, int *);
++                if (!target) {
++                    set_error(s, "<args>", json_error_null_value, "NULL boolean argument");
++                    return -1;
++                }
+                 if (root)
+                     *target = json_is_true(root);
+             }
+@@ -783,6 +795,10 @@ static int unpack(scanner_t *s, json_t *root, va_list *ap, const char *key) {
+ 
+             if (!(s->flags & JSON_VALIDATE_ONLY)) {
+                 double *target = va_arg(*ap, double *);
++                if (!target) {
++                    set_error(s, "<args>", json_error_null_value, "NULL real argument");
++                    return -1;
++                }
+                 if (root)
+                     *target = json_real_value(root);
+             }
+@@ -799,6 +815,10 @@ static int unpack(scanner_t *s, json_t *root, va_list *ap, const char *key) {
+ 
+             if (!(s->flags & JSON_VALIDATE_ONLY)) {
+                 double *target = va_arg(*ap, double *);
++                if (!target) {
++                    set_error(s, "<args>", json_error_null_value, "NULL number argument");
++                    return -1;
++                }
+                 if (root)
+                     *target = json_number_value(root);
+             }
+@@ -813,6 +833,12 @@ static int unpack(scanner_t *s, json_t *root, va_list *ap, const char *key) {
+         case 'o':
+             if (!(s->flags & JSON_VALIDATE_ONLY)) {
+                 json_t **target = va_arg(*ap, json_t **);
++                if (!target) {
++                    if (token(s) == 'O' && root)
++                        json_decref(root);
++                    set_error(s, "<args>", json_error_null_value, "NULL value argument");
++                    return -1;
++                }
+                 if (root)
+                     *target = root;
+             }

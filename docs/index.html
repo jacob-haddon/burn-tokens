@@ -22,7 +22,7 @@ BURN-TOKENS: AUTONOMOUS RESEARCH OBSERVATORY & VERIFIED ARTIFACT INDEX
 HOST         : https://github.com/jacob-haddon/burn-tokens
 SUBSTRATE    : Decentralized Zero-Trust Multi-Agent State Machine
 PILLARS      : 01-oss-sentinel | 02-counterexample-observatory | 03-open-lean-missions | 04-proof-reproduction-watch
-METRICS      : 51 Total Milestones | 4 Real OSS ASan Patches | 22 Lean 4 Packages (0 sorry) | 25 JSON Datasets (12.8 MB)
+METRICS      : 52 Total Milestones | 5 Real OSS ASan Patches | 22 Lean 4 Packages (0 sorry) | 25 JSON Datasets (12.8 MB)
 VERIFICATION : 100% Machine-Checked (Clang ASan/UBSan + Lean 4.33.1 + Python/SAT)
 </pre><hr>
 
@@ -39,6 +39,14 @@ VERIFICATION : 100% Machine-Checked (Clang ASan/UBSan + Lean 4.33.1 + Python/SAT
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td><code>akheron/jansson</code></td>
+  <td>NULL pointer dereference / crash in <code>json_unpack()</code> for non-string types (<code>i, I, b, f, F, o, O</code>)</td>
+  <td>Autonomous Audit<br>Verified: 2026-08-26</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-pr-ready">[PR READY]</span> Autonomously discovered via source audit, verified under ASan + 100% (215/215) tests pass. 0 open PRs.</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/01-oss-sentinel/results/2026-08-26--jansson-unpack-null-dereference-remediation.md">report</a> | <a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/01-oss-sentinel/patches/jansson_fix_unpack_null_deref.patch">patch</a></td>
+</tr>
 <tr>
   <td><code>google/brotli</code></td>
   <td>Stack buffer overflow in <code>ParseParams()</code> via unbounded empty-string CLI arguments (Issue #1508)</td>
