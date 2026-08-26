@@ -12,6 +12,20 @@ from datetime import datetime, timezone
 
 WORKSPACE_ROOT = Path(__file__).resolve().parent.parent
 
+import subprocess
+import json
+
+def check_github_ci():
+    try:
+        cmd = ["gh", "run", "list", "--repo", "jacob-haddon/burn-tokens", "--limit", "2", "--json", "name,status,conclusion,url"]
+        res = subprocess.run(cmd, capture_output=True, text=True, timeout=5)
+        if res.returncode == 0:
+            return json.loads(res.stdout)
+    except Exception:
+        pass
+    return []
+
+
 def parse_frontmatter(file_path):
     try:
         content = file_path.read_text(encoding='utf-8')
@@ -169,6 +183,15 @@ def main():
             print(f"    - 🛠️  {event}")
         print("-" * 65)
         
+    # 1.1 Check GitHub CI & Pages
+    ci_runs = check_github_ci()
+    if ci_runs:
+        print("[*] GITHUB CI & ACTIONS STATUS :")
+        for r in ci_runs:
+            status_icon = "🟢" if r.get("conclusion") == "success" else ("🟡" if r.get("status") == "in_progress" else "🔴")
+            print(f"    - {status_icon} [{r.get('name')}] status={r.get('status')} conclusion={r.get('conclusion')}")
+        print("-" * 65)
+
     print(f"[*] AGENTS ONLINE ({len(agents_online)}) :")
     for a in agents_online:
         print(f"    - 🟢 [{a['id']}] status: {a['status']} | ticket: {a['ticket']}")
