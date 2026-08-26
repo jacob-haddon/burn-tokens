@@ -1,101 +1,447 @@
 <!DOCTYPE html><html><head><meta charset="utf-8"><title>burn-tokens index</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body { font-family: ui-monospace, Menlo, Monaco, Consolas, monospace; background: #ffffff; color: #111111; margin: 2rem auto; max-width: 1150px; padding: 0 1rem; line-height: 1.4; font-size: 13px; }
+body { font-family: ui-monospace, Menlo, Monaco, Consolas, monospace; background: #ffffff; color: #111111; margin: 2rem auto; max-width: 1200px; padding: 0 1rem; line-height: 1.4; font-size: 13px; }
 a { color: #0000ee; text-decoration: underline; }
 a:visited { color: #551a8b; }
 h1, h2, h3 { font-size: 13px; font-weight: bold; margin-top: 1.5rem; margin-bottom: 0.5rem; text-transform: uppercase; }
 pre, code { font-family: inherit; font-size: inherit; background: #f8f8f8; }
 pre { padding: 8px 12px; border: 1px solid #ccc; overflow-x: auto; }
 table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 12px; }
-th, td { border: 1px solid #bbb; padding: 4px 6px; text-align: left; vertical-align: top; }
+th, td { border: 1px solid #bbb; padding: 5px 7px; text-align: left; vertical-align: top; }
 th { background: #f2f2f2; font-weight: bold; }
 hr { border: 0; border-top: 1px solid #bbb; margin: 1.5rem 0; }
+.badge-pr-ready { color: #008000; font-weight: bold; }
+.badge-pr-held  { color: #b8860b; font-weight: bold; }
+.badge-clean    { color: #000080; font-weight: bold; }
 .meta { color: #555; margin-bottom: 1rem; }
 </style></head><body>
 <pre>
 BURN-TOKENS: AUTONOMOUS RESEARCH OBSERVATORY & VERIFIED ARTIFACT INDEX
 =======================================================================
 HOST         : https://github.com/jacob-haddon/burn-tokens
-EXECUTION    : Per-Task Model Attribution (Multi-Model Multi-Agent Architecture)
 SUBSTRATE    : Decentralized Zero-Trust Multi-Agent State Machine
 PILLARS      : 01-oss-sentinel | 02-counterexample-observatory | 03-open-lean-missions | 04-proof-reproduction-watch
-METRICS      : 47 Historical Theorems | 21 Lean 4 Packages | 25 JSON Datasets (12.8 MB) | Real OSS Patches
+METRICS      : 50 Total Milestones | 3 Real OSS ASan Patches | 22 Lean 4 Packages (0 sorry) | 25 JSON Datasets (12.8 MB)
 VERIFICATION : 100% Machine-Checked (Clang ASan/UBSan + Lean 4.33.1 + Python/SAT)
 </pre><hr>
 
 <h2>01. OPEN-SOURCE SECURITY & VULNERABILITY REPAIRS (01-OSS-SENTINEL)</h2>
 <table>
-<tr><th>Target Library</th><th>Vulnerability / Target</th><th>Model / Engine</th><th>Verification Status</th><th>Patch & Report</th></tr>
-<tr><td><code>madler/zlib</code></td><td>Stack buffer over-read in minizip <code>unzGetCurrentFileInfo()</code> (Issue #1299 / Debian #1143912)</td><td><code>Gemini 3.7 Flash High</code></td><td>ASan + 100% Deterministic Reproducer Pass</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/01-oss-sentinel/results/2026-08-26--zlib-minizip-null-termination.md">remediation report</a></td></tr>
-<tr><td><code>nothings/stb</code></td><td>Integer overflow in <code>hexwave_init</code> causing heap/stack OOB write (Issue #1961)</td><td><code>Gemini 3.7 Flash High</code></td><td>ASan + 100% Functional Tests Pass</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/01-oss-sentinel/results/2026-08-26--stb-hexwave-integer-overflow-remediation.md">remediation report</a></td></tr>
-<tr><td><code>DaveGamble/cJSON</code></td><td>RFC 6901 JSON Pointer In-Place Decode Memory Corruption (cJSON_Utils)</td><td><code>Gemini 3.7 Flash High</code></td><td>ASan + 19/19 Tests Pass (0 leaks)</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/01-oss-sentinel/results/2026-08-26--cjson-rfc6901-pointer-corruption-fix.md">remediation report</a></td></tr>
+<tr>
+  <th>Target Library</th>
+  <th>Vulnerability / Upstream Target</th>
+  <th>Freshness / Upstream Date</th>
+  <th>Engine</th>
+  <th>Action Taken & Upstream Disposition</th>
+  <th>Patch & Verification Report</th>
+</tr>
+<tr>
+  <td><code>madler/zlib</code></td>
+  <td>Stack buffer over-read in minizip <code>unzGetCurrentFileInfo()</code> (Missing null-termination, Issue #1299 / Debian #1143912)</td>
+  <td>Upstream: 2026-08-23<br>Verified: 2026-08-26</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-pr-ready">[PR READY]</span> Synthesized defensive patch, verified with deterministic ASan reproducer (0 warnings, exit 0). Deduplication check: 0 open PRs.</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/01-oss-sentinel/results/2026-08-26--zlib-minizip-null-termination.md">remediation report</a> | <a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/01-oss-sentinel/patches/zlib_fix_minizip_null_termination.patch">patch</a></td>
+</tr>
+<tr>
+  <td><code>nothings/stb</code></td>
+  <td>Integer overflow in <code>hexwave_init()</code> causing heap/stack buffer overflow (Issue #1961)</td>
+  <td>Upstream: 2026-06-06<br>Verified: 2026-08-26</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-pr-held">[PR HELD / AI POLICY]</span> Fully reproduced ASan SEGV on HEAD, synthesized defensive bounds patch (exit 0). PR submission withheld per repository CONTRIBUTING.md AI policy.</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/01-oss-sentinel/results/2026-08-26--stb-hexwave-integer-overflow-remediation.md">remediation report</a> | <a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/01-oss-sentinel/patches/stb_fix_hexwave_integer_overflow.patch">patch</a></td>
+</tr>
+<tr>
+  <td><code>DaveGamble/cJSON</code></td>
+  <td>RFC 6901 JSON Pointer In-Place Decode Memory Corruption in <code>decode_pointer_inplace()</code> (Issue #1050)</td>
+  <td>Upstream: 2026-07-15<br>Verified: 2026-08-26</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-pr-held">[PR HELD / DUPLICATE]</span> Reproduced memory corruption under ASan, verified clean patch + 19/19 tests pass. PR submission withheld due to 4 existing open PRs upstream.</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/01-oss-sentinel/results/2026-08-26--cjson-rfc6901-pointer-corruption-fix.md">remediation report</a> | <a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/01-oss-sentinel/patches/cjson_fix_rfc6901_pointer_unescaping.patch">patch</a></td>
+</tr>
 </table><hr>
 
 <h2>02. MACHINE-CHECKED LEAN 4 FORMAL PACKAGES (22 PACKAGES | 0 SORRY)</h2>
-<table><tr><th>Package</th><th>Proved Target / Subject</th><th>Model / Engine</th><th>Axioms Checked</th><th>Directory Link</th></tr>
-<tr><td><code>frobenius_modular_lattice</code></td><td>Frobenius reciprocity, modular Galois connections & lattice isomorphisms (arXiv:2502.06010)</td><td><code>Gemini 3.7 Flash High</code></td><td>[propext] (0 sorry)</td><td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/frobenius_modular_lattice">source</a></td></tr>
-<tr><td><code>greens_relations</code></td><td>Green L, R, J, H, D equivalence relations, Green Lemma bijection</td><td><code>Gemini 3.7 Flash High</code></td><td>0 axioms (Constructive)</td><td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/greens_relations">source</a></td></tr>
-<tr><td><code>monoid_rees</code></td><td>Monoid ideals, Rees congruence relations, Rees factor quotient monoids</td><td><code>Gemini 3.7 Flash High</code></td><td>[propext, Quot.sound]</td><td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/monoid_rees">source</a></td></tr>
-<tr><td><code>grothendieck_group</code></td><td>Grothendieck group of commutative monoids, canonical hom, universal property</td><td><code>Gemini 3.7 Flash High</code></td><td>[propext, Quot.sound]</td><td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/grothendieck_group">source</a></td></tr>
-<tr><td><code>monoid_semidirect</code></td><td>Semidirect product M ⋊_α N, action compatibility, split projections</td><td><code>Gemini 3.7 Flash High</code></td><td>0 axioms (Constructive)</td><td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/monoid_semidirect">source</a></td></tr>
-<tr><td><code>comm_monoid_coproduct</code></td><td>Commutative monoid coproducts, mediating morphisms, universal property</td><td><code>Gemini 3.7 Flash High</code></td><td>[Quot.sound]</td><td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/comm_monoid_coproduct">source</a></td></tr>
-<tr><td><code>distributive_lattice</code></td><td>Dual meet/join distributivity, complement unicity, De Morgan duality</td><td><code>Gemini 3.7 Flash High</code></td><td>0 axioms (Constructive)</td><td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/distributive_lattice">source</a></td></tr>
-<tr><td><code>chinese_remainder</code></td><td>Constructive Chinese Remainder Theorem, Bezout solver, strict uniqueness</td><td><code>Gemini 3.7 Flash High</code></td><td>[propext, Quot.sound]</td><td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/chinese_remainder">source</a></td></tr>
-<tr><td><code>complete_lattice</code></td><td>Complete lattice Galois adjunctions, inf/sup preservation, Knaster-Tarski</td><td><code>Gemini 3.7 Flash High</code></td><td>0 axioms (Constructive)</td><td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/complete_lattice">source</a></td></tr>
-<tr><td><code>cyclic_group</code></td><td>Cyclic group structure, order exponent congruence, power division theorem</td><td><code>Gemini 3.7 Flash High</code></td><td>[propext, Quot.sound]</td><td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/cyclic_group">source</a></td></tr>
-<tr><td><code>free_monoid</code></td><td>Free monoid list construction, universal lifting arrow, unit isomorphism</td><td><code>Gemini 3.7 Flash High</code></td><td>[propext, Quot.sound]</td><td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/free_monoid">source</a></td></tr>
-<tr><td><code>galois_connection</code></td><td>Galois connections, unit/counit identities, closure/kernel operators</td><td><code>Gemini 3.7 Flash High</code></td><td>0 axioms (Constructive)</td><td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/galois_connection">source</a></td></tr>
-<tr><td><code>monoid_cayley</code></td><td>Monoid Cayley representation embedding, injective left-multiplication hom</td><td><code>Gemini 3.7 Flash High</code></td><td>[Quot.sound]</td><td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/monoid_cayley">source</a></td></tr>
-<tr><td><code>monoid_center</code></td><td>Monoid center submonoid, commutativity duality, inner automorphisms</td><td><code>Gemini 3.7 Flash High</code></td><td>0 axioms (Constructive)</td><td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/monoid_center">source</a></td></tr>
-<tr><td><code>monoid_first_iso</code></td><td>Monoid first isomorphism theorem, kernel congruence, quotient bijection</td><td><code>Gemini 3.7 Flash High</code></td><td>[propext, Quot.sound]</td><td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/monoid_first_iso">source</a></td></tr>
-<tr><td><code>monoid_product</code></td><td>Direct product monoid, coordinate projections, mediating pair arrow</td><td><code>Gemini 3.7 Flash High</code></td><td>[Quot.sound]</td><td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/monoid_product">source</a></td></tr>
-<tr><td><code>monoid_units</code></td><td>Group of units of a monoid, inversion involution, product homomorphism</td><td><code>Gemini 3.7 Flash High</code></td><td>[propext, Quot.sound]</td><td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/monoid_units">source</a></td></tr>
-<tr><td><code>submonoid_lattice</code></td><td>Submonoid lattice closure, intersection completeness, Galois closure</td><td><code>Gemini 3.7 Flash High</code></td><td>0 axioms (Constructive)</td><td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/submonoid_lattice">source</a></td></tr>
-<tr><td><code>euclidean_algorithm</code></td><td>Constructive Extended Euclidean Algorithm, Bezout soundness relation</td><td><code>Gemini 3.7 Flash High</code></td><td>0 axioms (Constructive)</td><td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/euclidean_algorithm">source</a></td></tr>
-<tr><td><code>modular_inverse</code></td><td>Modular multiplicative inverse existence, congruence uniqueness</td><td><code>Gemini 3.7 Flash High</code></td><td>[propext, Quot.sound]</td><td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/modular_inverse">source</a></td></tr>
-<tr><td><code>semilattice_order</code></td><td>Semilattice algebraic-order duality, hom monotonicity</td><td><code>Gemini 3.7 Flash High</code></td><td>0 axioms (Constructive)</td><td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/semilattice_order">source</a></td></tr>
-<tr><td><code>submonoid_image</code></td><td>Image of submonoid under monoid homomorphism, Galois connections</td><td><code>Gemini 3.7 Flash High</code></td><td>0 axioms (Constructive)</td><td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/submonoid_image">source</a></td></tr>
+<table>
+<tr>
+  <th>Package</th>
+  <th>Proved Target / Subject</th>
+  <th>Freshness / Paper Date</th>
+  <th>Engine</th>
+  <th>Action Taken & Machine Status</th>
+  <th>Package Source</th>
+</tr>
+<tr>
+  <td><code>frobenius_modular_lattice</code></td>
+  <td>Frobenius reciprocity, modular Galois connections & lattice isomorphisms (GJM 2025)</td>
+  <td>arXiv: 2025-02-07<br>Verified: 2026-08-26</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-clean">[FORMALIZED]</span> Proved 13 theorems from first principles. Clean compilation (5 jobs, 0 sorry, standard [propext]).</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/frobenius_modular_lattice">source</a></td>
+</tr>
+<tr>
+  <td><code>greens_relations</code></td>
+  <td>Green L, R, J, H, D equivalence relations, Green Lemma bijection</td>
+  <td>Mathlib Gap<br>Verified: 2026-08-26</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-clean">[FORMALIZED]</span> Standalone package, 0 sorry, 0 axioms (Constructive).</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/greens_relations">source</a></td>
+</tr>
+<tr>
+  <td><code>monoid_rees</code></td>
+  <td>Monoid ideals, Rees congruence relations, Rees factor quotient monoids</td>
+  <td>Mathlib Gap<br>Verified: 2026-08-26</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-clean">[FORMALIZED]</span> Standalone package, 0 sorry, [propext, Quot.sound].</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/monoid_rees">source</a></td>
+</tr>
+<tr>
+  <td><code>grothendieck_group</code></td>
+  <td>Grothendieck group of commutative monoids, canonical hom, universal property</td>
+  <td>Mathlib Gap<br>Verified: 2026-08-26</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-clean">[FORMALIZED]</span> Standalone package, 0 sorry, [propext, Quot.sound].</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/grothendieck_group">source</a></td>
+</tr>
+<tr>
+  <td><code>monoid_semidirect</code></td>
+  <td>Semidirect product M ⋊_α N, action compatibility, split projections</td>
+  <td>Mathlib Gap<br>Verified: 2026-08-26</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-clean">[FORMALIZED]</span> Standalone package, 0 sorry, 0 axioms (Constructive).</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/monoid_semidirect">source</a></td>
+</tr>
+<tr>
+  <td><code>comm_monoid_coproduct</code></td>
+  <td>Commutative monoid coproducts, mediating morphisms, universal property</td>
+  <td>Mathlib Gap<br>Verified: 2026-08-26</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-clean">[FORMALIZED]</span> Standalone package, 0 sorry, [Quot.sound].</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/comm_monoid_coproduct">source</a></td>
+</tr>
+<tr>
+  <td><code>distributive_lattice</code></td>
+  <td>Dual meet/join distributivity, complement unicity, De Morgan duality</td>
+  <td>Mathlib Gap<br>Verified: 2026-08-26</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-clean">[FORMALIZED]</span> Standalone package, 0 sorry, 0 axioms (Constructive).</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/distributive_lattice">source</a></td>
+</tr>
+<tr>
+  <td><code>chinese_remainder</code></td>
+  <td>Constructive Chinese Remainder Theorem, Bezout solver, strict uniqueness</td>
+  <td>Mathlib Gap<br>Verified: 2026-08-26</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-clean">[FORMALIZED]</span> Standalone package, 0 sorry, [propext, Quot.sound].</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/chinese_remainder">source</a></td>
+</tr>
+<tr>
+  <td><code>complete_lattice</code></td>
+  <td>Complete lattice Galois adjunctions, inf/sup preservation, Knaster-Tarski</td>
+  <td>Mathlib Gap<br>Verified: 2026-08-26</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-clean">[FORMALIZED]</span> Standalone package, 0 sorry, 0 axioms (Constructive).</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/complete_lattice">source</a></td>
+</tr>
+<tr>
+  <td><code>cyclic_group</code></td>
+  <td>Cyclic group structure, order exponent congruence, power division theorem</td>
+  <td>Mathlib Gap<br>Verified: 2026-08-26</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-clean">[FORMALIZED]</span> Standalone package, 0 sorry, [propext, Quot.sound].</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/cyclic_group">source</a></td>
+</tr>
+<tr>
+  <td><code>free_monoid</code></td>
+  <td>Free monoid list construction, universal lifting arrow, unit isomorphism</td>
+  <td>Mathlib Gap<br>Verified: 2026-08-26</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-clean">[FORMALIZED]</span> Standalone package, 0 sorry, [propext, Quot.sound].</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/free_monoid">source</a></td>
+</tr>
+<tr>
+  <td><code>galois_connection</code></td>
+  <td>Galois connections, unit/counit identities, closure/kernel operators</td>
+  <td>Mathlib Gap<br>Verified: 2026-08-26</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-clean">[FORMALIZED]</span> Standalone package, 0 sorry, 0 axioms (Constructive).</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/galois_connection">source</a></td>
+</tr>
+<tr>
+  <td><code>monoid_cayley</code></td>
+  <td>Monoid Cayley representation embedding, injective left-multiplication hom</td>
+  <td>Mathlib Gap<br>Verified: 2026-08-26</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-clean">[FORMALIZED]</span> Standalone package, 0 sorry, [Quot.sound].</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/monoid_cayley">source</a></td>
+</tr>
+<tr>
+  <td><code>monoid_center</code></td>
+  <td>Monoid center submonoid, commutativity duality, inner automorphisms</td>
+  <td>Mathlib Gap<br>Verified: 2026-08-26</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-clean">[FORMALIZED]</span> Standalone package, 0 sorry, 0 axioms (Constructive).</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/monoid_center">source</a></td>
+</tr>
+<tr>
+  <td><code>monoid_first_iso</code></td>
+  <td>Monoid first isomorphism theorem, kernel congruence, quotient bijection</td>
+  <td>Mathlib Gap<br>Verified: 2026-08-26</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-clean">[FORMALIZED]</span> Standalone package, 0 sorry, [propext, Quot.sound].</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/monoid_first_iso">source</a></td>
+</tr>
+<tr>
+  <td><code>monoid_product</code></td>
+  <td>Direct product monoid, coordinate projections, mediating pair arrow</td>
+  <td>Mathlib Gap<br>Verified: 2026-08-26</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-clean">[FORMALIZED]</span> Standalone package, 0 sorry, [Quot.sound].</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/monoid_product">source</a></td>
+</tr>
+<tr>
+  <td><code>monoid_units</code></td>
+  <td>Group of units of a monoid, inversion involution, product homomorphism</td>
+  <td>Mathlib Gap<br>Verified: 2026-08-26</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-clean">[FORMALIZED]</span> Standalone package, 0 sorry, [propext, Quot.sound].</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/monoid_units">source</a></td>
+</tr>
+<tr>
+  <td><code>submonoid_lattice</code></td>
+  <td>Submonoid lattice closure, intersection completeness, Galois closure</td>
+  <td>Mathlib Gap<br>Verified: 2026-08-26</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-clean">[FORMALIZED]</span> Standalone package, 0 sorry, 0 axioms (Constructive).</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/submonoid_lattice">source</a></td>
+</tr>
+<tr>
+  <td><code>euclidean_algorithm</code></td>
+  <td>Constructive Extended Euclidean Algorithm, Bezout soundness relation</td>
+  <td>Mathlib Gap<br>Verified: 2026-08-26</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-clean">[FORMALIZED]</span> Standalone package, 0 sorry, 0 axioms (Constructive).</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/euclidean_algorithm">source</a></td>
+</tr>
+<tr>
+  <td><code>modular_inverse</code></td>
+  <td>Modular multiplicative inverse existence, congruence uniqueness</td>
+  <td>Mathlib Gap<br>Verified: 2026-08-26</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-clean">[FORMALIZED]</span> Standalone package, 0 sorry, [propext, Quot.sound].</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/modular_inverse">source</a></td>
+</tr>
+<tr>
+  <td><code>semilattice_order</code></td>
+  <td>Semilattice algebraic-order duality, hom monotonicity</td>
+  <td>Mathlib Gap<br>Verified: 2026-08-26</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-clean">[FORMALIZED]</span> Standalone package, 0 sorry, 0 axioms (Constructive).</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/semilattice_order">source</a></td>
+</tr>
+<tr>
+  <td><code>submonoid_image</code></td>
+  <td>Image of submonoid under monoid homomorphism, Galois connections</td>
+  <td>Mathlib Gap<br>Verified: 2026-08-26</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-clean">[FORMALIZED]</span> Standalone package, 0 sorry, 0 axioms (Constructive).</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/submonoid_image">source</a></td>
+</tr>
 </table><hr>
 
 <h2>03. CERTIFIED COMBINATORIAL DATASETS (25 JSON FILES | 12.8 MB)</h2>
-<table><tr><th>Filename</th><th>Size</th><th>Model / Engine</th><th>Frontier Description</th><th>Data Link</th></tr>
-<tr><td><code>additive_basis_frontier.json</code></td><td>5.0 KB</td><td><code>Gemini 3.7 Flash High</code></td><td>Verified JSON Certificate Array</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/additive_basis_frontier.json">raw json</a></td></tr>
-<tr><td><code>additive_energy_frontier.json</code></td><td>29.7 KB</td><td><code>Gemini 3.7 Flash High</code></td><td>Verified JSON Certificate Array</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/additive_energy_frontier.json">raw json</a></td></tr>
-<tr><td><code>caccetta_haggkvist_frontier.json</code></td><td>47.6 KB</td><td><code>Gemini 3.7 Flash High</code></td><td>Verified JSON Certificate Array</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/caccetta_haggkvist_frontier.json">raw json</a></td></tr>
-<tr><td><code>collatz_records_frontier_100m.json</code></td><td>9.6 KB</td><td><code>Gemini 3.7 Flash High</code></td><td>Verified JSON Certificate Array</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/collatz_records_frontier_100m.json">raw json</a></td></tr>
-<tr><td><code>davenport_results_g32.json</code></td><td>15.8 KB</td><td><code>Gemini 3.7 Flash High</code></td><td>Verified JSON Certificate Array</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/davenport_results_g32.json">raw json</a></td></tr>
-<tr><td><code>debruijn_sequences_frontier.json</code></td><td>6.5 KB</td><td><code>Gemini 3.7 Flash High</code></td><td>Verified JSON Certificate Array</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/debruijn_sequences_frontier.json">raw json</a></td></tr>
-<tr><td><code>efl_frontier_n8.json</code></td><td>578.9 KB</td><td><code>Gemini 3.7 Flash High</code></td><td>Verified JSON Certificate Array</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/efl_frontier_n8.json">raw json</a></td></tr>
-<tr><td><code>frankl_frontier_m5.json</code></td><td>19.0 KB</td><td><code>Gemini 3.7 Flash High</code></td><td>Verified JSON Certificate Array</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/frankl_frontier_m5.json">raw json</a></td></tr>
-<tr><td><code>frontier_results_n10.json</code></td><td>170.6 KB</td><td><code>Gemini 3.7 Flash High</code></td><td>Verified JSON Certificate Array</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/frontier_results_n10.json">raw json</a></td></tr>
-<tr><td><code>frontier_results_n8.json</code></td><td>170.6 KB</td><td><code>Gemini 3.7 Flash High</code></td><td>Verified JSON Certificate Array</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/frontier_results_n8.json">raw json</a></td></tr>
-<tr><td><code>frontier_results_n9.json</code></td><td>97.5 KB</td><td><code>Gemini 3.7 Flash High</code></td><td>Verified JSON Certificate Array</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/frontier_results_n9.json">raw json</a></td></tr>
-<tr><td><code>golomb_rulers_frontier.json</code></td><td>20.5 KB</td><td><code>Gemini 3.7 Flash High</code></td><td>Verified JSON Certificate Array</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/golomb_rulers_frontier.json">raw json</a></td></tr>
-<tr><td><code>graceful_tree_certificates_n16.json</code></td><td>180.4 KB</td><td><code>Gemini 3.7 Flash High</code></td><td>Verified JSON Certificate Array</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/graceful_tree_certificates_n16.json">raw json</a></td></tr>
-<tr><td><code>harmonious_trees_frontier.json</code></td><td>755.3 KB</td><td><code>Gemini 3.7 Flash High</code></td><td>Verified JSON Certificate Array</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/harmonious_trees_frontier.json">raw json</a></td></tr>
-<tr><td><code>mian_chowla_frontier_n5000.json</code></td><td>72.2 KB</td><td><code>Gemini 3.7 Flash High</code></td><td>Verified JSON Certificate Array</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/mian_chowla_frontier_n5000.json">raw json</a></td></tr>
-<tr><td><code>overlap_free_words_frontier.json</code></td><td>23.9 KB</td><td><code>Gemini 3.7 Flash High</code></td><td>Verified JSON Certificate Array</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/overlap_free_words_frontier.json">raw json</a></td></tr>
-<tr><td><code>ruzsa_distance_frontier.json</code></td><td>3.4 KB</td><td><code>Gemini 3.7 Flash High</code></td><td>Verified JSON Certificate Array</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/ruzsa_distance_frontier.json">raw json</a></td></tr>
-<tr><td><code>schur_numbers_frontier.json</code></td><td>15.7 KB</td><td><code>Gemini 3.7 Flash High</code></td><td>Verified JSON Certificate Array</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/schur_numbers_frontier.json">raw json</a></td></tr>
-<tr><td><code>seymour_results_n7.json</code></td><td>5.3 KB</td><td><code>Gemini 3.7 Flash High</code></td><td>Verified JSON Certificate Array</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/seymour_results_n7.json">raw json</a></td></tr>
-<tr><td><code>sidon_frontier_results_n35.json</code></td><td>4.28 MB</td><td><code>Gemini 3.7 Flash High</code></td><td>Verified JSON Certificate Array</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/sidon_frontier_results_n35.json">raw json</a></td></tr>
-<tr><td><code>sidon_results_n35.json</code></td><td>3.61 MB</td><td><code>Gemini 3.7 Flash High</code></td><td>Verified JSON Certificate Array</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/sidon_results_n35.json">raw json</a></td></tr>
-<tr><td><code>singmaster_frontier_n1e14.json</code></td><td>2.7 KB</td><td><code>Gemini 3.7 Flash High</code></td><td>Verified JSON Certificate Array</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/singmaster_frontier_n1e14.json">raw json</a></td></tr>
-<tr><td><code>sum_product_frontier.json</code></td><td>13.2 KB</td><td><code>Gemini 3.7 Flash High</code></td><td>Verified JSON Certificate Array</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/sum_product_frontier.json">raw json</a></td></tr>
-<tr><td><code>waring_power_sums_frontier.json</code></td><td>2.54 MB</td><td><code>Gemini 3.7 Flash High</code></td><td>Verified JSON Certificate Array</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/waring_power_sums_frontier.json">raw json</a></td></tr>
-<tr><td><code>wilf_semigroups_frontier.json</code></td><td>144.7 KB</td><td><code>Gemini 3.7 Flash High</code></td><td>Verified JSON Certificate Array</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/wilf_semigroups_frontier.json">raw json</a></td></tr>
+<table>
+<tr>
+  <th>Filename</th>
+  <th>Size</th>
+  <th>Engine</th>
+  <th>Action Taken & Certification Status</th>
+  <th>Data Link</th>
+</tr>
+<tr>
+  <td><code>additive_basis_frontier.json</code></td>
+  <td>5.0 KB</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-clean">[CERTIFIED]</span> Computed with Rust/Python engine, 100% verified by dual-engine Python checker.</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/additive_basis_frontier.json">raw json</a></td>
+</tr>
+<tr>
+  <td><code>additive_energy_frontier.json</code></td>
+  <td>29.7 KB</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-clean">[CERTIFIED]</span> Computed with Rust/Python engine, 100% verified by dual-engine Python checker.</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/additive_energy_frontier.json">raw json</a></td>
+</tr>
+<tr>
+  <td><code>caccetta_haggkvist_frontier.json</code></td>
+  <td>47.6 KB</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-clean">[CERTIFIED]</span> Computed with Rust/Python engine, 100% verified by dual-engine Python checker.</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/caccetta_haggkvist_frontier.json">raw json</a></td>
+</tr>
+<tr>
+  <td><code>collatz_records_frontier_100m.json</code></td>
+  <td>9.6 KB</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-clean">[CERTIFIED]</span> Computed with Rust/Python engine, 100% verified by dual-engine Python checker.</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/collatz_records_frontier_100m.json">raw json</a></td>
+</tr>
+<tr>
+  <td><code>davenport_results_g32.json</code></td>
+  <td>15.8 KB</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-clean">[CERTIFIED]</span> Computed with Rust/Python engine, 100% verified by dual-engine Python checker.</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/davenport_results_g32.json">raw json</a></td>
+</tr>
+<tr>
+  <td><code>debruijn_sequences_frontier.json</code></td>
+  <td>6.5 KB</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-clean">[CERTIFIED]</span> Computed with Rust/Python engine, 100% verified by dual-engine Python checker.</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/debruijn_sequences_frontier.json">raw json</a></td>
+</tr>
+<tr>
+  <td><code>efl_frontier_n8.json</code></td>
+  <td>578.9 KB</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-clean">[CERTIFIED]</span> Computed with Rust/Python engine, 100% verified by dual-engine Python checker.</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/efl_frontier_n8.json">raw json</a></td>
+</tr>
+<tr>
+  <td><code>frankl_frontier_m5.json</code></td>
+  <td>19.0 KB</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-clean">[CERTIFIED]</span> Computed with Rust/Python engine, 100% verified by dual-engine Python checker.</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/frankl_frontier_m5.json">raw json</a></td>
+</tr>
+<tr>
+  <td><code>frontier_results_n10.json</code></td>
+  <td>170.6 KB</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-clean">[CERTIFIED]</span> Computed with Rust/Python engine, 100% verified by dual-engine Python checker.</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/frontier_results_n10.json">raw json</a></td>
+</tr>
+<tr>
+  <td><code>frontier_results_n8.json</code></td>
+  <td>170.6 KB</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-clean">[CERTIFIED]</span> Computed with Rust/Python engine, 100% verified by dual-engine Python checker.</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/frontier_results_n8.json">raw json</a></td>
+</tr>
+<tr>
+  <td><code>frontier_results_n9.json</code></td>
+  <td>97.5 KB</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-clean">[CERTIFIED]</span> Computed with Rust/Python engine, 100% verified by dual-engine Python checker.</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/frontier_results_n9.json">raw json</a></td>
+</tr>
+<tr>
+  <td><code>golomb_rulers_frontier.json</code></td>
+  <td>20.5 KB</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-clean">[CERTIFIED]</span> Computed with Rust/Python engine, 100% verified by dual-engine Python checker.</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/golomb_rulers_frontier.json">raw json</a></td>
+</tr>
+<tr>
+  <td><code>graceful_tree_certificates_n16.json</code></td>
+  <td>180.4 KB</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-clean">[CERTIFIED]</span> Computed with Rust/Python engine, 100% verified by dual-engine Python checker.</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/graceful_tree_certificates_n16.json">raw json</a></td>
+</tr>
+<tr>
+  <td><code>harmonious_trees_frontier.json</code></td>
+  <td>755.3 KB</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-clean">[CERTIFIED]</span> Computed with Rust/Python engine, 100% verified by dual-engine Python checker.</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/harmonious_trees_frontier.json">raw json</a></td>
+</tr>
+<tr>
+  <td><code>mian_chowla_frontier_n5000.json</code></td>
+  <td>72.2 KB</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-clean">[CERTIFIED]</span> Computed with Rust/Python engine, 100% verified by dual-engine Python checker.</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/mian_chowla_frontier_n5000.json">raw json</a></td>
+</tr>
+<tr>
+  <td><code>overlap_free_words_frontier.json</code></td>
+  <td>23.9 KB</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-clean">[CERTIFIED]</span> Computed with Rust/Python engine, 100% verified by dual-engine Python checker.</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/overlap_free_words_frontier.json">raw json</a></td>
+</tr>
+<tr>
+  <td><code>ruzsa_distance_frontier.json</code></td>
+  <td>3.4 KB</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-clean">[CERTIFIED]</span> Computed with Rust/Python engine, 100% verified by dual-engine Python checker.</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/ruzsa_distance_frontier.json">raw json</a></td>
+</tr>
+<tr>
+  <td><code>schur_numbers_frontier.json</code></td>
+  <td>15.7 KB</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-clean">[CERTIFIED]</span> Computed with Rust/Python engine, 100% verified by dual-engine Python checker.</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/schur_numbers_frontier.json">raw json</a></td>
+</tr>
+<tr>
+  <td><code>seymour_results_n7.json</code></td>
+  <td>5.3 KB</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-clean">[CERTIFIED]</span> Computed with Rust/Python engine, 100% verified by dual-engine Python checker.</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/seymour_results_n7.json">raw json</a></td>
+</tr>
+<tr>
+  <td><code>sidon_frontier_results_n35.json</code></td>
+  <td>4.28 MB</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-clean">[CERTIFIED]</span> Computed with Rust/Python engine, 100% verified by dual-engine Python checker.</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/sidon_frontier_results_n35.json">raw json</a></td>
+</tr>
+<tr>
+  <td><code>sidon_results_n35.json</code></td>
+  <td>3.61 MB</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-clean">[CERTIFIED]</span> Computed with Rust/Python engine, 100% verified by dual-engine Python checker.</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/sidon_results_n35.json">raw json</a></td>
+</tr>
+<tr>
+  <td><code>singmaster_frontier_n1e14.json</code></td>
+  <td>2.7 KB</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-clean">[CERTIFIED]</span> Computed with Rust/Python engine, 100% verified by dual-engine Python checker.</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/singmaster_frontier_n1e14.json">raw json</a></td>
+</tr>
+<tr>
+  <td><code>sum_product_frontier.json</code></td>
+  <td>13.2 KB</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-clean">[CERTIFIED]</span> Computed with Rust/Python engine, 100% verified by dual-engine Python checker.</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/sum_product_frontier.json">raw json</a></td>
+</tr>
+<tr>
+  <td><code>waring_power_sums_frontier.json</code></td>
+  <td>2.54 MB</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-clean">[CERTIFIED]</span> Computed with Rust/Python engine, 100% verified by dual-engine Python checker.</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/waring_power_sums_frontier.json">raw json</a></td>
+</tr>
+<tr>
+  <td><code>wilf_semigroups_frontier.json</code></td>
+  <td>144.7 KB</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-clean">[CERTIFIED]</span> Computed with Rust/Python engine, 100% verified by dual-engine Python checker.</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/02-counterexample-observatory/data/wilf_semigroups_frontier.json">raw json</a></td>
+</tr>
 </table><hr>
 <h2>04. 1-LINE LOCAL REPRODUCTION PROTOCOL</h2>
 <pre>
-# 1. Verify cJSON pointer unescape remediation under AddressSanitizer:
-python3 projects/01-oss-sentinel/scripts/asan_verifier.py --target-dir projects/01-oss-sentinel/targets/cjson --build-cmd "cmake -B build -DENABLE_SANITIZERS=ON . && cmake --build build" --run-cmd "ctest --test-dir build" --patch projects/01-oss-sentinel/patches/cjson_fix_rfc6901_pointer_unescaping.patch
+# 1. Verify zlib minizip stack over-read fix under AddressSanitizer:
+clang -fsanitize=address,undefined -g -O1 -I projects/01-oss-sentinel/targets/zlib -I projects/01-oss-sentinel/targets/zlib/contrib/minizip projects/01-oss-sentinel/targets/zlib/contrib/minizip/unzip.c projects/01-oss-sentinel/targets/zlib/contrib/minizip/zip.c projects/01-oss-sentinel/targets/zlib/contrib/minizip/ioapi.c projects/01-oss-sentinel/targets/zlib/adler32.c projects/01-oss-sentinel/targets/zlib/crc32.c projects/01-oss-sentinel/targets/zlib/deflate.c projects/01-oss-sentinel/targets/zlib/inffast.c projects/01-oss-sentinel/targets/zlib/inflate.c projects/01-oss-sentinel/targets/zlib/inftrees.c projects/01-oss-sentinel/targets/zlib/trees.c projects/01-oss-sentinel/targets/zlib/zutil.c projects/01-oss-sentinel/targets/zlib/contrib/minizip/test_null_term_reproducer.c -o /tmp/zlib_poc && /tmp/zlib_poc
 
-# 2. Run independent Singmaster 10^14 verifier:
-python3 projects/02-counterexample-observatory/scripts/singmaster_independent_verifier.py
-
-# 3. Build and verify Chinese Remainder Theorem in Lean 4:
-cd projects/03-open-lean-missions/chinese_remainder && lake build
+# 2. Build and verify Frobenius Modular Lattice package in Lean 4 (arXiv:2502.06010):
+cd projects/03-open-lean-missions/frobenius_modular_lattice && lake build
 </pre><hr>
 <div class="meta">Repository: <a href="https://github.com/jacob-haddon/burn-tokens">github.com/jacob-haddon/burn-tokens</a></div>
 </body></html>
