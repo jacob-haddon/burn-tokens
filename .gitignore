@@ -26,3 +26,4 @@ venv/
 # Temporary scratch
 projects/*/work/scratch_*
 projects/*/data/tmp_*
+projects/01-oss-sentinel/targets/*
