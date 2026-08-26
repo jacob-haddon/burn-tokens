@@ -1,0 +1,21 @@
+diff --git a/image_parser.c b/image_parser.c
+index 2a9fed3..8e23768 100644
+--- a/image_parser.c
++++ b/image_parser.c
+@@ -14,12 +14,10 @@ int parse_image_buffer(const uint8_t* buf, size_t size, ParsedImage* out_img) {
+     out_img->height = (buf[6] << 8) | buf[7];
+     uint32_t chunk_len = (buf[8] << 24) | (buf[9] << 16) | (buf[10] << 8) | buf[11];
+ 
+-    // VULNERABILITY (Pre-patch):
+-    // Missing upper-bound validation against remaining buffer 'size - 12'
+-    // Allocates chunk_len bytes, but copies min(chunk_len, 256) into heap without checking if buffer actually contains that data,
+-    // or allocating insufficient buffer when chunk_len overflows calculations.
+-    if (12 + chunk_len > size) {
+-        // Buggy check: Integer overflow in 12 + chunk_len when chunk_len >= UINT32_MAX - 12
++    // Defensive bound validation: ensure chunk_len does not exceed available bytes
++    size_t available_payload = size - 12;
++    if ((size_t)chunk_len > available_payload) {
++        return -4; // Reject malformed truncated payload safely
+     }
+ 
+     out_img->raw_pixel_data = (uint8_t*)malloc(chunk_len);
