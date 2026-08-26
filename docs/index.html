@@ -27,6 +27,7 @@ VERIFICATION : 100% Machine-Checked (Clang ASan/UBSan + Lean 4.33.1 + Python/SAT
 <h2>01. OPEN-SOURCE SECURITY & VULNERABILITY REPAIRS (01-OSS-SENTINEL)</h2>
 <table>
 <tr><th>Target Library</th><th>Vulnerability / Target</th><th>Model / Engine</th><th>Verification Status</th><th>Patch & Report</th></tr>
+<tr><td><code>nothings/stb</code></td><td>Integer overflow in <code>hexwave_init</code> causing heap/stack OOB write (Issue #1961)</td><td><code>Gemini 3.7 Flash High</code></td><td>ASan + 100% Functional Tests Pass</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/01-oss-sentinel/results/2026-08-26--stb-hexwave-integer-overflow-remediation.md">remediation report</a></td></tr>
 <tr><td><code>DaveGamble/cJSON</code></td><td>RFC 6901 JSON Pointer In-Place Decode Memory Corruption (cJSON_Utils)</td><td><code>Gemini 3.7 Flash High</code></td><td>ASan + 19/19 Tests Pass (0 leaks)</td><td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/01-oss-sentinel/results/2026-08-26--cjson-rfc6901-pointer-corruption-fix.md">remediation report</a></td></tr>
 </table><hr>
 

@@ -1,0 +1,54 @@
+diff --git a/stb_hexwave.h b/stb_hexwave.h
+index 480ab1b..8db0983 100644
+--- a/stb_hexwave.h
++++ b/stb_hexwave.h
+@@ -556,23 +556,37 @@ STB_HEXWAVE_DEF void hexwave_shutdown(float *user_buffer)
+ // buffer should be NULL or must be 4*(width*(oversample+1)*2 + 
+ STB_HEXWAVE_DEF void hexwave_init(int width, int oversample, float *user_buffer)
+ {
+-   int halfwidth = width/2;
+-   int half = halfwidth*oversample;
+-   int blep_buffer_count = width*(oversample+1);
+-   int n = 2*half+1;
+-#ifdef STB_HEXWAVE_NO_ALLOCATION
+-   float *buffers = user_buffer;
+-#else
+-   float *buffers = user_buffer ? user_buffer : (float *) malloc(sizeof(float) * n * 2);
+-#endif
+-   float *step    = buffers+0*n;
+-   float *ramp    = buffers+1*n;
+-   float *blep_buffer, *blamp_buffer;
++   int halfwidth, half, blep_buffer_count, n;
++   float *buffers, *step, *ramp, *blep_buffer, *blamp_buffer;
+    double integrate_impulse=0, integrate_step=0;
+    int i,j;
+ 
++   if (width < 4)
++      width = 4;
+    if (width > STB_HEXWAVE_MAX_BLEP_LENGTH)
+       width = STB_HEXWAVE_MAX_BLEP_LENGTH;
++   width &= ~1;
++
++   if (oversample < 2)
++      oversample = 2;
++   if (oversample > 1024)
++      oversample = 1024;
++
++   halfwidth = width/2;
++   half = halfwidth*oversample;
++   blep_buffer_count = width*(oversample+1);
++   n = 2*half+1;
++
++#ifdef STB_HEXWAVE_NO_ALLOCATION
++   buffers = user_buffer;
++#else
++   buffers = user_buffer ? user_buffer : (float *) malloc(sizeof(float) * n * 2);
++#endif
++   if (!buffers)
++      return;
++
++   step    = buffers+0*n;
++   ramp    = buffers+1*n;
+ 
+    if (user_buffer == 0) {
+       #ifndef STB_HEXWAVE_NO_ALLOCATION
