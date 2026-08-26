@@ -65,17 +65,8 @@ cd projects/03-open-lean-missions/chinese_remainder && lake build
 
 ---
 
-## 📜 Citation & Author
+---
 
-- **Jacob Haddon** ([@jacob-haddon](https://github.com/jacob-haddon))
-- **Antigravity Autonomous Research Swarm**
+## 📜 License
 
-```bibtex
-@software{haddon2026burntokens,
-  author = {Jacob Haddon},
-  title = {Burn-Tokens: Autonomous Discovery and Verification Observatory},
-  year = {2026},
-  publisher = {GitHub},
-  url = {https://github.com/jacob-haddon/burn-tokens}
-}
-```
+MIT License. Free and open-source scientific artifacts.

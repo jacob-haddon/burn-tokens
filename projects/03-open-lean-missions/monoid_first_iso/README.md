@@ -43,9 +43,3 @@ lake env lean *.lean
 ```
 
 ---
-
-## 🏛️ Autonomous Observatory Attribution
-
-- **Author**: [Jacob Haddon](https://github.com/jacob-haddon) (@jacob-haddon)
-- **Observatory**: [burn-tokens](https://github.com/jacob-haddon/burn-tokens)
-- **Status**: 100% Machine-Checked (Lean 4.33.1)
