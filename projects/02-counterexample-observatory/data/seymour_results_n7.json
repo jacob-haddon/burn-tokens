@@ -1,0 +1,218 @@
+{
+  "timestamp": "2026-08-26T00:27:00+02:00",
+  "tournament_results": [
+    {
+      "num_vertices": 3,
+      "total_tournaments_tested": 8,
+      "counterexamples": 0,
+      "min_seymour_vertices_found": 1,
+      "tournaments_with_one_seymour_vertex": 6,
+      "min_outdeg_not_seymour_count": 0
+    },
+    {
+      "num_vertices": 4,
+      "total_tournaments_tested": 64,
+      "counterexamples": 0,
+      "min_seymour_vertices_found": 1,
+      "tournaments_with_one_seymour_vertex": 32,
+      "min_outdeg_not_seymour_count": 0
+    },
+    {
+      "num_vertices": 5,
+      "total_tournaments_tested": 1024,
+      "counterexamples": 0,
+      "min_seymour_vertices_found": 1,
+      "tournaments_with_one_seymour_vertex": 200,
+      "min_outdeg_not_seymour_count": 0
+    },
+    {
+      "num_vertices": 6,
+      "total_tournaments_tested": 32768,
+      "counterexamples": 0,
+      "min_seymour_vertices_found": 1,
+      "tournaments_with_one_seymour_vertex": 2304,
+      "min_outdeg_not_seymour_count": 0
+    },
+    {
+      "num_vertices": 7,
+      "total_tournaments_tested": 2097152,
+      "counterexamples": 0,
+      "min_seymour_vertices_found": 1,
+      "tournaments_with_one_seymour_vertex": 41216,
+      "min_outdeg_not_seymour_count": 0
+    }
+  ],
+  "oriented_graph_results": [
+    {
+      "num_vertices": 3,
+      "total_graphs_tested": 27,
+      "counterexamples": 0,
+      "min_seymour_vertices_found": 1,
+      "graphs_with_one_seymour_vertex": 9,
+      "graphs_with_delta_ge_1": 2,
+      "delta_ge_1_counterexamples": 0
+    },
+    {
+      "num_vertices": 4,
+      "total_graphs_tested": 729,
+      "counterexamples": 0,
+      "min_seymour_vertices_found": 1,
+      "graphs_with_one_seymour_vertex": 144,
+      "graphs_with_delta_ge_1": 122,
+      "delta_ge_1_counterexamples": 0
+    },
+    {
+      "num_vertices": 5,
+      "total_graphs_tested": 59049,
+      "counterexamples": 0,
+      "min_seymour_vertices_found": 1,
+      "graphs_with_one_seymour_vertex": 4995,
+      "graphs_with_delta_ge_1": 16168,
+      "delta_ge_1_counterexamples": 0
+    },
+    {
+      "num_vertices": 6,
+      "total_graphs_tested": 14348907,
+      "counterexamples": 0,
+      "min_seymour_vertices_found": 1,
+      "graphs_with_one_seymour_vertex": 481824,
+      "graphs_with_delta_ge_1": 5545708,
+      "delta_ge_1_counterexamples": 0
+    },
+    {
+      "num_vertices": 7,
+      "total_graphs_tested": 500000,
+      "counterexamples": 0,
+      "min_seymour_vertices_found": 1,
+      "graphs_with_one_seymour_vertex": 4796,
+      "graphs_with_delta_ge_1": 248553,
+      "delta_ge_1_counterexamples": 0
+    },
+    {
+      "num_vertices": 8,
+      "total_graphs_tested": 500000,
+      "counterexamples": 0,
+      "min_seymour_vertices_found": 1,
+      "graphs_with_one_seymour_vertex": 1147,
+      "graphs_with_delta_ge_1": 299690,
+      "delta_ge_1_counterexamples": 0
+    }
+  ],
+  "paley_tournament_results": [
+    {
+      "prime_p": 3,
+      "out_degree": 1,
+      "second_out_degree": 1,
+      "is_seymour": true,
+      "is_strictly_extremal": true
+    },
+    {
+      "prime_p": 7,
+      "out_degree": 3,
+      "second_out_degree": 3,
+      "is_seymour": true,
+      "is_strictly_extremal": true
+    },
+    {
+      "prime_p": 11,
+      "out_degree": 5,
+      "second_out_degree": 5,
+      "is_seymour": true,
+      "is_strictly_extremal": true
+    },
+    {
+      "prime_p": 19,
+      "out_degree": 9,
+      "second_out_degree": 9,
+      "is_seymour": true,
+      "is_strictly_extremal": true
+    },
+    {
+      "prime_p": 23,
+      "out_degree": 11,
+      "second_out_degree": 11,
+      "is_seymour": true,
+      "is_strictly_extremal": true
+    },
+    {
+      "prime_p": 31,
+      "out_degree": 15,
+      "second_out_degree": 15,
+      "is_seymour": true,
+      "is_strictly_extremal": true
+    },
+    {
+      "prime_p": 43,
+      "out_degree": 21,
+      "second_out_degree": 21,
+      "is_seymour": true,
+      "is_strictly_extremal": true
+    },
+    {
+      "prime_p": 47,
+      "out_degree": 23,
+      "second_out_degree": 23,
+      "is_seymour": true,
+      "is_strictly_extremal": true
+    },
+    {
+      "prime_p": 59,
+      "out_degree": 29,
+      "second_out_degree": 29,
+      "is_seymour": true,
+      "is_strictly_extremal": true
+    },
+    {
+      "prime_p": 67,
+      "out_degree": 33,
+      "second_out_degree": 33,
+      "is_seymour": true,
+      "is_strictly_extremal": true
+    },
+    {
+      "prime_p": 71,
+      "out_degree": 35,
+      "second_out_degree": 35,
+      "is_seymour": true,
+      "is_strictly_extremal": true
+    },
+    {
+      "prime_p": 79,
+      "out_degree": 39,
+      "second_out_degree": 39,
+      "is_seymour": true,
+      "is_strictly_extremal": true
+    },
+    {
+      "prime_p": 83,
+      "out_degree": 41,
+      "second_out_degree": 41,
+      "is_seymour": true,
+      "is_strictly_extremal": true
+    },
+    {
+      "prime_p": 103,
+      "out_degree": 51,
+      "second_out_degree": 51,
+      "is_seymour": true,
+      "is_strictly_extremal": true
+    },
+    {
+      "prime_p": 107,
+      "out_degree": 53,
+      "second_out_degree": 53,
+      "is_seymour": true,
+      "is_strictly_extremal": true
+    },
+    {
+      "prime_p": 127,
+      "out_degree": 63,
+      "second_out_degree": 63,
+      "is_seymour": true,
+      "is_strictly_extremal": true
+    }
+  ],
+  "total_graphs_checked": 17539728,
+  "total_counterexamples": 0,
+  "execution_time_ms": 657
+}

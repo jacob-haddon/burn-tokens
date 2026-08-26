@@ -1,0 +1,6 @@
+name = "monoid_first_iso"
+version = "0.1.0"
+defaultTargets = ["MonoidFirstIso"]
+
+[[lean_lib]]
+name = "MonoidFirstIso"

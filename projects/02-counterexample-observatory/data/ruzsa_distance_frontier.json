@@ -1,0 +1,185 @@
+{
+  "title": "Ruzsa Triangle Inequality & Exact Additive Difference Distance Frontier (|A|, |B|, |C| <= 6)",
+  "timestamp": "2026-08-26T01:11:00+02:00",
+  "total_triples_tested": 9528128,
+  "counterexamples_found": 0,
+  "metric_violations_found": 0,
+  "sharp_equality_count": 176495,
+  "max_ratio_observed": 1.0,
+  "min_triangle_slack": -1.1102230246251565e-16,
+  "sample_equality_witnesses": [],
+  "sample_asymmetric_triples": [
+    {
+      "set_a": [
+        -4,
+        -3,
+        -2
+      ],
+      "set_b": [
+        -4,
+        -1,
+        2,
+        5
+      ],
+      "set_c": [
+        -4,
+        -1,
+        2,
+        5,
+        8
+      ],
+      "card_a": 3,
+      "card_b": 4,
+      "card_c": 5,
+      "card_diff_ab": 12,
+      "card_diff_ac": 15,
+      "card_diff_bc": 8,
+      "lhs": 24,
+      "rhs": 180,
+      "ratio": 0.13333333333333333,
+      "is_valid_inequality": true,
+      "dist_ab": 1.2424533248940002,
+      "dist_ac": 1.354025100551105,
+      "dist_bc": 0.5815754049028404,
+      "triangle_slack": 2.0149030205422647
+    },
+    {
+      "set_a": [
+        -4,
+        -3,
+        -2
+      ],
+      "set_b": [
+        -4,
+        -1,
+        2,
+        5
+      ],
+      "set_c": [
+        -4,
+        -1,
+        2,
+        5,
+        8,
+        11
+      ],
+      "card_a": 3,
+      "card_b": 4,
+      "card_c": 6,
+      "card_diff_ab": 12,
+      "card_diff_ac": 18,
+      "card_diff_bc": 9,
+      "lhs": 27,
+      "rhs": 216,
+      "ratio": 0.125,
+      "is_valid_inequality": true,
+      "dist_ab": 1.2424533248940002,
+      "dist_ac": 1.4451858789480825,
+      "dist_bc": 0.6081976621622466,
+      "triangle_slack": 2.079441541679836
+    },
+    {
+      "set_a": [
+        -4,
+        -3,
+        -2
+      ],
+      "set_b": [
+        -4,
+        -1,
+        2,
+        5
+      ],
+      "set_c": [
+        -3,
+        0,
+        3,
+        6,
+        9
+      ],
+      "card_a": 3,
+      "card_b": 4,
+      "card_c": 5,
+      "card_diff_ab": 12,
+      "card_diff_ac": 15,
+      "card_diff_bc": 8,
+      "lhs": 24,
+      "rhs": 180,
+      "ratio": 0.13333333333333333,
+      "is_valid_inequality": true,
+      "dist_ab": 1.2424533248940002,
+      "dist_ac": 1.354025100551105,
+      "dist_bc": 0.5815754049028404,
+      "triangle_slack": 2.0149030205422647
+    },
+    {
+      "set_a": [
+        -4,
+        -3,
+        -2
+      ],
+      "set_b": [
+        -4,
+        -1,
+        2,
+        5
+      ],
+      "set_c": [
+        -3,
+        0,
+        3,
+        6,
+        9,
+        12
+      ],
+      "card_a": 3,
+      "card_b": 4,
+      "card_c": 6,
+      "card_diff_ab": 12,
+      "card_diff_ac": 18,
+      "card_diff_bc": 9,
+      "lhs": 27,
+      "rhs": 216,
+      "ratio": 0.125,
+      "is_valid_inequality": true,
+      "dist_ab": 1.2424533248940002,
+      "dist_ac": 1.4451858789480825,
+      "dist_bc": 0.6081976621622466,
+      "triangle_slack": 2.079441541679836
+    },
+    {
+      "set_a": [
+        -4,
+        -3,
+        -2
+      ],
+      "set_b": [
+        -4,
+        -1,
+        2,
+        5
+      ],
+      "set_c": [
+        -2,
+        1,
+        4,
+        7,
+        10
+      ],
+      "card_a": 3,
+      "card_b": 4,
+      "card_c": 5,
+      "card_diff_ab": 12,
+      "card_diff_ac": 15,
+      "card_diff_bc": 8,
+      "lhs": 24,
+      "rhs": 180,
+      "ratio": 0.13333333333333333,
+      "is_valid_inequality": true,
+      "dist_ab": 1.2424533248940002,
+      "dist_ac": 1.354025100551105,
+      "dist_bc": 0.5815754049028404,
+      "triangle_slack": 2.0149030205422647
+    }
+  ]
+}

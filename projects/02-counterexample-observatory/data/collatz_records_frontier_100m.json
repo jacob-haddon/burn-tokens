@@ -1,0 +1,516 @@
+{
+  "limit_n": 100000000,
+  "total_numbers_checked": 100000000,
+  "max_stopping_time_found": 949,
+  "max_stopping_time_champion": 63728127,
+  "max_peak_height_found": 2185143829170100,
+  "max_peak_height_champion": 80049391,
+  "count_stopping_time_records": 59,
+  "count_peak_height_records": 41,
+  "counterexamples_found": 0,
+  "stopping_time_records": [
+    {
+      "start_n": 2,
+      "stopping_time": 1,
+      "peak_height": 2
+    },
+    {
+      "start_n": 3,
+      "stopping_time": 7,
+      "peak_height": 16
+    },
+    {
+      "start_n": 6,
+      "stopping_time": 8,
+      "peak_height": 6
+    },
+    {
+      "start_n": 7,
+      "stopping_time": 16,
+      "peak_height": 52
+    },
+    {
+      "start_n": 9,
+      "stopping_time": 19,
+      "peak_height": 28
+    },
+    {
+      "start_n": 18,
+      "stopping_time": 20,
+      "peak_height": 18
+    },
+    {
+      "start_n": 25,
+      "stopping_time": 23,
+      "peak_height": 76
+    },
+    {
+      "start_n": 27,
+      "stopping_time": 111,
+      "peak_height": 9232
+    },
+    {
+      "start_n": 54,
+      "stopping_time": 112,
+      "peak_height": 54
+    },
+    {
+      "start_n": 73,
+      "stopping_time": 115,
+      "peak_height": 220
+    },
+    {
+      "start_n": 97,
+      "stopping_time": 118,
+      "peak_height": 292
+    },
+    {
+      "start_n": 129,
+      "stopping_time": 121,
+      "peak_height": 388
+    },
+    {
+      "start_n": 171,
+      "stopping_time": 124,
+      "peak_height": 772
+    },
+    {
+      "start_n": 231,
+      "stopping_time": 127,
+      "peak_height": 2644
+    },
+    {
+      "start_n": 313,
+      "stopping_time": 130,
+      "peak_height": 940
+    },
+    {
+      "start_n": 327,
+      "stopping_time": 143,
+      "peak_height": 7108
+    },
+    {
+      "start_n": 649,
+      "stopping_time": 144,
+      "peak_height": 1948
+    },
+    {
+      "start_n": 703,
+      "stopping_time": 170,
+      "peak_height": 250504
+    },
+    {
+      "start_n": 871,
+      "stopping_time": 178,
+      "peak_height": 190996
+    },
+    {
+      "start_n": 1161,
+      "stopping_time": 181,
+      "peak_height": 3484
+    },
+    {
+      "start_n": 2223,
+      "stopping_time": 182,
+      "peak_height": 22516
+    },
+    {
+      "start_n": 2463,
+      "stopping_time": 208,
+      "peak_height": 42100
+    },
+    {
+      "start_n": 2919,
+      "stopping_time": 216,
+      "peak_height": 112264
+    },
+    {
+      "start_n": 3711,
+      "stopping_time": 237,
+      "peak_height": 481624
+    },
+    {
+      "start_n": 6171,
+      "stopping_time": 261,
+      "peak_height": 975400
+    },
+    {
+      "start_n": 10971,
+      "stopping_time": 267,
+      "peak_height": 83320
+    },
+    {
+      "start_n": 13255,
+      "stopping_time": 275,
+      "peak_height": 89476
+    },
+    {
+      "start_n": 17647,
+      "stopping_time": 278,
+      "peak_height": 11003416
+    },
+    {
+      "start_n": 23529,
+      "stopping_time": 281,
+      "peak_height": 70588
+    },
+    {
+      "start_n": 26623,
+      "stopping_time": 307,
+      "peak_height": 106358020
+    },
+    {
+      "start_n": 34239,
+      "stopping_time": 310,
+      "peak_height": 18976192
+    },
+    {
+      "start_n": 35655,
+      "stopping_time": 323,
+      "peak_height": 41163712
+    },
+    {
+      "start_n": 52527,
+      "stopping_time": 339,
+      "peak_height": 567952
+    },
+    {
+      "start_n": 77031,
+      "stopping_time": 350,
+      "peak_height": 21933016
+    },
+    {
+      "start_n": 106239,
+      "stopping_time": 353,
+      "peak_height": 104674192
+    },
+    {
+      "start_n": 142587,
+      "stopping_time": 374,
+      "peak_height": 6937648
+    },
+    {
+      "start_n": 156159,
+      "stopping_time": 382,
+      "peak_height": 28848472
+    },
+    {
+      "start_n": 216367,
+      "stopping_time": 385,
+      "peak_height": 11843332
+    },
+    {
+      "start_n": 230631,
+      "stopping_time": 442,
+      "peak_height": 76778008
+    },
+    {
+      "start_n": 410011,
+      "stopping_time": 448,
+      "peak_height": 4670296
+    },
+    {
+      "start_n": 511935,
+      "stopping_time": 469,
+      "peak_height": 13120360
+    },
+    {
+      "start_n": 626331,
+      "stopping_time": 508,
+      "peak_height": 7222283188
+    },
+    {
+      "start_n": 837799,
+      "stopping_time": 524,
+      "peak_height": 2974984576
+    },
+    {
+      "start_n": 1117065,
+      "stopping_time": 527,
+      "peak_height": 3351196
+    },
+    {
+      "start_n": 1501353,
+      "stopping_time": 530,
+      "peak_height": 4504060
+    },
+    {
+      "start_n": 1723519,
+      "stopping_time": 556,
+      "peak_height": 46571871940
+    },
+    {
+      "start_n": 2298025,
+      "stopping_time": 559,
+      "peak_height": 6894076
+    },
+    {
+      "start_n": 3064033,
+      "stopping_time": 562,
+      "peak_height": 9192100
+    },
+    {
+      "start_n": 3542887,
+      "stopping_time": 583,
+      "peak_height": 294475592320
+    },
+    {
+      "start_n": 3732423,
+      "stopping_time": 596,
+      "peak_height": 25193860
+    },
+    {
+      "start_n": 5649499,
+      "stopping_time": 612,
+      "peak_height": 1017886660
+    },
+    {
+      "start_n": 6649279,
+      "stopping_time": 664,
+      "peak_height": 9327893956
+    },
+    {
+      "start_n": 8400511,
+      "stopping_time": 685,
+      "peak_height": 159424614880
+    },
+    {
+      "start_n": 11200681,
+      "stopping_time": 688,
+      "peak_height": 33602044
+    },
+    {
+      "start_n": 14934241,
+      "stopping_time": 691,
+      "peak_height": 44802724
+    },
+    {
+      "start_n": 15733191,
+      "stopping_time": 704,
+      "peak_height": 106199044
+    },
+    {
+      "start_n": 31466382,
+      "stopping_time": 705,
+      "peak_height": 31466382
+    },
+    {
+      "start_n": 36791535,
+      "stopping_time": 744,
+      "peak_height": 3182378056
+    },
+    {
+      "start_n": 63728127,
+      "stopping_time": 949,
+      "peak_height": 966616035460
+    }
+  ],
+  "peak_height_records": [
+    {
+      "start_n": 1,
+      "peak_height": 1,
+      "stopping_time": 0
+    },
+    {
+      "start_n": 2,
+      "peak_height": 2,
+      "stopping_time": 1
+    },
+    {
+      "start_n": 3,
+      "peak_height": 16,
+      "stopping_time": 7
+    },
+    {
+      "start_n": 7,
+      "peak_height": 52,
+      "stopping_time": 16
+    },
+    {
+      "start_n": 15,
+      "peak_height": 160,
+      "stopping_time": 17
+    },
+    {
+      "start_n": 27,
+      "peak_height": 9232,
+      "stopping_time": 111
+    },
+    {
+      "start_n": 255,
+      "peak_height": 13120,
+      "stopping_time": 47
+    },
+    {
+      "start_n": 447,
+      "peak_height": 39364,
+      "stopping_time": 97
+    },
+    {
+      "start_n": 639,
+      "peak_height": 41524,
+      "stopping_time": 131
+    },
+    {
+      "start_n": 703,
+      "peak_height": 250504,
+      "stopping_time": 170
+    },
+    {
+      "start_n": 1819,
+      "peak_height": 1276936,
+      "stopping_time": 161
+    },
+    {
+      "start_n": 4255,
+      "peak_height": 6810136,
+      "stopping_time": 201
+    },
+    {
+      "start_n": 4591,
+      "peak_height": 8153620,
+      "stopping_time": 170
+    },
+    {
+      "start_n": 9663,
+      "peak_height": 27114424,
+      "stopping_time": 184
+    },
+    {
+      "start_n": 20895,
+      "peak_height": 50143264,
+      "stopping_time": 255
+    },
+    {
+      "start_n": 26623,
+      "peak_height": 106358020,
+      "stopping_time": 307
+    },
+    {
+      "start_n": 31911,
+      "peak_height": 121012864,
+      "stopping_time": 160
+    },
+    {
+      "start_n": 60975,
+      "peak_height": 593279152,
+      "stopping_time": 334
+    },
+    {
+      "start_n": 77671,
+      "peak_height": 1570824736,
+      "stopping_time": 231
+    },
+    {
+      "start_n": 113383,
+      "peak_height": 2482111348,
+      "stopping_time": 247
+    },
+    {
+      "start_n": 138367,
+      "peak_height": 2798323360,
+      "stopping_time": 162
+    },
+    {
+      "start_n": 159487,
+      "peak_height": 17202377752,
+      "stopping_time": 183
+    },
+    {
+      "start_n": 270271,
+      "peak_height": 24648077896,
+      "stopping_time": 406
+    },
+    {
+      "start_n": 665215,
+      "peak_height": 52483285312,
+      "stopping_time": 441
+    },
+    {
+      "start_n": 704511,
+      "peak_height": 56991483520,
+      "stopping_time": 242
+    },
+    {
+      "start_n": 1042431,
+      "peak_height": 90239155648,
+      "stopping_time": 439
+    },
+    {
+      "start_n": 1212415,
+      "peak_height": 139646736808,
+      "stopping_time": 328
+    },
+    {
+      "start_n": 1441407,
+      "peak_height": 151629574372,
+      "stopping_time": 367
+    },
+    {
+      "start_n": 1875711,
+      "peak_height": 155904349696,
+      "stopping_time": 370
+    },
+    {
+      "start_n": 1988859,
+      "peak_height": 156914378224,
+      "stopping_time": 427
+    },
+    {
+      "start_n": 2643183,
+      "peak_height": 190459818484,
+      "stopping_time": 430
+    },
+    {
+      "start_n": 2684647,
+      "peak_height": 352617812944,
+      "stopping_time": 399
+    },
+    {
+      "start_n": 3041127,
+      "peak_height": 622717901620,
+      "stopping_time": 363
+    },
+    {
+      "start_n": 3873535,
+      "peak_height": 858555169576,
+      "stopping_time": 322
+    },
+    {
+      "start_n": 4637979,
+      "peak_height": 1318802294932,
+      "stopping_time": 573
+    },
+    {
+      "start_n": 5656191,
+      "peak_height": 2412493616608,
+      "stopping_time": 400
+    },
+    {
+      "start_n": 6416623,
+      "peak_height": 4799996945368,
+      "stopping_time": 483
+    },
+    {
+      "start_n": 6631675,
+      "peak_height": 60342610919632,
+      "stopping_time": 576
+    },
+    {
+      "start_n": 19638399,
+      "peak_height": 306296925203752,
+      "stopping_time": 606
+    },
+    {
+      "start_n": 38595583,
+      "peak_height": 474637698851092,
+      "stopping_time": 483
+    },
+    {
+      "start_n": 80049391,
+      "peak_height": 2185143829170100,
+      "stopping_time": 572
+    }
+  ],
+  "execution_time_ms": 9518
+}

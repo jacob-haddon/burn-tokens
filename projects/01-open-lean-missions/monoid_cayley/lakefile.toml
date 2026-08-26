@@ -1,0 +1,6 @@
+name = "monoid_cayley"
+version = "0.1.0"
+defaultTargets = ["MonoidCayley"]
+
+[[lean_lib]]
+name = "MonoidCayley"

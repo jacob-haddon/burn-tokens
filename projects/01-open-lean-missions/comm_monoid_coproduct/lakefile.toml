@@ -1,0 +1,6 @@
+name = "comm_monoid_coproduct"
+version = "0.1.0"
+defaultTargets = ["CommMonoidCoproduct"]
+
+[[lean_lib]]
+name = "CommMonoidCoproduct"

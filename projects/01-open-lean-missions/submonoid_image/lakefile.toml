@@ -1,0 +1,6 @@
+name = "submonoid_image"
+version = "0.1.0"
+defaultTargets = ["SubmonoidImage"]
+
+[[lean_lib]]
+name = "SubmonoidImage"

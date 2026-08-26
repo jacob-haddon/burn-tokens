@@ -1,0 +1,6 @@
+name = "grothendieck_group"
+version = "0.1.0"
+defaultTargets = ["GrothendieckGroup"]
+
+[[lean_lib]]
+name = "GrothendieckGroup"

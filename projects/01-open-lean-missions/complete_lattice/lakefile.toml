@@ -1,0 +1,6 @@
+name = "complete_lattice"
+version = "0.1.0"
+defaultTargets = ["CompleteLattice"]
+
+[[lean_lib]]
+name = "CompleteLattice"

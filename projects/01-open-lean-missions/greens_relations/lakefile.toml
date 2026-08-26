@@ -1,0 +1,6 @@
+name = "greens_relations"
+version = "0.1.0"
+defaultTargets = ["GreensRelations"]
+
+[[lean_lib]]
+name = "GreensRelations"

@@ -1,0 +1,6 @@
+name = "monoid_semidirect"
+version = "0.1.0"
+defaultTargets = ["MonoidSemidirect"]
+
+[[lean_lib]]
+name = "MonoidSemidirect"

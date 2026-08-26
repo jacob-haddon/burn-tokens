@@ -1,0 +1,1351 @@
+{
+  "timestamp": "2026-08-26T01:23:00+02:00",
+  "min_cardinality": 2,
+  "max_cardinality": 8,
+  "all_bounds_verified": true,
+  "levels": [
+    {
+      "k": 2,
+      "theoretical_min_energy": 6,
+      "theoretical_max_energy": 6,
+      "min_energy_observed": 6,
+      "max_energy_observed": 6,
+      "bounds_exact_match": true,
+      "distinct_realizable_energies_found": 1,
+      "realizable_energies": [
+        6
+      ],
+      "min_witness": {
+        "energy": 6,
+        "set": [
+          1,
+          2
+        ],
+        "sumset_size": 3,
+        "cauchy_schwarz_lower_bound": 5.333333333333333,
+        "energy_ratio_e_over_k3": 0.75,
+        "set_type": "sidon_dissociated"
+      },
+      "max_witness": {
+        "energy": 6,
+        "set": [
+          1,
+          2
+        ],
+        "sumset_size": 3,
+        "cauchy_schwarz_lower_bound": 5.333333333333333,
+        "energy_ratio_e_over_k3": 0.75,
+        "set_type": "arithmetic_progression"
+      },
+      "sample_witnesses": [
+        {
+          "energy": 6,
+          "set": [
+            1,
+            2
+          ],
+          "sumset_size": 3,
+          "cauchy_schwarz_lower_bound": 5.333333333333333,
+          "energy_ratio_e_over_k3": 0.75,
+          "set_type": "sidon_dissociated"
+        }
+      ],
+      "elapsed_ms": 0
+    },
+    {
+      "k": 3,
+      "theoretical_min_energy": 15,
+      "theoretical_max_energy": 19,
+      "min_energy_observed": 15,
+      "max_energy_observed": 19,
+      "bounds_exact_match": true,
+      "distinct_realizable_energies_found": 2,
+      "realizable_energies": [
+        15,
+        19
+      ],
+      "min_witness": {
+        "energy": 15,
+        "set": [
+          1,
+          2,
+          4
+        ],
+        "sumset_size": 6,
+        "cauchy_schwarz_lower_bound": 13.5,
+        "energy_ratio_e_over_k3": 0.5555555555555556,
+        "set_type": "sidon_dissociated"
+      },
+      "max_witness": {
+        "energy": 19,
+        "set": [
+          0,
+          1,
+          2
+        ],
+        "sumset_size": 5,
+        "cauchy_schwarz_lower_bound": 16.2,
+        "energy_ratio_e_over_k3": 0.7037037037037037,
+        "set_type": "arithmetic_progression"
+      },
+      "sample_witnesses": [
+        {
+          "energy": 15,
+          "set": [
+            1,
+            2,
+            4
+          ],
+          "sumset_size": 6,
+          "cauchy_schwarz_lower_bound": 13.5,
+          "energy_ratio_e_over_k3": 0.5555555555555556,
+          "set_type": "sidon_dissociated"
+        },
+        {
+          "energy": 19,
+          "set": [
+            0,
+            1,
+            2
+          ],
+          "sumset_size": 5,
+          "cauchy_schwarz_lower_bound": 16.2,
+          "energy_ratio_e_over_k3": 0.7037037037037037,
+          "set_type": "arithmetic_progression"
+        }
+      ],
+      "elapsed_ms": 0
+    },
+    {
+      "k": 4,
+      "theoretical_min_energy": 28,
+      "theoretical_max_energy": 44,
+      "min_energy_observed": 28,
+      "max_energy_observed": 44,
+      "bounds_exact_match": true,
+      "distinct_realizable_energies_found": 4,
+      "realizable_energies": [
+        28,
+        32,
+        36,
+        44
+      ],
+      "min_witness": {
+        "energy": 28,
+        "set": [
+          1,
+          2,
+          4,
+          8
+        ],
+        "sumset_size": 10,
+        "cauchy_schwarz_lower_bound": 25.6,
+        "energy_ratio_e_over_k3": 0.4375,
+        "set_type": "sidon_dissociated"
+      },
+      "max_witness": {
+        "energy": 44,
+        "set": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "sumset_size": 7,
+        "cauchy_schwarz_lower_bound": 36.57142857142857,
+        "energy_ratio_e_over_k3": 0.6875,
+        "set_type": "arithmetic_progression"
+      },
+      "sample_witnesses": [
+        {
+          "energy": 28,
+          "set": [
+            1,
+            2,
+            4,
+            8
+          ],
+          "sumset_size": 10,
+          "cauchy_schwarz_lower_bound": 25.6,
+          "energy_ratio_e_over_k3": 0.4375,
+          "set_type": "sidon_dissociated"
+        },
+        {
+          "energy": 32,
+          "set": [
+            0,
+            1,
+            2,
+            5
+          ],
+          "sumset_size": 9,
+          "cauchy_schwarz_lower_bound": 28.444444444444443,
+          "energy_ratio_e_over_k3": 0.5,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 36,
+          "set": [
+            0,
+            1,
+            2,
+            4
+          ],
+          "sumset_size": 8,
+          "cauchy_schwarz_lower_bound": 32.0,
+          "energy_ratio_e_over_k3": 0.5625,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 44,
+          "set": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "sumset_size": 7,
+          "cauchy_schwarz_lower_bound": 36.57142857142857,
+          "energy_ratio_e_over_k3": 0.6875,
+          "set_type": "arithmetic_progression"
+        }
+      ],
+      "elapsed_ms": 0
+    },
+    {
+      "k": 5,
+      "theoretical_min_energy": 45,
+      "theoretical_max_energy": 85,
+      "min_energy_observed": 45,
+      "max_energy_observed": 85,
+      "bounds_exact_match": true,
+      "distinct_realizable_energies_found": 9,
+      "realizable_energies": [
+        45,
+        49,
+        53,
+        57,
+        61,
+        65,
+        69,
+        73,
+        85
+      ],
+      "min_witness": {
+        "energy": 45,
+        "set": [
+          1,
+          2,
+          4,
+          8,
+          16
+        ],
+        "sumset_size": 15,
+        "cauchy_schwarz_lower_bound": 41.666666666666664,
+        "energy_ratio_e_over_k3": 0.36,
+        "set_type": "sidon_dissociated"
+      },
+      "max_witness": {
+        "energy": 85,
+        "set": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "sumset_size": 9,
+        "cauchy_schwarz_lower_bound": 69.44444444444444,
+        "energy_ratio_e_over_k3": 0.68,
+        "set_type": "arithmetic_progression"
+      },
+      "sample_witnesses": [
+        {
+          "energy": 45,
+          "set": [
+            1,
+            2,
+            4,
+            8,
+            16
+          ],
+          "sumset_size": 15,
+          "cauchy_schwarz_lower_bound": 41.666666666666664,
+          "energy_ratio_e_over_k3": 0.36,
+          "set_type": "sidon_dissociated"
+        },
+        {
+          "energy": 49,
+          "set": [
+            0,
+            1,
+            2,
+            6,
+            9
+          ],
+          "sumset_size": 14,
+          "cauchy_schwarz_lower_bound": 44.642857142857146,
+          "energy_ratio_e_over_k3": 0.392,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 53,
+          "set": [
+            0,
+            1,
+            2,
+            5,
+            8
+          ],
+          "sumset_size": 13,
+          "cauchy_schwarz_lower_bound": 48.07692307692308,
+          "energy_ratio_e_over_k3": 0.424,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 57,
+          "set": [
+            0,
+            1,
+            2,
+            4,
+            7
+          ],
+          "sumset_size": 12,
+          "cauchy_schwarz_lower_bound": 52.083333333333336,
+          "energy_ratio_e_over_k3": 0.456,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 61,
+          "set": [
+            0,
+            1,
+            3,
+            5,
+            6
+          ],
+          "sumset_size": 13,
+          "cauchy_schwarz_lower_bound": 48.07692307692308,
+          "energy_ratio_e_over_k3": 0.488,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 65,
+          "set": [
+            0,
+            1,
+            2,
+            3,
+            6
+          ],
+          "sumset_size": 11,
+          "cauchy_schwarz_lower_bound": 56.81818181818182,
+          "energy_ratio_e_over_k3": 0.52,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 69,
+          "set": [
+            0,
+            1,
+            2,
+            4,
+            5
+          ],
+          "sumset_size": 11,
+          "cauchy_schwarz_lower_bound": 56.81818181818182,
+          "energy_ratio_e_over_k3": 0.552,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 73,
+          "set": [
+            0,
+            1,
+            2,
+            3,
+            5
+          ],
+          "sumset_size": 10,
+          "cauchy_schwarz_lower_bound": 62.5,
+          "energy_ratio_e_over_k3": 0.584,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 85,
+          "set": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "sumset_size": 9,
+          "cauchy_schwarz_lower_bound": 69.44444444444444,
+          "energy_ratio_e_over_k3": 0.68,
+          "set_type": "arithmetic_progression"
+        }
+      ],
+      "elapsed_ms": 0
+    },
+    {
+      "k": 6,
+      "theoretical_min_energy": 66,
+      "theoretical_max_energy": 146,
+      "min_energy_observed": 66,
+      "max_energy_observed": 146,
+      "bounds_exact_match": true,
+      "distinct_realizable_energies_found": 14,
+      "realizable_energies": [
+        66,
+        82,
+        86,
+        90,
+        94,
+        98,
+        102,
+        106,
+        110,
+        114,
+        118,
+        122,
+        130,
+        146
+      ],
+      "min_witness": {
+        "energy": 66,
+        "set": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32
+        ],
+        "sumset_size": 21,
+        "cauchy_schwarz_lower_bound": 61.714285714285715,
+        "energy_ratio_e_over_k3": 0.3055555555555556,
+        "set_type": "sidon_dissociated"
+      },
+      "max_witness": {
+        "energy": 146,
+        "set": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "sumset_size": 11,
+        "cauchy_schwarz_lower_bound": 117.81818181818181,
+        "energy_ratio_e_over_k3": 0.6759259259259259,
+        "set_type": "arithmetic_progression"
+      },
+      "sample_witnesses": [
+        {
+          "energy": 66,
+          "set": [
+            1,
+            2,
+            4,
+            8,
+            16,
+            32
+          ],
+          "sumset_size": 21,
+          "cauchy_schwarz_lower_bound": 61.714285714285715,
+          "energy_ratio_e_over_k3": 0.3055555555555556,
+          "set_type": "sidon_dissociated"
+        },
+        {
+          "energy": 82,
+          "set": [
+            0,
+            1,
+            2,
+            6,
+            8,
+            11
+          ],
+          "sumset_size": 18,
+          "cauchy_schwarz_lower_bound": 72.0,
+          "energy_ratio_e_over_k3": 0.37962962962962965,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 86,
+          "set": [
+            0,
+            1,
+            3,
+            4,
+            8,
+            10
+          ],
+          "sumset_size": 18,
+          "cauchy_schwarz_lower_bound": 72.0,
+          "energy_ratio_e_over_k3": 0.39814814814814814,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 90,
+          "set": [
+            0,
+            1,
+            3,
+            5,
+            8,
+            9
+          ],
+          "sumset_size": 17,
+          "cauchy_schwarz_lower_bound": 76.23529411764706,
+          "energy_ratio_e_over_k3": 0.4166666666666667,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 94,
+          "set": [
+            0,
+            1,
+            2,
+            4,
+            6,
+            9
+          ],
+          "sumset_size": 16,
+          "cauchy_schwarz_lower_bound": 81.0,
+          "energy_ratio_e_over_k3": 0.4351851851851852,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 98,
+          "set": [
+            0,
+            1,
+            2,
+            5,
+            6,
+            8
+          ],
+          "sumset_size": 16,
+          "cauchy_schwarz_lower_bound": 81.0,
+          "energy_ratio_e_over_k3": 0.4537037037037037,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 102,
+          "set": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            8
+          ],
+          "sumset_size": 15,
+          "cauchy_schwarz_lower_bound": 86.4,
+          "energy_ratio_e_over_k3": 0.4722222222222222,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 106,
+          "set": [
+            0,
+            1,
+            2,
+            4,
+            6,
+            7
+          ],
+          "sumset_size": 15,
+          "cauchy_schwarz_lower_bound": 86.4,
+          "energy_ratio_e_over_k3": 0.49074074074074076,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 110,
+          "set": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7
+          ],
+          "sumset_size": 14,
+          "cauchy_schwarz_lower_bound": 92.57142857142857,
+          "energy_ratio_e_over_k3": 0.5092592592592593,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 114,
+          "set": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            7
+          ],
+          "sumset_size": 13,
+          "cauchy_schwarz_lower_bound": 99.6923076923077,
+          "energy_ratio_e_over_k3": 0.5277777777777778,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 118,
+          "set": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            7
+          ],
+          "sumset_size": 13,
+          "cauchy_schwarz_lower_bound": 99.6923076923077,
+          "energy_ratio_e_over_k3": 0.5462962962962963,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 122,
+          "set": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            6
+          ],
+          "sumset_size": 13,
+          "cauchy_schwarz_lower_bound": 99.6923076923077,
+          "energy_ratio_e_over_k3": 0.5648148148148148,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 130,
+          "set": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6
+          ],
+          "sumset_size": 12,
+          "cauchy_schwarz_lower_bound": 108.0,
+          "energy_ratio_e_over_k3": 0.6018518518518519,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 146,
+          "set": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "sumset_size": 11,
+          "cauchy_schwarz_lower_bound": 117.81818181818181,
+          "energy_ratio_e_over_k3": 0.6759259259259259,
+          "set_type": "arithmetic_progression"
+        }
+      ],
+      "elapsed_ms": 0
+    },
+    {
+      "k": 7,
+      "theoretical_min_energy": 91,
+      "theoretical_max_energy": 231,
+      "min_energy_observed": 91,
+      "max_energy_observed": 231,
+      "bounds_exact_match": true,
+      "distinct_realizable_energies_found": 16,
+      "realizable_energies": [
+        91,
+        147,
+        151,
+        155,
+        159,
+        163,
+        167,
+        171,
+        175,
+        179,
+        183,
+        187,
+        195,
+        199,
+        211,
+        231
+      ],
+      "min_witness": {
+        "energy": 91,
+        "set": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64
+        ],
+        "sumset_size": 28,
+        "cauchy_schwarz_lower_bound": 85.75,
+        "energy_ratio_e_over_k3": 0.2653061224489796,
+        "set_type": "sidon_dissociated"
+      },
+      "max_witness": {
+        "energy": 231,
+        "set": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "sumset_size": 13,
+        "cauchy_schwarz_lower_bound": 184.69230769230768,
+        "energy_ratio_e_over_k3": 0.673469387755102,
+        "set_type": "arithmetic_progression"
+      },
+      "sample_witnesses": [
+        {
+          "energy": 91,
+          "set": [
+            1,
+            2,
+            4,
+            8,
+            16,
+            32,
+            64
+          ],
+          "sumset_size": 28,
+          "cauchy_schwarz_lower_bound": 85.75,
+          "energy_ratio_e_over_k3": 0.2653061224489796,
+          "set_type": "sidon_dissociated"
+        },
+        {
+          "energy": 147,
+          "set": [
+            0,
+            1,
+            2,
+            4,
+            6,
+            9,
+            10
+          ],
+          "sumset_size": 20,
+          "cauchy_schwarz_lower_bound": 120.05,
+          "energy_ratio_e_over_k3": 0.42857142857142855,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 151,
+          "set": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            8,
+            10
+          ],
+          "sumset_size": 19,
+          "cauchy_schwarz_lower_bound": 126.36842105263158,
+          "energy_ratio_e_over_k3": 0.4402332361516035,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 155,
+          "set": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7,
+            10
+          ],
+          "sumset_size": 18,
+          "cauchy_schwarz_lower_bound": 133.38888888888889,
+          "energy_ratio_e_over_k3": 0.4518950437317784,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 159,
+          "set": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            8,
+            9
+          ],
+          "sumset_size": 18,
+          "cauchy_schwarz_lower_bound": 133.38888888888889,
+          "energy_ratio_e_over_k3": 0.46355685131195334,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 163,
+          "set": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7,
+            9
+          ],
+          "sumset_size": 18,
+          "cauchy_schwarz_lower_bound": 133.38888888888889,
+          "energy_ratio_e_over_k3": 0.4752186588921283,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 167,
+          "set": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            7,
+            9
+          ],
+          "sumset_size": 17,
+          "cauchy_schwarz_lower_bound": 141.23529411764707,
+          "energy_ratio_e_over_k3": 0.4868804664723032,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 171,
+          "set": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            6,
+            9
+          ],
+          "sumset_size": 16,
+          "cauchy_schwarz_lower_bound": 150.0625,
+          "energy_ratio_e_over_k3": 0.49854227405247814,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 175,
+          "set": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            7,
+            8
+          ],
+          "sumset_size": 17,
+          "cauchy_schwarz_lower_bound": 141.23529411764707,
+          "energy_ratio_e_over_k3": 0.5102040816326531,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 179,
+          "set": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            7,
+            8
+          ],
+          "sumset_size": 16,
+          "cauchy_schwarz_lower_bound": 150.0625,
+          "energy_ratio_e_over_k3": 0.521865889212828,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 183,
+          "set": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            6,
+            8
+          ],
+          "sumset_size": 16,
+          "cauchy_schwarz_lower_bound": 150.0625,
+          "energy_ratio_e_over_k3": 0.5335276967930029,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 187,
+          "set": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            8
+          ],
+          "sumset_size": 15,
+          "cauchy_schwarz_lower_bound": 160.06666666666666,
+          "energy_ratio_e_over_k3": 0.5451895043731778,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 195,
+          "set": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            6,
+            7
+          ],
+          "sumset_size": 15,
+          "cauchy_schwarz_lower_bound": 160.06666666666666,
+          "energy_ratio_e_over_k3": 0.5685131195335277,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 199,
+          "set": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            7
+          ],
+          "sumset_size": 15,
+          "cauchy_schwarz_lower_bound": 160.06666666666666,
+          "energy_ratio_e_over_k3": 0.5801749271137027,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 211,
+          "set": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7
+          ],
+          "sumset_size": 14,
+          "cauchy_schwarz_lower_bound": 171.5,
+          "energy_ratio_e_over_k3": 0.6151603498542274,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 231,
+          "set": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "sumset_size": 13,
+          "cauchy_schwarz_lower_bound": 184.69230769230768,
+          "energy_ratio_e_over_k3": 0.673469387755102,
+          "set_type": "arithmetic_progression"
+        }
+      ],
+      "elapsed_ms": 0
+    },
+    {
+      "k": 8,
+      "theoretical_min_energy": 120,
+      "theoretical_max_energy": 344,
+      "min_energy_observed": 120,
+      "max_energy_observed": 344,
+      "bounds_exact_match": true,
+      "distinct_realizable_energies_found": 18,
+      "realizable_energies": [
+        120,
+        240,
+        244,
+        252,
+        256,
+        260,
+        264,
+        268,
+        272,
+        276,
+        280,
+        284,
+        288,
+        296,
+        300,
+        304,
+        320,
+        344
+      ],
+      "min_witness": {
+        "energy": 120,
+        "set": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128
+        ],
+        "sumset_size": 36,
+        "cauchy_schwarz_lower_bound": 113.77777777777777,
+        "energy_ratio_e_over_k3": 0.234375,
+        "set_type": "sidon_dissociated"
+      },
+      "max_witness": {
+        "energy": 344,
+        "set": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "sumset_size": 15,
+        "cauchy_schwarz_lower_bound": 273.06666666666666,
+        "energy_ratio_e_over_k3": 0.671875,
+        "set_type": "arithmetic_progression"
+      },
+      "sample_witnesses": [
+        {
+          "energy": 120,
+          "set": [
+            1,
+            2,
+            4,
+            8,
+            16,
+            32,
+            64,
+            128
+          ],
+          "sumset_size": 36,
+          "cauchy_schwarz_lower_bound": 113.77777777777777,
+          "energy_ratio_e_over_k3": 0.234375,
+          "set_type": "sidon_dissociated"
+        },
+        {
+          "energy": 240,
+          "set": [
+            0,
+            1,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "sumset_size": 21,
+          "cauchy_schwarz_lower_bound": 195.04761904761904,
+          "energy_ratio_e_over_k3": 0.46875,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 244,
+          "set": [
+            0,
+            1,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "sumset_size": 20,
+          "cauchy_schwarz_lower_bound": 204.8,
+          "energy_ratio_e_over_k3": 0.4765625,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 252,
+          "set": [
+            0,
+            1,
+            2,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "sumset_size": 21,
+          "cauchy_schwarz_lower_bound": 195.04761904761904,
+          "energy_ratio_e_over_k3": 0.4921875,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 256,
+          "set": [
+            0,
+            1,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "sumset_size": 19,
+          "cauchy_schwarz_lower_bound": 215.57894736842104,
+          "energy_ratio_e_over_k3": 0.5,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 260,
+          "set": [
+            0,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "sumset_size": 21,
+          "cauchy_schwarz_lower_bound": 195.04761904761904,
+          "energy_ratio_e_over_k3": 0.5078125,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 264,
+          "set": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            7,
+            8,
+            9
+          ],
+          "sumset_size": 19,
+          "cauchy_schwarz_lower_bound": 215.57894736842104,
+          "energy_ratio_e_over_k3": 0.515625,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 268,
+          "set": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            8,
+            9
+          ],
+          "sumset_size": 19,
+          "cauchy_schwarz_lower_bound": 215.57894736842104,
+          "energy_ratio_e_over_k3": 0.5234375,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 272,
+          "set": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            6,
+            8,
+            9
+          ],
+          "sumset_size": 19,
+          "cauchy_schwarz_lower_bound": 215.57894736842104,
+          "energy_ratio_e_over_k3": 0.53125,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 276,
+          "set": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            6,
+            7,
+            9
+          ],
+          "sumset_size": 18,
+          "cauchy_schwarz_lower_bound": 227.55555555555554,
+          "energy_ratio_e_over_k3": 0.5390625,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 280,
+          "set": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            7,
+            9
+          ],
+          "sumset_size": 18,
+          "cauchy_schwarz_lower_bound": 227.55555555555554,
+          "energy_ratio_e_over_k3": 0.546875,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 284,
+          "set": [
+            0,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "sumset_size": 18,
+          "cauchy_schwarz_lower_bound": 227.55555555555554,
+          "energy_ratio_e_over_k3": 0.5546875,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 288,
+          "set": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7,
+            9
+          ],
+          "sumset_size": 17,
+          "cauchy_schwarz_lower_bound": 240.94117647058823,
+          "energy_ratio_e_over_k3": 0.5625,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 296,
+          "set": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            7,
+            8
+          ],
+          "sumset_size": 17,
+          "cauchy_schwarz_lower_bound": 240.94117647058823,
+          "energy_ratio_e_over_k3": 0.578125,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 300,
+          "set": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            9
+          ],
+          "sumset_size": 17,
+          "cauchy_schwarz_lower_bound": 240.94117647058823,
+          "energy_ratio_e_over_k3": 0.5859375,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 304,
+          "set": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7,
+            8
+          ],
+          "sumset_size": 17,
+          "cauchy_schwarz_lower_bound": 240.94117647058823,
+          "energy_ratio_e_over_k3": 0.59375,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 320,
+          "set": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            8
+          ],
+          "sumset_size": 16,
+          "cauchy_schwarz_lower_bound": 256.0,
+          "energy_ratio_e_over_k3": 0.625,
+          "set_type": "intermediate_structure"
+        },
+        {
+          "energy": 344,
+          "set": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "sumset_size": 15,
+          "cauchy_schwarz_lower_bound": 273.06666666666666,
+          "energy_ratio_e_over_k3": 0.671875,
+          "set_type": "arithmetic_progression"
+        }
+      ],
+      "elapsed_ms": 0
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+name = "monoid_units"
+version = "0.1.0"
+defaultTargets = ["MonoidUnits"]
+
+[[lean_lib]]
+name = "MonoidUnits"

@@ -1,0 +1,6 @@
+name = "free_monoid"
+version = "0.1.0"
+defaultTargets = ["FreeMonoid"]
+
+[[lean_lib]]
+name = "FreeMonoid"

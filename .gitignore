@@ -1,0 +1,28 @@
+# Build artifacts & binaries
+**/target/
+**/.lake/
+**/lake-packages/
+**/build/
+**/*.o
+**/*.a
+**/*.so
+**/*.dylib
+**/*.rlib
+
+# Python environments & caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+.pytest_cache/
+
+# System and IDE logs
+.system_generated/
+*.log
+.DS_Store
+
+# Temporary scratch
+projects/*/work/scratch_*
+projects/*/data/tmp_*

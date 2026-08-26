@@ -1,0 +1,6 @@
+name = "submonoid_lattice"
+version = "0.1.0"
+defaultTargets = ["SubmonoidLattice"]
+
+[[lean_lib]]
+name = "SubmonoidLattice"

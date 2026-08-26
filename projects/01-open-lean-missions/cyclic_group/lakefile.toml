@@ -1,0 +1,6 @@
+name = "cyclic_group"
+version = "0.1.0"
+defaultTargets = ["CyclicGroup"]
+
+[[lean_lib]]
+name = "CyclicGroup"

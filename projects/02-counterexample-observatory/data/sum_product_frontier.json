@@ -1,0 +1,641 @@
+{
+  "timestamp": "2026-08-26T01:14:00+02:00",
+  "max_k": 7,
+  "results": [
+    {
+      "k": 2,
+      "min_max_sum_product": 3,
+      "max_possible_sumset": 3,
+      "min_possible_sumset": 3,
+      "num_minimizing_sets_found": 32,
+      "sample_minimizers": [
+        {
+          "k": 2,
+          "set": [
+            1,
+            2
+          ],
+          "sumset_size": 3,
+          "productset_size": 3,
+          "max_sum_product": 3,
+          "additive_energy": 6,
+          "multiplicative_energy": 6
+        },
+        {
+          "k": 2,
+          "set": [
+            1,
+            3
+          ],
+          "sumset_size": 3,
+          "productset_size": 3,
+          "max_sum_product": 3,
+          "additive_energy": 6,
+          "multiplicative_energy": 6
+        },
+        {
+          "k": 2,
+          "set": [
+            1,
+            4
+          ],
+          "sumset_size": 3,
+          "productset_size": 3,
+          "max_sum_product": 3,
+          "additive_energy": 6,
+          "multiplicative_energy": 6
+        },
+        {
+          "k": 2,
+          "set": [
+            1,
+            5
+          ],
+          "sumset_size": 3,
+          "productset_size": 3,
+          "max_sum_product": 3,
+          "additive_energy": 6,
+          "multiplicative_energy": 6
+        },
+        {
+          "k": 2,
+          "set": [
+            1,
+            6
+          ],
+          "sumset_size": 3,
+          "productset_size": 3,
+          "max_sum_product": 3,
+          "additive_energy": 6,
+          "multiplicative_energy": 6
+        },
+        {
+          "k": 2,
+          "set": [
+            1,
+            7
+          ],
+          "sumset_size": 3,
+          "productset_size": 3,
+          "max_sum_product": 3,
+          "additive_energy": 6,
+          "multiplicative_energy": 6
+        },
+        {
+          "k": 2,
+          "set": [
+            1,
+            8
+          ],
+          "sumset_size": 3,
+          "productset_size": 3,
+          "max_sum_product": 3,
+          "additive_energy": 6,
+          "multiplicative_energy": 6
+        },
+        {
+          "k": 2,
+          "set": [
+            1,
+            9
+          ],
+          "sumset_size": 3,
+          "productset_size": 3,
+          "max_sum_product": 3,
+          "additive_energy": 6,
+          "multiplicative_energy": 6
+        },
+        {
+          "k": 2,
+          "set": [
+            1,
+            10
+          ],
+          "sumset_size": 3,
+          "productset_size": 3,
+          "max_sum_product": 3,
+          "additive_energy": 6,
+          "multiplicative_energy": 6
+        },
+        {
+          "k": 2,
+          "set": [
+            2,
+            3
+          ],
+          "sumset_size": 3,
+          "productset_size": 3,
+          "max_sum_product": 3,
+          "additive_energy": 6,
+          "multiplicative_energy": 6
+        }
+      ],
+      "elapsed_ms": 0
+    },
+    {
+      "k": 3,
+      "min_max_sum_product": 6,
+      "max_possible_sumset": 6,
+      "min_possible_sumset": 5,
+      "num_minimizing_sets_found": 415,
+      "sample_minimizers": [
+        {
+          "k": 3,
+          "set": [
+            1,
+            2,
+            3
+          ],
+          "sumset_size": 5,
+          "productset_size": 6,
+          "max_sum_product": 6,
+          "additive_energy": 19,
+          "multiplicative_energy": 15
+        },
+        {
+          "k": 3,
+          "set": [
+            1,
+            3,
+            5
+          ],
+          "sumset_size": 5,
+          "productset_size": 6,
+          "max_sum_product": 6,
+          "additive_energy": 19,
+          "multiplicative_energy": 15
+        },
+        {
+          "k": 3,
+          "set": [
+            1,
+            4,
+            7
+          ],
+          "sumset_size": 5,
+          "productset_size": 6,
+          "max_sum_product": 6,
+          "additive_energy": 19,
+          "multiplicative_energy": 15
+        },
+        {
+          "k": 3,
+          "set": [
+            1,
+            5,
+            9
+          ],
+          "sumset_size": 5,
+          "productset_size": 6,
+          "max_sum_product": 6,
+          "additive_energy": 19,
+          "multiplicative_energy": 15
+        },
+        {
+          "k": 3,
+          "set": [
+            1,
+            6,
+            11
+          ],
+          "sumset_size": 5,
+          "productset_size": 6,
+          "max_sum_product": 6,
+          "additive_energy": 19,
+          "multiplicative_energy": 15
+        },
+        {
+          "k": 3,
+          "set": [
+            1,
+            7,
+            13
+          ],
+          "sumset_size": 5,
+          "productset_size": 6,
+          "max_sum_product": 6,
+          "additive_energy": 19,
+          "multiplicative_energy": 15
+        },
+        {
+          "k": 3,
+          "set": [
+            1,
+            8,
+            15
+          ],
+          "sumset_size": 5,
+          "productset_size": 6,
+          "max_sum_product": 6,
+          "additive_energy": 19,
+          "multiplicative_energy": 15
+        },
+        {
+          "k": 3,
+          "set": [
+            2,
+            3,
+            4
+          ],
+          "sumset_size": 5,
+          "productset_size": 6,
+          "max_sum_product": 6,
+          "additive_energy": 19,
+          "multiplicative_energy": 15
+        },
+        {
+          "k": 3,
+          "set": [
+            2,
+            5,
+            8
+          ],
+          "sumset_size": 5,
+          "productset_size": 6,
+          "max_sum_product": 6,
+          "additive_energy": 19,
+          "multiplicative_energy": 15
+        },
+        {
+          "k": 3,
+          "set": [
+            2,
+            7,
+            12
+          ],
+          "sumset_size": 5,
+          "productset_size": 6,
+          "max_sum_product": 6,
+          "additive_energy": 19,
+          "multiplicative_energy": 15
+        }
+      ],
+      "elapsed_ms": 0
+    },
+    {
+      "k": 4,
+      "min_max_sum_product": 9,
+      "max_possible_sumset": 10,
+      "min_possible_sumset": 7,
+      "num_minimizing_sets_found": 49,
+      "sample_minimizers": [
+        {
+          "k": 4,
+          "set": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "sumset_size": 7,
+          "productset_size": 9,
+          "max_sum_product": 9,
+          "additive_energy": 44,
+          "multiplicative_energy": 32
+        },
+        {
+          "k": 4,
+          "set": [
+            1,
+            3,
+            5,
+            9
+          ],
+          "sumset_size": 8,
+          "productset_size": 9,
+          "max_sum_product": 9,
+          "additive_energy": 36,
+          "multiplicative_energy": 32
+        },
+        {
+          "k": 4,
+          "set": [
+            2,
+            3,
+            4,
+            6
+          ],
+          "sumset_size": 8,
+          "productset_size": 9,
+          "max_sum_product": 9,
+          "additive_energy": 36,
+          "multiplicative_energy": 36
+        },
+        {
+          "k": 4,
+          "set": [
+            1,
+            2,
+            3,
+            6
+          ],
+          "sumset_size": 9,
+          "productset_size": 9,
+          "max_sum_product": 9,
+          "additive_energy": 32,
+          "multiplicative_energy": 36
+        },
+        {
+          "k": 4,
+          "set": [
+            1,
+            2,
+            3,
+            9
+          ],
+          "sumset_size": 9,
+          "productset_size": 9,
+          "max_sum_product": 9,
+          "additive_energy": 32,
+          "multiplicative_energy": 32
+        },
+        {
+          "k": 4,
+          "set": [
+            1,
+            2,
+            4,
+            5
+          ],
+          "sumset_size": 9,
+          "productset_size": 9,
+          "max_sum_product": 9,
+          "additive_energy": 36,
+          "multiplicative_energy": 32
+        },
+        {
+          "k": 4,
+          "set": [
+            1,
+            2,
+            4,
+            6
+          ],
+          "sumset_size": 9,
+          "productset_size": 9,
+          "max_sum_product": 9,
+          "additive_energy": 32,
+          "multiplicative_energy": 32
+        },
+        {
+          "k": 4,
+          "set": [
+            1,
+            2,
+            4,
+            7
+          ],
+          "sumset_size": 9,
+          "productset_size": 9,
+          "max_sum_product": 9,
+          "additive_energy": 32,
+          "multiplicative_energy": 32
+        },
+        {
+          "k": 4,
+          "set": [
+            1,
+            3,
+            5,
+            15
+          ],
+          "sumset_size": 9,
+          "productset_size": 9,
+          "max_sum_product": 9,
+          "additive_energy": 32,
+          "multiplicative_energy": 36
+        },
+        {
+          "k": 4,
+          "set": [
+            1,
+            3,
+            6,
+            9
+          ],
+          "sumset_size": 9,
+          "productset_size": 9,
+          "max_sum_product": 9,
+          "additive_energy": 32,
+          "multiplicative_energy": 32
+        }
+      ],
+      "elapsed_ms": 1
+    },
+    {
+      "k": 5,
+      "min_max_sum_product": 12,
+      "max_possible_sumset": 15,
+      "min_possible_sumset": 9,
+      "num_minimizing_sets_found": 8,
+      "sample_minimizers": [
+        {
+          "k": 5,
+          "set": [
+            1,
+            2,
+            3,
+            4,
+            6
+          ],
+          "sumset_size": 10,
+          "productset_size": 12,
+          "max_sum_product": 12,
+          "additive_energy": 73,
+          "multiplicative_energy": 65
+        },
+        {
+          "k": 5,
+          "set": [
+            2,
+            3,
+            4,
+            6,
+            8
+          ],
+          "sumset_size": 11,
+          "productset_size": 12,
+          "max_sum_product": 12,
+          "additive_energy": 65,
+          "multiplicative_energy": 65
+        },
+        {
+          "k": 5,
+          "set": [
+            1,
+            2,
+            3,
+            4,
+            8
+          ],
+          "sumset_size": 12,
+          "productset_size": 12,
+          "max_sum_product": 12,
+          "additive_energy": 61,
+          "multiplicative_energy": 61
+        },
+        {
+          "k": 5,
+          "set": [
+            1,
+            2,
+            4,
+            5,
+            8
+          ],
+          "sumset_size": 12,
+          "productset_size": 12,
+          "max_sum_product": 12,
+          "additive_energy": 65,
+          "multiplicative_energy": 61
+        },
+        {
+          "k": 5,
+          "set": [
+            1,
+            2,
+            4,
+            6,
+            8
+          ],
+          "sumset_size": 12,
+          "productset_size": 12,
+          "max_sum_product": 12,
+          "additive_energy": 61,
+          "multiplicative_energy": 61
+        },
+        {
+          "k": 5,
+          "set": [
+            1,
+            3,
+            5,
+            9,
+            15
+          ],
+          "sumset_size": 12,
+          "productset_size": 12,
+          "max_sum_product": 12,
+          "additive_energy": 57,
+          "multiplicative_energy": 65
+        },
+        {
+          "k": 5,
+          "set": [
+            2,
+            3,
+            4,
+            6,
+            9
+          ],
+          "sumset_size": 12,
+          "productset_size": 12,
+          "max_sum_product": 12,
+          "additive_energy": 57,
+          "multiplicative_energy": 65
+        },
+        {
+          "k": 5,
+          "set": [
+            4,
+            6,
+            8,
+            9,
+            12
+          ],
+          "sumset_size": 12,
+          "productset_size": 12,
+          "max_sum_product": 12,
+          "additive_energy": 57,
+          "multiplicative_energy": 65
+        }
+      ],
+      "elapsed_ms": 21
+    },
+    {
+      "k": 6,
+      "min_max_sum_product": 15,
+      "max_possible_sumset": 21,
+      "min_possible_sumset": 11,
+      "num_minimizing_sets_found": 3,
+      "sample_minimizers": [
+        {
+          "k": 6,
+          "set": [
+            1,
+            2,
+            3,
+            4,
+            6,
+            8
+          ],
+          "sumset_size": 13,
+          "productset_size": 15,
+          "max_sum_product": 15,
+          "additive_energy": 114,
+          "multiplicative_energy": 106
+        },
+        {
+          "k": 6,
+          "set": [
+            1,
+            2,
+            3,
+            4,
+            6,
+            9
+          ],
+          "sumset_size": 14,
+          "productset_size": 15,
+          "max_sum_product": 15,
+          "additive_energy": 106,
+          "multiplicative_energy": 102
+        },
+        {
+          "k": 6,
+          "set": [
+            2,
+            3,
+            4,
+            6,
+            8,
+            12
+          ],
+          "sumset_size": 15,
+          "productset_size": 15,
+          "max_sum_product": 15,
+          "additive_energy": 98,
+          "multiplicative_energy": 114
+        }
+      ],
+      "elapsed_ms": 68
+    },
+    {
+      "k": 7,
+      "min_max_sum_product": 18,
+      "max_possible_sumset": 28,
+      "min_possible_sumset": 13,
+      "num_minimizing_sets_found": 1,
+      "sample_minimizers": [
+        {
+          "k": 7,
+          "set": [
+            1,
+            2,
+            3,
+            4,
+            6,
+            8,
+            12
+          ],
+          "sumset_size": 18,
+          "productset_size": 18,
+          "max_sum_product": 18,
+          "additive_energy": 151,
+          "multiplicative_energy": 175
+        }
+      ],
+      "elapsed_ms": 100
+    }
+  ]
+}

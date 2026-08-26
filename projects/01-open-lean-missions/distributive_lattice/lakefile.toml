@@ -1,0 +1,6 @@
+name = "distributive_lattice"
+version = "0.1.0"
+defaultTargets = ["DistributiveLattice"]
+
+[[lean_lib]]
+name = "DistributiveLattice"

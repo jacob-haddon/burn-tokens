@@ -1,0 +1,6 @@
+name = "semilattice_order"
+version = "0.1.0"
+defaultTargets = ["SemilatticeOrder"]
+
+[[lean_lib]]
+name = "SemilatticeOrder"

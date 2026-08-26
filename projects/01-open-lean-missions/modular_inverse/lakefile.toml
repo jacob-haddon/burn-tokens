@@ -1,0 +1,6 @@
+name = "modular_inverse"
+version = "0.1.0"
+defaultTargets = ["ModularInverse"]
+
+[[lean_lib]]
+name = "ModularInverse"

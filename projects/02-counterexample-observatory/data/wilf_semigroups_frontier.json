@@ -1,0 +1,8222 @@
+[
+  {
+    "genus": 1,
+    "frobenius": 1,
+    "conductor": 2,
+    "multiplicity": 2,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      2,
+      3
+    ],
+    "num_elements_below_f": 1,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 2,
+    "frobenius": 2,
+    "conductor": 3,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      4,
+      5
+    ],
+    "num_elements_below_f": 1,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 3,
+    "frobenius": 3,
+    "conductor": 4,
+    "multiplicity": 4,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "num_elements_below_f": 1,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 4,
+    "frobenius": 4,
+    "conductor": 5,
+    "multiplicity": 5,
+    "embedding_dimension": 5,
+    "minimal_generators": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "num_elements_below_f": 1,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 5,
+    "frobenius": 5,
+    "conductor": 6,
+    "multiplicity": 6,
+    "embedding_dimension": 6,
+    "minimal_generators": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "num_elements_below_f": 1,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 6,
+    "frobenius": 6,
+    "conductor": 7,
+    "multiplicity": 7,
+    "embedding_dimension": 7,
+    "minimal_generators": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "num_elements_below_f": 1,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 7,
+    "frobenius": 7,
+    "conductor": 8,
+    "multiplicity": 8,
+    "embedding_dimension": 8,
+    "minimal_generators": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "num_elements_below_f": 1,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 8,
+    "frobenius": 8,
+    "conductor": 9,
+    "multiplicity": 9,
+    "embedding_dimension": 9,
+    "minimal_generators": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "num_elements_below_f": 1,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 9,
+    "frobenius": 9,
+    "conductor": 10,
+    "multiplicity": 10,
+    "embedding_dimension": 10,
+    "minimal_generators": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "num_elements_below_f": 1,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 10,
+    "frobenius": 10,
+    "conductor": 11,
+    "multiplicity": 11,
+    "embedding_dimension": 11,
+    "minimal_generators": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "num_elements_below_f": 1,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 11,
+    "frobenius": 11,
+    "conductor": 12,
+    "multiplicity": 12,
+    "embedding_dimension": 12,
+    "minimal_generators": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "num_elements_below_f": 1,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 12,
+    "frobenius": 12,
+    "conductor": 13,
+    "multiplicity": 13,
+    "embedding_dimension": 13,
+    "minimal_generators": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "num_elements_below_f": 1,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 13,
+    "frobenius": 13,
+    "conductor": 14,
+    "multiplicity": 14,
+    "embedding_dimension": 14,
+    "minimal_generators": [
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27
+    ],
+    "num_elements_below_f": 1,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 14,
+    "frobenius": 14,
+    "conductor": 15,
+    "multiplicity": 15,
+    "embedding_dimension": 15,
+    "minimal_generators": [
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "num_elements_below_f": 1,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 15,
+    "frobenius": 15,
+    "conductor": 16,
+    "multiplicity": 16,
+    "embedding_dimension": 16,
+    "minimal_generators": [
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "num_elements_below_f": 1,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 16,
+    "frobenius": 16,
+    "conductor": 17,
+    "multiplicity": 17,
+    "embedding_dimension": 17,
+    "minimal_generators": [
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ],
+    "num_elements_below_f": 1,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 16,
+    "frobenius": 17,
+    "conductor": 18,
+    "multiplicity": 9,
+    "embedding_dimension": 9,
+    "minimal_generators": [
+      9,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26
+    ],
+    "num_elements_below_f": 2,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 14,
+    "frobenius": 15,
+    "conductor": 16,
+    "multiplicity": 8,
+    "embedding_dimension": 8,
+    "minimal_generators": [
+      8,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "num_elements_below_f": 2,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 12,
+    "frobenius": 13,
+    "conductor": 14,
+    "multiplicity": 7,
+    "embedding_dimension": 7,
+    "minimal_generators": [
+      7,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "num_elements_below_f": 2,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 10,
+    "frobenius": 11,
+    "conductor": 12,
+    "multiplicity": 6,
+    "embedding_dimension": 6,
+    "minimal_generators": [
+      6,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "num_elements_below_f": 2,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 15,
+    "frobenius": 17,
+    "conductor": 18,
+    "multiplicity": 6,
+    "embedding_dimension": 6,
+    "minimal_generators": [
+      6,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "num_elements_below_f": 3,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 15,
+    "frobenius": 29,
+    "conductor": 30,
+    "multiplicity": 6,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      6,
+      7
+    ],
+    "num_elements_below_f": 15,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 8,
+    "frobenius": 9,
+    "conductor": 10,
+    "multiplicity": 5,
+    "embedding_dimension": 5,
+    "minimal_generators": [
+      5,
+      11,
+      12,
+      13,
+      14
+    ],
+    "num_elements_below_f": 2,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 12,
+    "frobenius": 14,
+    "conductor": 15,
+    "multiplicity": 5,
+    "embedding_dimension": 5,
+    "minimal_generators": [
+      5,
+      16,
+      17,
+      18,
+      19
+    ],
+    "num_elements_below_f": 3,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 16,
+    "frobenius": 19,
+    "conductor": 20,
+    "multiplicity": 5,
+    "embedding_dimension": 5,
+    "minimal_generators": [
+      5,
+      21,
+      22,
+      23,
+      24
+    ],
+    "num_elements_below_f": 4,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 16,
+    "frobenius": 31,
+    "conductor": 32,
+    "multiplicity": 5,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      5,
+      9
+    ],
+    "num_elements_below_f": 16,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 14,
+    "frobenius": 27,
+    "conductor": 28,
+    "multiplicity": 5,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      5,
+      8
+    ],
+    "num_elements_below_f": 14,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 12,
+    "frobenius": 23,
+    "conductor": 24,
+    "multiplicity": 5,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      5,
+      7
+    ],
+    "num_elements_below_f": 12,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 10,
+    "frobenius": 19,
+    "conductor": 20,
+    "multiplicity": 5,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      5,
+      6
+    ],
+    "num_elements_below_f": 10,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 6,
+    "frobenius": 7,
+    "conductor": 8,
+    "multiplicity": 4,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      4,
+      9,
+      10,
+      11
+    ],
+    "num_elements_below_f": 2,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 9,
+    "frobenius": 11,
+    "conductor": 12,
+    "multiplicity": 4,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      4,
+      13,
+      14,
+      15
+    ],
+    "num_elements_below_f": 3,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 12,
+    "frobenius": 15,
+    "conductor": 16,
+    "multiplicity": 4,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      4,
+      17,
+      18,
+      19
+    ],
+    "num_elements_below_f": 4,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 15,
+    "frobenius": 19,
+    "conductor": 20,
+    "multiplicity": 4,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      4,
+      21,
+      22,
+      23
+    ],
+    "num_elements_below_f": 5,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 15,
+    "frobenius": 29,
+    "conductor": 30,
+    "multiplicity": 4,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      4,
+      11
+    ],
+    "num_elements_below_f": 15,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 12,
+    "frobenius": 23,
+    "conductor": 24,
+    "multiplicity": 4,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      4,
+      9
+    ],
+    "num_elements_below_f": 12,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 9,
+    "frobenius": 17,
+    "conductor": 18,
+    "multiplicity": 4,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      4,
+      7
+    ],
+    "num_elements_below_f": 9,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 6,
+    "frobenius": 11,
+    "conductor": 12,
+    "multiplicity": 4,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      4,
+      5
+    ],
+    "num_elements_below_f": 6,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 4,
+    "frobenius": 5,
+    "conductor": 6,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      7,
+      8
+    ],
+    "num_elements_below_f": 2,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 6,
+    "frobenius": 8,
+    "conductor": 9,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      10,
+      11
+    ],
+    "num_elements_below_f": 3,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 8,
+    "frobenius": 11,
+    "conductor": 12,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      13,
+      14
+    ],
+    "num_elements_below_f": 4,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 10,
+    "frobenius": 14,
+    "conductor": 15,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      16,
+      17
+    ],
+    "num_elements_below_f": 5,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 12,
+    "frobenius": 17,
+    "conductor": 18,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      19,
+      20
+    ],
+    "num_elements_below_f": 6,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 14,
+    "frobenius": 20,
+    "conductor": 21,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      22,
+      23
+    ],
+    "num_elements_below_f": 7,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 16,
+    "frobenius": 23,
+    "conductor": 24,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      25,
+      26
+    ],
+    "num_elements_below_f": 8,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 16,
+    "frobenius": 31,
+    "conductor": 32,
+    "multiplicity": 3,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      3,
+      17
+    ],
+    "num_elements_below_f": 16,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 15,
+    "frobenius": 29,
+    "conductor": 30,
+    "multiplicity": 3,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      3,
+      16
+    ],
+    "num_elements_below_f": 15,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 13,
+    "frobenius": 25,
+    "conductor": 26,
+    "multiplicity": 3,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      3,
+      14
+    ],
+    "num_elements_below_f": 13,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 12,
+    "frobenius": 23,
+    "conductor": 24,
+    "multiplicity": 3,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      3,
+      13
+    ],
+    "num_elements_below_f": 12,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 10,
+    "frobenius": 19,
+    "conductor": 20,
+    "multiplicity": 3,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      3,
+      11
+    ],
+    "num_elements_below_f": 10,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 9,
+    "frobenius": 17,
+    "conductor": 18,
+    "multiplicity": 3,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      3,
+      10
+    ],
+    "num_elements_below_f": 9,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 7,
+    "frobenius": 13,
+    "conductor": 14,
+    "multiplicity": 3,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      3,
+      8
+    ],
+    "num_elements_below_f": 7,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 6,
+    "frobenius": 11,
+    "conductor": 12,
+    "multiplicity": 3,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      3,
+      7
+    ],
+    "num_elements_below_f": 6,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 4,
+    "frobenius": 7,
+    "conductor": 8,
+    "multiplicity": 3,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      3,
+      5
+    ],
+    "num_elements_below_f": 4,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 3,
+    "frobenius": 5,
+    "conductor": 6,
+    "multiplicity": 3,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      3,
+      4
+    ],
+    "num_elements_below_f": 3,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 2,
+    "frobenius": 3,
+    "conductor": 4,
+    "multiplicity": 2,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      2,
+      5
+    ],
+    "num_elements_below_f": 2,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 3,
+    "frobenius": 5,
+    "conductor": 6,
+    "multiplicity": 2,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      2,
+      7
+    ],
+    "num_elements_below_f": 3,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 4,
+    "frobenius": 7,
+    "conductor": 8,
+    "multiplicity": 2,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      2,
+      9
+    ],
+    "num_elements_below_f": 4,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 5,
+    "frobenius": 9,
+    "conductor": 10,
+    "multiplicity": 2,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      2,
+      11
+    ],
+    "num_elements_below_f": 5,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 6,
+    "frobenius": 11,
+    "conductor": 12,
+    "multiplicity": 2,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      2,
+      13
+    ],
+    "num_elements_below_f": 6,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 7,
+    "frobenius": 13,
+    "conductor": 14,
+    "multiplicity": 2,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      2,
+      15
+    ],
+    "num_elements_below_f": 7,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 8,
+    "frobenius": 15,
+    "conductor": 16,
+    "multiplicity": 2,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      2,
+      17
+    ],
+    "num_elements_below_f": 8,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 9,
+    "frobenius": 17,
+    "conductor": 18,
+    "multiplicity": 2,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      2,
+      19
+    ],
+    "num_elements_below_f": 9,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 10,
+    "frobenius": 19,
+    "conductor": 20,
+    "multiplicity": 2,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      2,
+      21
+    ],
+    "num_elements_below_f": 10,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 11,
+    "frobenius": 21,
+    "conductor": 22,
+    "multiplicity": 2,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      2,
+      23
+    ],
+    "num_elements_below_f": 11,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 12,
+    "frobenius": 23,
+    "conductor": 24,
+    "multiplicity": 2,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      2,
+      25
+    ],
+    "num_elements_below_f": 12,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 13,
+    "frobenius": 25,
+    "conductor": 26,
+    "multiplicity": 2,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      2,
+      27
+    ],
+    "num_elements_below_f": 13,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 14,
+    "frobenius": 27,
+    "conductor": 28,
+    "multiplicity": 2,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      2,
+      29
+    ],
+    "num_elements_below_f": 14,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 15,
+    "frobenius": 29,
+    "conductor": 30,
+    "multiplicity": 2,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      2,
+      31
+    ],
+    "num_elements_below_f": 15,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 16,
+    "frobenius": 31,
+    "conductor": 32,
+    "multiplicity": 2,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      2,
+      33
+    ],
+    "num_elements_below_f": 16,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 1,
+    "frobenius": 1,
+    "conductor": 2,
+    "multiplicity": 2,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      2,
+      3
+    ],
+    "num_elements_below_f": 1,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 2,
+    "frobenius": 3,
+    "conductor": 4,
+    "multiplicity": 2,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      2,
+      5
+    ],
+    "num_elements_below_f": 2,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 3,
+    "frobenius": 5,
+    "conductor": 6,
+    "multiplicity": 2,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      2,
+      7
+    ],
+    "num_elements_below_f": 3,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 4,
+    "frobenius": 7,
+    "conductor": 8,
+    "multiplicity": 2,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      2,
+      9
+    ],
+    "num_elements_below_f": 4,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 5,
+    "frobenius": 9,
+    "conductor": 10,
+    "multiplicity": 2,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      2,
+      11
+    ],
+    "num_elements_below_f": 5,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 6,
+    "frobenius": 11,
+    "conductor": 12,
+    "multiplicity": 2,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      2,
+      13
+    ],
+    "num_elements_below_f": 6,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 7,
+    "frobenius": 13,
+    "conductor": 14,
+    "multiplicity": 2,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      2,
+      15
+    ],
+    "num_elements_below_f": 7,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 8,
+    "frobenius": 15,
+    "conductor": 16,
+    "multiplicity": 2,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      2,
+      17
+    ],
+    "num_elements_below_f": 8,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 9,
+    "frobenius": 17,
+    "conductor": 18,
+    "multiplicity": 2,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      2,
+      19
+    ],
+    "num_elements_below_f": 9,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 10,
+    "frobenius": 19,
+    "conductor": 20,
+    "multiplicity": 2,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      2,
+      21
+    ],
+    "num_elements_below_f": 10,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 11,
+    "frobenius": 21,
+    "conductor": 22,
+    "multiplicity": 2,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      2,
+      23
+    ],
+    "num_elements_below_f": 11,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 12,
+    "frobenius": 23,
+    "conductor": 24,
+    "multiplicity": 2,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      2,
+      25
+    ],
+    "num_elements_below_f": 12,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 13,
+    "frobenius": 25,
+    "conductor": 26,
+    "multiplicity": 2,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      2,
+      27
+    ],
+    "num_elements_below_f": 13,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 14,
+    "frobenius": 27,
+    "conductor": 28,
+    "multiplicity": 2,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      2,
+      29
+    ],
+    "num_elements_below_f": 14,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 15,
+    "frobenius": 29,
+    "conductor": 30,
+    "multiplicity": 2,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      2,
+      31
+    ],
+    "num_elements_below_f": 15,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 16,
+    "frobenius": 31,
+    "conductor": 32,
+    "multiplicity": 2,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      2,
+      33
+    ],
+    "num_elements_below_f": 16,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 17,
+    "frobenius": 33,
+    "conductor": 34,
+    "multiplicity": 2,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      2,
+      35
+    ],
+    "num_elements_below_f": 17,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 18,
+    "frobenius": 35,
+    "conductor": 36,
+    "multiplicity": 2,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      2,
+      37
+    ],
+    "num_elements_below_f": 18,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 19,
+    "frobenius": 37,
+    "conductor": 38,
+    "multiplicity": 2,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      2,
+      39
+    ],
+    "num_elements_below_f": 19,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 20,
+    "frobenius": 39,
+    "conductor": 40,
+    "multiplicity": 2,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      2,
+      41
+    ],
+    "num_elements_below_f": 20,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 21,
+    "frobenius": 41,
+    "conductor": 42,
+    "multiplicity": 2,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      2,
+      43
+    ],
+    "num_elements_below_f": 21,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 22,
+    "frobenius": 43,
+    "conductor": 44,
+    "multiplicity": 2,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      2,
+      45
+    ],
+    "num_elements_below_f": 22,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 23,
+    "frobenius": 45,
+    "conductor": 46,
+    "multiplicity": 2,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      2,
+      47
+    ],
+    "num_elements_below_f": 23,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 24,
+    "frobenius": 47,
+    "conductor": 48,
+    "multiplicity": 2,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      2,
+      49
+    ],
+    "num_elements_below_f": 24,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 3,
+    "frobenius": 5,
+    "conductor": 6,
+    "multiplicity": 3,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      3,
+      4
+    ],
+    "num_elements_below_f": 3,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 4,
+    "frobenius": 7,
+    "conductor": 8,
+    "multiplicity": 3,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      3,
+      5
+    ],
+    "num_elements_below_f": 4,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 6,
+    "frobenius": 11,
+    "conductor": 12,
+    "multiplicity": 3,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      3,
+      7
+    ],
+    "num_elements_below_f": 6,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 7,
+    "frobenius": 13,
+    "conductor": 14,
+    "multiplicity": 3,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      3,
+      8
+    ],
+    "num_elements_below_f": 7,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 9,
+    "frobenius": 17,
+    "conductor": 18,
+    "multiplicity": 3,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      3,
+      10
+    ],
+    "num_elements_below_f": 9,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 10,
+    "frobenius": 19,
+    "conductor": 20,
+    "multiplicity": 3,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      3,
+      11
+    ],
+    "num_elements_below_f": 10,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 12,
+    "frobenius": 23,
+    "conductor": 24,
+    "multiplicity": 3,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      3,
+      13
+    ],
+    "num_elements_below_f": 12,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 13,
+    "frobenius": 25,
+    "conductor": 26,
+    "multiplicity": 3,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      3,
+      14
+    ],
+    "num_elements_below_f": 13,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 15,
+    "frobenius": 29,
+    "conductor": 30,
+    "multiplicity": 3,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      3,
+      16
+    ],
+    "num_elements_below_f": 15,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 16,
+    "frobenius": 31,
+    "conductor": 32,
+    "multiplicity": 3,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      3,
+      17
+    ],
+    "num_elements_below_f": 16,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 18,
+    "frobenius": 35,
+    "conductor": 36,
+    "multiplicity": 3,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      3,
+      19
+    ],
+    "num_elements_below_f": 18,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 19,
+    "frobenius": 37,
+    "conductor": 38,
+    "multiplicity": 3,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      3,
+      20
+    ],
+    "num_elements_below_f": 19,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 21,
+    "frobenius": 41,
+    "conductor": 42,
+    "multiplicity": 3,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      3,
+      22
+    ],
+    "num_elements_below_f": 21,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 22,
+    "frobenius": 43,
+    "conductor": 44,
+    "multiplicity": 3,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      3,
+      23
+    ],
+    "num_elements_below_f": 22,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 24,
+    "frobenius": 47,
+    "conductor": 48,
+    "multiplicity": 3,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      3,
+      25
+    ],
+    "num_elements_below_f": 24,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 25,
+    "frobenius": 49,
+    "conductor": 50,
+    "multiplicity": 3,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      3,
+      26
+    ],
+    "num_elements_below_f": 25,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 27,
+    "frobenius": 53,
+    "conductor": 54,
+    "multiplicity": 3,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      3,
+      28
+    ],
+    "num_elements_below_f": 27,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 28,
+    "frobenius": 55,
+    "conductor": 56,
+    "multiplicity": 3,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      3,
+      29
+    ],
+    "num_elements_below_f": 28,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 30,
+    "frobenius": 59,
+    "conductor": 60,
+    "multiplicity": 3,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      3,
+      31
+    ],
+    "num_elements_below_f": 30,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 31,
+    "frobenius": 61,
+    "conductor": 62,
+    "multiplicity": 3,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      3,
+      32
+    ],
+    "num_elements_below_f": 31,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 33,
+    "frobenius": 65,
+    "conductor": 66,
+    "multiplicity": 3,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      3,
+      34
+    ],
+    "num_elements_below_f": 33,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 34,
+    "frobenius": 67,
+    "conductor": 68,
+    "multiplicity": 3,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      3,
+      35
+    ],
+    "num_elements_below_f": 34,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 36,
+    "frobenius": 71,
+    "conductor": 72,
+    "multiplicity": 3,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      3,
+      37
+    ],
+    "num_elements_below_f": 36,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 37,
+    "frobenius": 73,
+    "conductor": 74,
+    "multiplicity": 3,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      3,
+      38
+    ],
+    "num_elements_below_f": 37,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 39,
+    "frobenius": 77,
+    "conductor": 78,
+    "multiplicity": 3,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      3,
+      40
+    ],
+    "num_elements_below_f": 39,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 40,
+    "frobenius": 79,
+    "conductor": 80,
+    "multiplicity": 3,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      3,
+      41
+    ],
+    "num_elements_below_f": 40,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 42,
+    "frobenius": 83,
+    "conductor": 84,
+    "multiplicity": 3,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      3,
+      43
+    ],
+    "num_elements_below_f": 42,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 43,
+    "frobenius": 85,
+    "conductor": 86,
+    "multiplicity": 3,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      3,
+      44
+    ],
+    "num_elements_below_f": 43,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 45,
+    "frobenius": 89,
+    "conductor": 90,
+    "multiplicity": 3,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      3,
+      46
+    ],
+    "num_elements_below_f": 45,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 46,
+    "frobenius": 91,
+    "conductor": 92,
+    "multiplicity": 3,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      3,
+      47
+    ],
+    "num_elements_below_f": 46,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 48,
+    "frobenius": 95,
+    "conductor": 96,
+    "multiplicity": 3,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      3,
+      49
+    ],
+    "num_elements_below_f": 48,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 49,
+    "frobenius": 97,
+    "conductor": 98,
+    "multiplicity": 3,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      3,
+      50
+    ],
+    "num_elements_below_f": 49,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 6,
+    "frobenius": 11,
+    "conductor": 12,
+    "multiplicity": 4,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      4,
+      5
+    ],
+    "num_elements_below_f": 6,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 9,
+    "frobenius": 17,
+    "conductor": 18,
+    "multiplicity": 4,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      4,
+      7
+    ],
+    "num_elements_below_f": 9,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 12,
+    "frobenius": 23,
+    "conductor": 24,
+    "multiplicity": 4,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      4,
+      9
+    ],
+    "num_elements_below_f": 12,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 15,
+    "frobenius": 29,
+    "conductor": 30,
+    "multiplicity": 4,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      4,
+      11
+    ],
+    "num_elements_below_f": 15,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 18,
+    "frobenius": 35,
+    "conductor": 36,
+    "multiplicity": 4,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      4,
+      13
+    ],
+    "num_elements_below_f": 18,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 21,
+    "frobenius": 41,
+    "conductor": 42,
+    "multiplicity": 4,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      4,
+      15
+    ],
+    "num_elements_below_f": 21,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 24,
+    "frobenius": 47,
+    "conductor": 48,
+    "multiplicity": 4,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      4,
+      17
+    ],
+    "num_elements_below_f": 24,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 27,
+    "frobenius": 53,
+    "conductor": 54,
+    "multiplicity": 4,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      4,
+      19
+    ],
+    "num_elements_below_f": 27,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 30,
+    "frobenius": 59,
+    "conductor": 60,
+    "multiplicity": 4,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      4,
+      21
+    ],
+    "num_elements_below_f": 30,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 33,
+    "frobenius": 65,
+    "conductor": 66,
+    "multiplicity": 4,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      4,
+      23
+    ],
+    "num_elements_below_f": 33,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 36,
+    "frobenius": 71,
+    "conductor": 72,
+    "multiplicity": 4,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      4,
+      25
+    ],
+    "num_elements_below_f": 36,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 39,
+    "frobenius": 77,
+    "conductor": 78,
+    "multiplicity": 4,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      4,
+      27
+    ],
+    "num_elements_below_f": 39,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 42,
+    "frobenius": 83,
+    "conductor": 84,
+    "multiplicity": 4,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      4,
+      29
+    ],
+    "num_elements_below_f": 42,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 45,
+    "frobenius": 89,
+    "conductor": 90,
+    "multiplicity": 4,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      4,
+      31
+    ],
+    "num_elements_below_f": 45,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 48,
+    "frobenius": 95,
+    "conductor": 96,
+    "multiplicity": 4,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      4,
+      33
+    ],
+    "num_elements_below_f": 48,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 51,
+    "frobenius": 101,
+    "conductor": 102,
+    "multiplicity": 4,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      4,
+      35
+    ],
+    "num_elements_below_f": 51,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 54,
+    "frobenius": 107,
+    "conductor": 108,
+    "multiplicity": 4,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      4,
+      37
+    ],
+    "num_elements_below_f": 54,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 57,
+    "frobenius": 113,
+    "conductor": 114,
+    "multiplicity": 4,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      4,
+      39
+    ],
+    "num_elements_below_f": 57,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 60,
+    "frobenius": 119,
+    "conductor": 120,
+    "multiplicity": 4,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      4,
+      41
+    ],
+    "num_elements_below_f": 60,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 10,
+    "frobenius": 19,
+    "conductor": 20,
+    "multiplicity": 5,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      5,
+      6
+    ],
+    "num_elements_below_f": 10,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 12,
+    "frobenius": 23,
+    "conductor": 24,
+    "multiplicity": 5,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      5,
+      7
+    ],
+    "num_elements_below_f": 12,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 14,
+    "frobenius": 27,
+    "conductor": 28,
+    "multiplicity": 5,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      5,
+      8
+    ],
+    "num_elements_below_f": 14,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 16,
+    "frobenius": 31,
+    "conductor": 32,
+    "multiplicity": 5,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      5,
+      9
+    ],
+    "num_elements_below_f": 16,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 20,
+    "frobenius": 39,
+    "conductor": 40,
+    "multiplicity": 5,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      5,
+      11
+    ],
+    "num_elements_below_f": 20,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 22,
+    "frobenius": 43,
+    "conductor": 44,
+    "multiplicity": 5,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      5,
+      12
+    ],
+    "num_elements_below_f": 22,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 24,
+    "frobenius": 47,
+    "conductor": 48,
+    "multiplicity": 5,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      5,
+      13
+    ],
+    "num_elements_below_f": 24,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 26,
+    "frobenius": 51,
+    "conductor": 52,
+    "multiplicity": 5,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      5,
+      14
+    ],
+    "num_elements_below_f": 26,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 30,
+    "frobenius": 59,
+    "conductor": 60,
+    "multiplicity": 5,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      5,
+      16
+    ],
+    "num_elements_below_f": 30,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 32,
+    "frobenius": 63,
+    "conductor": 64,
+    "multiplicity": 5,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      5,
+      17
+    ],
+    "num_elements_below_f": 32,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 34,
+    "frobenius": 67,
+    "conductor": 68,
+    "multiplicity": 5,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      5,
+      18
+    ],
+    "num_elements_below_f": 34,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 36,
+    "frobenius": 71,
+    "conductor": 72,
+    "multiplicity": 5,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      5,
+      19
+    ],
+    "num_elements_below_f": 36,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 40,
+    "frobenius": 79,
+    "conductor": 80,
+    "multiplicity": 5,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      5,
+      21
+    ],
+    "num_elements_below_f": 40,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 42,
+    "frobenius": 83,
+    "conductor": 84,
+    "multiplicity": 5,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      5,
+      22
+    ],
+    "num_elements_below_f": 42,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 44,
+    "frobenius": 87,
+    "conductor": 88,
+    "multiplicity": 5,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      5,
+      23
+    ],
+    "num_elements_below_f": 44,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 46,
+    "frobenius": 91,
+    "conductor": 92,
+    "multiplicity": 5,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      5,
+      24
+    ],
+    "num_elements_below_f": 46,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 50,
+    "frobenius": 99,
+    "conductor": 100,
+    "multiplicity": 5,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      5,
+      26
+    ],
+    "num_elements_below_f": 50,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 52,
+    "frobenius": 103,
+    "conductor": 104,
+    "multiplicity": 5,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      5,
+      27
+    ],
+    "num_elements_below_f": 52,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 54,
+    "frobenius": 107,
+    "conductor": 108,
+    "multiplicity": 5,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      5,
+      28
+    ],
+    "num_elements_below_f": 54,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 56,
+    "frobenius": 111,
+    "conductor": 112,
+    "multiplicity": 5,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      5,
+      29
+    ],
+    "num_elements_below_f": 56,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 60,
+    "frobenius": 119,
+    "conductor": 120,
+    "multiplicity": 5,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      5,
+      31
+    ],
+    "num_elements_below_f": 60,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 15,
+    "frobenius": 29,
+    "conductor": 30,
+    "multiplicity": 6,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      6,
+      7
+    ],
+    "num_elements_below_f": 15,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 25,
+    "frobenius": 49,
+    "conductor": 50,
+    "multiplicity": 6,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      6,
+      11
+    ],
+    "num_elements_below_f": 25,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 30,
+    "frobenius": 59,
+    "conductor": 60,
+    "multiplicity": 6,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      6,
+      13
+    ],
+    "num_elements_below_f": 30,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 40,
+    "frobenius": 79,
+    "conductor": 80,
+    "multiplicity": 6,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      6,
+      17
+    ],
+    "num_elements_below_f": 40,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 45,
+    "frobenius": 89,
+    "conductor": 90,
+    "multiplicity": 6,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      6,
+      19
+    ],
+    "num_elements_below_f": 45,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 55,
+    "frobenius": 109,
+    "conductor": 110,
+    "multiplicity": 6,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      6,
+      23
+    ],
+    "num_elements_below_f": 55,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 60,
+    "frobenius": 119,
+    "conductor": 120,
+    "multiplicity": 6,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      6,
+      25
+    ],
+    "num_elements_below_f": 60,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 21,
+    "frobenius": 41,
+    "conductor": 42,
+    "multiplicity": 7,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      7,
+      8
+    ],
+    "num_elements_below_f": 21,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 24,
+    "frobenius": 47,
+    "conductor": 48,
+    "multiplicity": 7,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      7,
+      9
+    ],
+    "num_elements_below_f": 24,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 27,
+    "frobenius": 53,
+    "conductor": 54,
+    "multiplicity": 7,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      7,
+      10
+    ],
+    "num_elements_below_f": 27,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 30,
+    "frobenius": 59,
+    "conductor": 60,
+    "multiplicity": 7,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      7,
+      11
+    ],
+    "num_elements_below_f": 30,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 33,
+    "frobenius": 65,
+    "conductor": 66,
+    "multiplicity": 7,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      7,
+      12
+    ],
+    "num_elements_below_f": 33,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 36,
+    "frobenius": 71,
+    "conductor": 72,
+    "multiplicity": 7,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      7,
+      13
+    ],
+    "num_elements_below_f": 36,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 42,
+    "frobenius": 83,
+    "conductor": 84,
+    "multiplicity": 7,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      7,
+      15
+    ],
+    "num_elements_below_f": 42,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 45,
+    "frobenius": 89,
+    "conductor": 90,
+    "multiplicity": 7,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      7,
+      16
+    ],
+    "num_elements_below_f": 45,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 48,
+    "frobenius": 95,
+    "conductor": 96,
+    "multiplicity": 7,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      7,
+      17
+    ],
+    "num_elements_below_f": 48,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 51,
+    "frobenius": 101,
+    "conductor": 102,
+    "multiplicity": 7,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      7,
+      18
+    ],
+    "num_elements_below_f": 51,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 54,
+    "frobenius": 107,
+    "conductor": 108,
+    "multiplicity": 7,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      7,
+      19
+    ],
+    "num_elements_below_f": 54,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 57,
+    "frobenius": 113,
+    "conductor": 114,
+    "multiplicity": 7,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      7,
+      20
+    ],
+    "num_elements_below_f": 57,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 28,
+    "frobenius": 55,
+    "conductor": 56,
+    "multiplicity": 8,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      8,
+      9
+    ],
+    "num_elements_below_f": 28,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 35,
+    "frobenius": 69,
+    "conductor": 70,
+    "multiplicity": 8,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      8,
+      11
+    ],
+    "num_elements_below_f": 35,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 42,
+    "frobenius": 83,
+    "conductor": 84,
+    "multiplicity": 8,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      8,
+      13
+    ],
+    "num_elements_below_f": 42,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 49,
+    "frobenius": 97,
+    "conductor": 98,
+    "multiplicity": 8,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      8,
+      15
+    ],
+    "num_elements_below_f": 49,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 56,
+    "frobenius": 111,
+    "conductor": 112,
+    "multiplicity": 8,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      8,
+      17
+    ],
+    "num_elements_below_f": 56,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 36,
+    "frobenius": 71,
+    "conductor": 72,
+    "multiplicity": 9,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      9,
+      10
+    ],
+    "num_elements_below_f": 36,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 40,
+    "frobenius": 79,
+    "conductor": 80,
+    "multiplicity": 9,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      9,
+      11
+    ],
+    "num_elements_below_f": 40,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 48,
+    "frobenius": 95,
+    "conductor": 96,
+    "multiplicity": 9,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      9,
+      13
+    ],
+    "num_elements_below_f": 48,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 52,
+    "frobenius": 103,
+    "conductor": 104,
+    "multiplicity": 9,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      9,
+      14
+    ],
+    "num_elements_below_f": 52,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 60,
+    "frobenius": 119,
+    "conductor": 120,
+    "multiplicity": 9,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      9,
+      16
+    ],
+    "num_elements_below_f": 60,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 45,
+    "frobenius": 89,
+    "conductor": 90,
+    "multiplicity": 10,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      10,
+      11
+    ],
+    "num_elements_below_f": 45,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 54,
+    "frobenius": 107,
+    "conductor": 108,
+    "multiplicity": 10,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      10,
+      13
+    ],
+    "num_elements_below_f": 54,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 55,
+    "frobenius": 109,
+    "conductor": 110,
+    "multiplicity": 11,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      11,
+      12
+    ],
+    "num_elements_below_f": 55,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 60,
+    "frobenius": 119,
+    "conductor": 120,
+    "multiplicity": 11,
+    "embedding_dimension": 2,
+    "minimal_generators": [
+      11,
+      13
+    ],
+    "num_elements_below_f": 60,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 2,
+    "frobenius": 2,
+    "conductor": 3,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      4,
+      5
+    ],
+    "num_elements_below_f": 1,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 4,
+    "frobenius": 5,
+    "conductor": 6,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      7,
+      8
+    ],
+    "num_elements_below_f": 2,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 6,
+    "frobenius": 8,
+    "conductor": 9,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      10,
+      11
+    ],
+    "num_elements_below_f": 3,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 8,
+    "frobenius": 11,
+    "conductor": 12,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      13,
+      14
+    ],
+    "num_elements_below_f": 4,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 10,
+    "frobenius": 14,
+    "conductor": 15,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      16,
+      17
+    ],
+    "num_elements_below_f": 5,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 12,
+    "frobenius": 17,
+    "conductor": 18,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      19,
+      20
+    ],
+    "num_elements_below_f": 6,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 14,
+    "frobenius": 20,
+    "conductor": 21,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      22,
+      23
+    ],
+    "num_elements_below_f": 7,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 16,
+    "frobenius": 23,
+    "conductor": 24,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      25,
+      26
+    ],
+    "num_elements_below_f": 8,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 3,
+    "frobenius": 3,
+    "conductor": 4,
+    "multiplicity": 4,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "num_elements_below_f": 1,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 6,
+    "frobenius": 7,
+    "conductor": 8,
+    "multiplicity": 4,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      4,
+      9,
+      10,
+      11
+    ],
+    "num_elements_below_f": 2,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 9,
+    "frobenius": 11,
+    "conductor": 12,
+    "multiplicity": 4,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      4,
+      13,
+      14,
+      15
+    ],
+    "num_elements_below_f": 3,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 12,
+    "frobenius": 15,
+    "conductor": 16,
+    "multiplicity": 4,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      4,
+      17,
+      18,
+      19
+    ],
+    "num_elements_below_f": 4,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 4,
+    "frobenius": 4,
+    "conductor": 5,
+    "multiplicity": 5,
+    "embedding_dimension": 5,
+    "minimal_generators": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "num_elements_below_f": 1,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 8,
+    "frobenius": 9,
+    "conductor": 10,
+    "multiplicity": 5,
+    "embedding_dimension": 5,
+    "minimal_generators": [
+      5,
+      11,
+      12,
+      13,
+      14
+    ],
+    "num_elements_below_f": 2,
+    "wilf_defect": 0,
+    "wilf_ratio": 1.0,
+    "is_symmetric": false
+  },
+  {
+    "genus": 15,
+    "frobenius": 22,
+    "conductor": 23,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      23,
+      25
+    ],
+    "num_elements_below_f": 8,
+    "wilf_defect": 1,
+    "wilf_ratio": 0.9583333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 15,
+    "frobenius": 22,
+    "conductor": 23,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      23,
+      25
+    ],
+    "num_elements_below_f": 8,
+    "wilf_defect": 1,
+    "wilf_ratio": 0.9583333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 13,
+    "frobenius": 19,
+    "conductor": 20,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      20,
+      22
+    ],
+    "num_elements_below_f": 7,
+    "wilf_defect": 1,
+    "wilf_ratio": 0.9523809523809523,
+    "is_symmetric": false
+  },
+  {
+    "genus": 13,
+    "frobenius": 19,
+    "conductor": 20,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      20,
+      22
+    ],
+    "num_elements_below_f": 7,
+    "wilf_defect": 1,
+    "wilf_ratio": 0.9523809523809523,
+    "is_symmetric": false
+  },
+  {
+    "genus": 15,
+    "frobenius": 18,
+    "conductor": 19,
+    "multiplicity": 5,
+    "embedding_dimension": 5,
+    "minimal_generators": [
+      5,
+      19,
+      21,
+      22,
+      23
+    ],
+    "num_elements_below_f": 4,
+    "wilf_defect": 1,
+    "wilf_ratio": 0.95,
+    "is_symmetric": false
+  },
+  {
+    "genus": 14,
+    "frobenius": 18,
+    "conductor": 19,
+    "multiplicity": 4,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      4,
+      19,
+      21,
+      22
+    ],
+    "num_elements_below_f": 5,
+    "wilf_defect": 1,
+    "wilf_ratio": 0.95,
+    "is_symmetric": false
+  },
+  {
+    "genus": 15,
+    "frobenius": 16,
+    "conductor": 17,
+    "multiplicity": 9,
+    "embedding_dimension": 9,
+    "minimal_generators": [
+      9,
+      17,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "num_elements_below_f": 2,
+    "wilf_defect": 1,
+    "wilf_ratio": 0.9444444444444444,
+    "is_symmetric": false
+  },
+  {
+    "genus": 14,
+    "frobenius": 16,
+    "conductor": 17,
+    "multiplicity": 6,
+    "embedding_dimension": 6,
+    "minimal_generators": [
+      6,
+      17,
+      19,
+      20,
+      21,
+      22
+    ],
+    "num_elements_below_f": 3,
+    "wilf_defect": 1,
+    "wilf_ratio": 0.9444444444444444,
+    "is_symmetric": false
+  },
+  {
+    "genus": 11,
+    "frobenius": 16,
+    "conductor": 17,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      17,
+      19
+    ],
+    "num_elements_below_f": 6,
+    "wilf_defect": 1,
+    "wilf_ratio": 0.9444444444444444,
+    "is_symmetric": false
+  },
+  {
+    "genus": 11,
+    "frobenius": 16,
+    "conductor": 17,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      17,
+      19
+    ],
+    "num_elements_below_f": 6,
+    "wilf_defect": 1,
+    "wilf_ratio": 0.9444444444444444,
+    "is_symmetric": false
+  },
+  {
+    "genus": 13,
+    "frobenius": 14,
+    "conductor": 15,
+    "multiplicity": 8,
+    "embedding_dimension": 8,
+    "minimal_generators": [
+      8,
+      15,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+    ],
+    "num_elements_below_f": 2,
+    "wilf_defect": 1,
+    "wilf_ratio": 0.9375,
+    "is_symmetric": false
+  },
+  {
+    "genus": 11,
+    "frobenius": 14,
+    "conductor": 15,
+    "multiplicity": 4,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      4,
+      15,
+      17,
+      18
+    ],
+    "num_elements_below_f": 4,
+    "wilf_defect": 1,
+    "wilf_ratio": 0.9375,
+    "is_symmetric": false
+  },
+  {
+    "genus": 11,
+    "frobenius": 14,
+    "conductor": 15,
+    "multiplicity": 4,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      4,
+      15,
+      17,
+      18
+    ],
+    "num_elements_below_f": 4,
+    "wilf_defect": 1,
+    "wilf_ratio": 0.9375,
+    "is_symmetric": false
+  },
+  {
+    "genus": 11,
+    "frobenius": 13,
+    "conductor": 14,
+    "multiplicity": 5,
+    "embedding_dimension": 5,
+    "minimal_generators": [
+      5,
+      14,
+      16,
+      17,
+      18
+    ],
+    "num_elements_below_f": 3,
+    "wilf_defect": 1,
+    "wilf_ratio": 0.9333333333333333,
+    "is_symmetric": false
+  },
+  {
+    "genus": 9,
+    "frobenius": 13,
+    "conductor": 14,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      14,
+      16
+    ],
+    "num_elements_below_f": 5,
+    "wilf_defect": 1,
+    "wilf_ratio": 0.9333333333333333,
+    "is_symmetric": false
+  },
+  {
+    "genus": 9,
+    "frobenius": 13,
+    "conductor": 14,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      14,
+      16
+    ],
+    "num_elements_below_f": 5,
+    "wilf_defect": 1,
+    "wilf_ratio": 0.9333333333333333,
+    "is_symmetric": false
+  },
+  {
+    "genus": 11,
+    "frobenius": 13,
+    "conductor": 14,
+    "multiplicity": 5,
+    "embedding_dimension": 5,
+    "minimal_generators": [
+      5,
+      14,
+      16,
+      17,
+      18
+    ],
+    "num_elements_below_f": 3,
+    "wilf_defect": 1,
+    "wilf_ratio": 0.9333333333333333,
+    "is_symmetric": false
+  },
+  {
+    "genus": 11,
+    "frobenius": 12,
+    "conductor": 13,
+    "multiplicity": 7,
+    "embedding_dimension": 7,
+    "minimal_generators": [
+      7,
+      13,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "num_elements_below_f": 2,
+    "wilf_defect": 1,
+    "wilf_ratio": 0.9285714285714286,
+    "is_symmetric": false
+  },
+  {
+    "genus": 9,
+    "frobenius": 10,
+    "conductor": 11,
+    "multiplicity": 6,
+    "embedding_dimension": 6,
+    "minimal_generators": [
+      6,
+      11,
+      13,
+      14,
+      15,
+      16
+    ],
+    "num_elements_below_f": 2,
+    "wilf_defect": 1,
+    "wilf_ratio": 0.9166666666666666,
+    "is_symmetric": false
+  },
+  {
+    "genus": 8,
+    "frobenius": 10,
+    "conductor": 11,
+    "multiplicity": 4,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      4,
+      11,
+      13,
+      14
+    ],
+    "num_elements_below_f": 3,
+    "wilf_defect": 1,
+    "wilf_ratio": 0.9166666666666666,
+    "is_symmetric": false
+  },
+  {
+    "genus": 16,
+    "frobenius": 21,
+    "conductor": 22,
+    "multiplicity": 4,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      4,
+      22,
+      23,
+      25
+    ],
+    "num_elements_below_f": 6,
+    "wilf_defect": 2,
+    "wilf_ratio": 0.9166666666666666,
+    "is_symmetric": false
+  },
+  {
+    "genus": 7,
+    "frobenius": 10,
+    "conductor": 11,
+    "multiplicity": 4,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      4,
+      7,
+      13
+    ],
+    "num_elements_below_f": 4,
+    "wilf_defect": 1,
+    "wilf_ratio": 0.9166666666666666,
+    "is_symmetric": false
+  },
+  {
+    "genus": 7,
+    "frobenius": 10,
+    "conductor": 11,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      11,
+      13
+    ],
+    "num_elements_below_f": 4,
+    "wilf_defect": 1,
+    "wilf_ratio": 0.9166666666666666,
+    "is_symmetric": false
+  },
+  {
+    "genus": 7,
+    "frobenius": 10,
+    "conductor": 11,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      11,
+      13
+    ],
+    "num_elements_below_f": 4,
+    "wilf_defect": 1,
+    "wilf_ratio": 0.9166666666666666,
+    "is_symmetric": false
+  },
+  {
+    "genus": 7,
+    "frobenius": 10,
+    "conductor": 11,
+    "multiplicity": 4,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      4,
+      7,
+      13
+    ],
+    "num_elements_below_f": 4,
+    "wilf_defect": 1,
+    "wilf_ratio": 0.9166666666666666,
+    "is_symmetric": false
+  },
+  {
+    "genus": 8,
+    "frobenius": 10,
+    "conductor": 11,
+    "multiplicity": 4,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      4,
+      11,
+      13,
+      14
+    ],
+    "num_elements_below_f": 3,
+    "wilf_defect": 1,
+    "wilf_ratio": 0.9166666666666666,
+    "is_symmetric": false
+  },
+  {
+    "genus": 16,
+    "frobenius": 18,
+    "conductor": 19,
+    "multiplicity": 7,
+    "embedding_dimension": 7,
+    "minimal_generators": [
+      7,
+      19,
+      20,
+      22,
+      23,
+      24,
+      25
+    ],
+    "num_elements_below_f": 3,
+    "wilf_defect": 2,
+    "wilf_ratio": 0.9047619047619048,
+    "is_symmetric": false
+  },
+  {
+    "genus": 12,
+    "frobenius": 18,
+    "conductor": 19,
+    "multiplicity": 4,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      4,
+      11,
+      21
+    ],
+    "num_elements_below_f": 7,
+    "wilf_defect": 2,
+    "wilf_ratio": 0.9047619047619048,
+    "is_symmetric": false
+  },
+  {
+    "genus": 12,
+    "frobenius": 18,
+    "conductor": 19,
+    "multiplicity": 4,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      4,
+      11,
+      21
+    ],
+    "num_elements_below_f": 7,
+    "wilf_defect": 2,
+    "wilf_ratio": 0.9047619047619048,
+    "is_symmetric": false
+  },
+  {
+    "genus": 16,
+    "frobenius": 17,
+    "conductor": 18,
+    "multiplicity": 10,
+    "embedding_dimension": 10,
+    "minimal_generators": [
+      10,
+      18,
+      19,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27
+    ],
+    "num_elements_below_f": 2,
+    "wilf_defect": 2,
+    "wilf_ratio": 0.9,
+    "is_symmetric": false
+  },
+  {
+    "genus": 13,
+    "frobenius": 17,
+    "conductor": 18,
+    "multiplicity": 9,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      9,
+      10,
+      12,
+      13
+    ],
+    "num_elements_below_f": 5,
+    "wilf_defect": 2,
+    "wilf_ratio": 0.9,
+    "is_symmetric": false
+  },
+  {
+    "genus": 13,
+    "frobenius": 17,
+    "conductor": 18,
+    "multiplicity": 7,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      7,
+      11,
+      12,
+      20
+    ],
+    "num_elements_below_f": 5,
+    "wilf_defect": 2,
+    "wilf_ratio": 0.9,
+    "is_symmetric": false
+  },
+  {
+    "genus": 7,
+    "frobenius": 8,
+    "conductor": 9,
+    "multiplicity": 5,
+    "embedding_dimension": 5,
+    "minimal_generators": [
+      5,
+      9,
+      11,
+      12,
+      13
+    ],
+    "num_elements_below_f": 2,
+    "wilf_defect": 1,
+    "wilf_ratio": 0.9,
+    "is_symmetric": false
+  },
+  {
+    "genus": 14,
+    "frobenius": 17,
+    "conductor": 18,
+    "multiplicity": 5,
+    "embedding_dimension": 5,
+    "minimal_generators": [
+      5,
+      18,
+      19,
+      21,
+      22
+    ],
+    "num_elements_below_f": 4,
+    "wilf_defect": 2,
+    "wilf_ratio": 0.9,
+    "is_symmetric": false
+  },
+  {
+    "genus": 13,
+    "frobenius": 17,
+    "conductor": 18,
+    "multiplicity": 4,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      4,
+      18,
+      19,
+      21
+    ],
+    "num_elements_below_f": 5,
+    "wilf_defect": 2,
+    "wilf_ratio": 0.9,
+    "is_symmetric": false
+  },
+  {
+    "genus": 17,
+    "frobenius": 26,
+    "conductor": 27,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      25,
+      29
+    ],
+    "num_elements_below_f": 10,
+    "wilf_defect": 3,
+    "wilf_ratio": 0.9,
+    "is_symmetric": false
+  },
+  {
+    "genus": 17,
+    "frobenius": 26,
+    "conductor": 27,
+    "multiplicity": 4,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      4,
+      15,
+      29
+    ],
+    "num_elements_below_f": 10,
+    "wilf_defect": 3,
+    "wilf_ratio": 0.9,
+    "is_symmetric": false
+  },
+  {
+    "genus": 13,
+    "frobenius": 17,
+    "conductor": 18,
+    "multiplicity": 4,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      4,
+      18,
+      19,
+      21
+    ],
+    "num_elements_below_f": 5,
+    "wilf_defect": 2,
+    "wilf_ratio": 0.9,
+    "is_symmetric": false
+  },
+  {
+    "genus": 13,
+    "frobenius": 17,
+    "conductor": 18,
+    "multiplicity": 7,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      7,
+      11,
+      12,
+      20
+    ],
+    "num_elements_below_f": 5,
+    "wilf_defect": 2,
+    "wilf_ratio": 0.9,
+    "is_symmetric": false
+  },
+  {
+    "genus": 13,
+    "frobenius": 17,
+    "conductor": 18,
+    "multiplicity": 9,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      9,
+      10,
+      12,
+      13
+    ],
+    "num_elements_below_f": 5,
+    "wilf_defect": 2,
+    "wilf_ratio": 0.9,
+    "is_symmetric": false
+  },
+  {
+    "genus": 7,
+    "frobenius": 8,
+    "conductor": 9,
+    "multiplicity": 5,
+    "embedding_dimension": 5,
+    "minimal_generators": [
+      5,
+      9,
+      11,
+      12,
+      13
+    ],
+    "num_elements_below_f": 2,
+    "wilf_defect": 1,
+    "wilf_ratio": 0.9,
+    "is_symmetric": false
+  },
+  {
+    "genus": 14,
+    "frobenius": 15,
+    "conductor": 16,
+    "multiplicity": 9,
+    "embedding_dimension": 9,
+    "minimal_generators": [
+      9,
+      16,
+      17,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "num_elements_below_f": 2,
+    "wilf_defect": 2,
+    "wilf_ratio": 0.8888888888888888,
+    "is_symmetric": false
+  },
+  {
+    "genus": 13,
+    "frobenius": 15,
+    "conductor": 16,
+    "multiplicity": 6,
+    "embedding_dimension": 6,
+    "minimal_generators": [
+      6,
+      16,
+      17,
+      19,
+      20,
+      21
+    ],
+    "num_elements_below_f": 3,
+    "wilf_defect": 2,
+    "wilf_ratio": 0.8888888888888888,
+    "is_symmetric": false
+  },
+  {
+    "genus": 15,
+    "frobenius": 23,
+    "conductor": 24,
+    "multiplicity": 4,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      4,
+      13,
+      27
+    ],
+    "num_elements_below_f": 9,
+    "wilf_defect": 3,
+    "wilf_ratio": 0.8888888888888888,
+    "is_symmetric": false
+  },
+  {
+    "genus": 10,
+    "frobenius": 15,
+    "conductor": 16,
+    "multiplicity": 4,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      4,
+      9,
+      19
+    ],
+    "num_elements_below_f": 6,
+    "wilf_defect": 2,
+    "wilf_ratio": 0.8888888888888888,
+    "is_symmetric": false
+  },
+  {
+    "genus": 5,
+    "frobenius": 7,
+    "conductor": 8,
+    "multiplicity": 4,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      4,
+      5,
+      11
+    ],
+    "num_elements_below_f": 3,
+    "wilf_defect": 1,
+    "wilf_ratio": 0.8888888888888888,
+    "is_symmetric": false
+  },
+  {
+    "genus": 5,
+    "frobenius": 7,
+    "conductor": 8,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      8,
+      10
+    ],
+    "num_elements_below_f": 3,
+    "wilf_defect": 1,
+    "wilf_ratio": 0.8888888888888888,
+    "is_symmetric": false
+  },
+  {
+    "genus": 15,
+    "frobenius": 23,
+    "conductor": 24,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      22,
+      26
+    ],
+    "num_elements_below_f": 9,
+    "wilf_defect": 3,
+    "wilf_ratio": 0.8888888888888888,
+    "is_symmetric": false
+  },
+  {
+    "genus": 5,
+    "frobenius": 7,
+    "conductor": 8,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      8,
+      10
+    ],
+    "num_elements_below_f": 3,
+    "wilf_defect": 1,
+    "wilf_ratio": 0.8888888888888888,
+    "is_symmetric": false
+  },
+  {
+    "genus": 15,
+    "frobenius": 23,
+    "conductor": 24,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      22,
+      26
+    ],
+    "num_elements_below_f": 9,
+    "wilf_defect": 3,
+    "wilf_ratio": 0.8888888888888888,
+    "is_symmetric": false
+  },
+  {
+    "genus": 5,
+    "frobenius": 7,
+    "conductor": 8,
+    "multiplicity": 4,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      4,
+      5,
+      11
+    ],
+    "num_elements_below_f": 3,
+    "wilf_defect": 1,
+    "wilf_ratio": 0.8888888888888888,
+    "is_symmetric": false
+  },
+  {
+    "genus": 10,
+    "frobenius": 15,
+    "conductor": 16,
+    "multiplicity": 4,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      4,
+      9,
+      19
+    ],
+    "num_elements_below_f": 6,
+    "wilf_defect": 2,
+    "wilf_ratio": 0.8888888888888888,
+    "is_symmetric": false
+  },
+  {
+    "genus": 15,
+    "frobenius": 23,
+    "conductor": 24,
+    "multiplicity": 4,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      4,
+      13,
+      27
+    ],
+    "num_elements_below_f": 9,
+    "wilf_defect": 3,
+    "wilf_ratio": 0.8888888888888888,
+    "is_symmetric": false
+  },
+  {
+    "genus": 12,
+    "frobenius": 13,
+    "conductor": 14,
+    "multiplicity": 8,
+    "embedding_dimension": 8,
+    "minimal_generators": [
+      8,
+      14,
+      15,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "num_elements_below_f": 2,
+    "wilf_defect": 2,
+    "wilf_ratio": 0.875,
+    "is_symmetric": false
+  },
+  {
+    "genus": 10,
+    "frobenius": 13,
+    "conductor": 14,
+    "multiplicity": 7,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      7,
+      9,
+      10,
+      15
+    ],
+    "num_elements_below_f": 4,
+    "wilf_defect": 2,
+    "wilf_ratio": 0.875,
+    "is_symmetric": false
+  },
+  {
+    "genus": 10,
+    "frobenius": 13,
+    "conductor": 14,
+    "multiplicity": 7,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      7,
+      8,
+      10,
+      19
+    ],
+    "num_elements_below_f": 4,
+    "wilf_defect": 2,
+    "wilf_ratio": 0.875,
+    "is_symmetric": false
+  },
+  {
+    "genus": 10,
+    "frobenius": 13,
+    "conductor": 14,
+    "multiplicity": 5,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      5,
+      9,
+      16,
+      17
+    ],
+    "num_elements_below_f": 4,
+    "wilf_defect": 2,
+    "wilf_ratio": 0.875,
+    "is_symmetric": false
+  },
+  {
+    "genus": 5,
+    "frobenius": 6,
+    "conductor": 7,
+    "multiplicity": 4,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      4,
+      7,
+      9,
+      10
+    ],
+    "num_elements_below_f": 2,
+    "wilf_defect": 1,
+    "wilf_ratio": 0.875,
+    "is_symmetric": false
+  },
+  {
+    "genus": 10,
+    "frobenius": 13,
+    "conductor": 14,
+    "multiplicity": 4,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      4,
+      14,
+      15,
+      17
+    ],
+    "num_elements_below_f": 4,
+    "wilf_defect": 2,
+    "wilf_ratio": 0.875,
+    "is_symmetric": false
+  },
+  {
+    "genus": 13,
+    "frobenius": 20,
+    "conductor": 21,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      19,
+      23
+    ],
+    "num_elements_below_f": 8,
+    "wilf_defect": 3,
+    "wilf_ratio": 0.875,
+    "is_symmetric": false
+  },
+  {
+    "genus": 13,
+    "frobenius": 20,
+    "conductor": 21,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      19,
+      23
+    ],
+    "num_elements_below_f": 8,
+    "wilf_defect": 3,
+    "wilf_ratio": 0.875,
+    "is_symmetric": false
+  },
+  {
+    "genus": 5,
+    "frobenius": 6,
+    "conductor": 7,
+    "multiplicity": 4,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      4,
+      7,
+      9,
+      10
+    ],
+    "num_elements_below_f": 2,
+    "wilf_defect": 1,
+    "wilf_ratio": 0.875,
+    "is_symmetric": false
+  },
+  {
+    "genus": 10,
+    "frobenius": 13,
+    "conductor": 14,
+    "multiplicity": 4,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      4,
+      14,
+      15,
+      17
+    ],
+    "num_elements_below_f": 4,
+    "wilf_defect": 2,
+    "wilf_ratio": 0.875,
+    "is_symmetric": false
+  },
+  {
+    "genus": 10,
+    "frobenius": 13,
+    "conductor": 14,
+    "multiplicity": 5,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      5,
+      9,
+      16,
+      17
+    ],
+    "num_elements_below_f": 4,
+    "wilf_defect": 2,
+    "wilf_ratio": 0.875,
+    "is_symmetric": false
+  },
+  {
+    "genus": 10,
+    "frobenius": 13,
+    "conductor": 14,
+    "multiplicity": 7,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      7,
+      8,
+      10,
+      19
+    ],
+    "num_elements_below_f": 4,
+    "wilf_defect": 2,
+    "wilf_ratio": 0.875,
+    "is_symmetric": false
+  },
+  {
+    "genus": 10,
+    "frobenius": 13,
+    "conductor": 14,
+    "multiplicity": 7,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      7,
+      9,
+      10,
+      15
+    ],
+    "num_elements_below_f": 4,
+    "wilf_defect": 2,
+    "wilf_ratio": 0.875,
+    "is_symmetric": false
+  },
+  {
+    "genus": 21,
+    "frobenius": 33,
+    "conductor": 34,
+    "multiplicity": 7,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      7,
+      10,
+      29
+    ],
+    "num_elements_below_f": 13,
+    "wilf_defect": 5,
+    "wilf_ratio": 0.8717948717948718,
+    "is_symmetric": false
+  },
+  {
+    "genus": 10,
+    "frobenius": 12,
+    "conductor": 13,
+    "multiplicity": 5,
+    "embedding_dimension": 5,
+    "minimal_generators": [
+      5,
+      13,
+      14,
+      16,
+      17
+    ],
+    "num_elements_below_f": 3,
+    "wilf_defect": 2,
+    "wilf_ratio": 0.8666666666666667,
+    "is_symmetric": false
+  },
+  {
+    "genus": 8,
+    "frobenius": 12,
+    "conductor": 13,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      8,
+      9
+    ],
+    "num_elements_below_f": 5,
+    "wilf_defect": 2,
+    "wilf_ratio": 0.8666666666666667,
+    "is_symmetric": false
+  },
+  {
+    "genus": 16,
+    "frobenius": 25,
+    "conductor": 26,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      23,
+      28
+    ],
+    "num_elements_below_f": 10,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8666666666666667,
+    "is_symmetric": false
+  },
+  {
+    "genus": 16,
+    "frobenius": 25,
+    "conductor": 26,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      23,
+      28
+    ],
+    "num_elements_below_f": 10,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8666666666666667,
+    "is_symmetric": false
+  },
+  {
+    "genus": 8,
+    "frobenius": 12,
+    "conductor": 13,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      8,
+      9
+    ],
+    "num_elements_below_f": 5,
+    "wilf_defect": 2,
+    "wilf_ratio": 0.8666666666666667,
+    "is_symmetric": false
+  },
+  {
+    "genus": 10,
+    "frobenius": 12,
+    "conductor": 13,
+    "multiplicity": 5,
+    "embedding_dimension": 5,
+    "minimal_generators": [
+      5,
+      13,
+      14,
+      16,
+      17
+    ],
+    "num_elements_below_f": 3,
+    "wilf_defect": 2,
+    "wilf_ratio": 0.8666666666666667,
+    "is_symmetric": false
+  },
+  {
+    "genus": 10,
+    "frobenius": 11,
+    "conductor": 12,
+    "multiplicity": 7,
+    "embedding_dimension": 7,
+    "minimal_generators": [
+      7,
+      12,
+      13,
+      15,
+      16,
+      17,
+      18
+    ],
+    "num_elements_below_f": 2,
+    "wilf_defect": 2,
+    "wilf_ratio": 0.8571428571428571,
+    "is_symmetric": false
+  },
+  {
+    "genus": 15,
+    "frobenius": 17,
+    "conductor": 18,
+    "multiplicity": 7,
+    "embedding_dimension": 7,
+    "minimal_generators": [
+      7,
+      18,
+      19,
+      20,
+      22,
+      23,
+      24
+    ],
+    "num_elements_below_f": 3,
+    "wilf_defect": 3,
+    "wilf_ratio": 0.8571428571428571,
+    "is_symmetric": false
+  },
+  {
+    "genus": 11,
+    "frobenius": 17,
+    "conductor": 18,
+    "multiplicity": 6,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      6,
+      7,
+      16
+    ],
+    "num_elements_below_f": 7,
+    "wilf_defect": 3,
+    "wilf_ratio": 0.8571428571428571,
+    "is_symmetric": false
+  },
+  {
+    "genus": 11,
+    "frobenius": 17,
+    "conductor": 18,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      16,
+      20
+    ],
+    "num_elements_below_f": 7,
+    "wilf_defect": 3,
+    "wilf_ratio": 0.8571428571428571,
+    "is_symmetric": false
+  },
+  {
+    "genus": 11,
+    "frobenius": 17,
+    "conductor": 18,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      16,
+      20
+    ],
+    "num_elements_below_f": 7,
+    "wilf_defect": 3,
+    "wilf_ratio": 0.8571428571428571,
+    "is_symmetric": false
+  },
+  {
+    "genus": 11,
+    "frobenius": 17,
+    "conductor": 18,
+    "multiplicity": 6,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      6,
+      7,
+      16
+    ],
+    "num_elements_below_f": 7,
+    "wilf_defect": 3,
+    "wilf_ratio": 0.8571428571428571,
+    "is_symmetric": false
+  },
+  {
+    "genus": 22,
+    "frobenius": 35,
+    "conductor": 36,
+    "multiplicity": 6,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      6,
+      13,
+      28
+    ],
+    "num_elements_below_f": 14,
+    "wilf_defect": 6,
+    "wilf_ratio": 0.8571428571428571,
+    "is_symmetric": false
+  },
+  {
+    "genus": 17,
+    "frobenius": 23,
+    "conductor": 24,
+    "multiplicity": 9,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      9,
+      13,
+      15,
+      16
+    ],
+    "num_elements_below_f": 7,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8571428571428571,
+    "is_symmetric": false
+  },
+  {
+    "genus": 14,
+    "frobenius": 22,
+    "conductor": 23,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      13,
+      14
+    ],
+    "num_elements_below_f": 9,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8518518518518519,
+    "is_symmetric": false
+  },
+  {
+    "genus": 14,
+    "frobenius": 22,
+    "conductor": 23,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      9,
+      26
+    ],
+    "num_elements_below_f": 9,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8518518518518519,
+    "is_symmetric": false
+  },
+  {
+    "genus": 14,
+    "frobenius": 22,
+    "conductor": 23,
+    "multiplicity": 4,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      4,
+      13,
+      23
+    ],
+    "num_elements_below_f": 9,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8518518518518519,
+    "is_symmetric": false
+  },
+  {
+    "genus": 14,
+    "frobenius": 22,
+    "conductor": 23,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      20,
+      25
+    ],
+    "num_elements_below_f": 9,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8518518518518519,
+    "is_symmetric": false
+  },
+  {
+    "genus": 14,
+    "frobenius": 22,
+    "conductor": 23,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      20,
+      25
+    ],
+    "num_elements_below_f": 9,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8518518518518519,
+    "is_symmetric": false
+  },
+  {
+    "genus": 14,
+    "frobenius": 22,
+    "conductor": 23,
+    "multiplicity": 4,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      4,
+      13,
+      23
+    ],
+    "num_elements_below_f": 9,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8518518518518519,
+    "is_symmetric": false
+  },
+  {
+    "genus": 14,
+    "frobenius": 22,
+    "conductor": 23,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      9,
+      26
+    ],
+    "num_elements_below_f": 9,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8518518518518519,
+    "is_symmetric": false
+  },
+  {
+    "genus": 14,
+    "frobenius": 22,
+    "conductor": 23,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      13,
+      14
+    ],
+    "num_elements_below_f": 9,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8518518518518519,
+    "is_symmetric": false
+  },
+  {
+    "genus": 15,
+    "frobenius": 16,
+    "conductor": 17,
+    "multiplicity": 10,
+    "embedding_dimension": 10,
+    "minimal_generators": [
+      10,
+      17,
+      18,
+      19,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26
+    ],
+    "num_elements_below_f": 2,
+    "wilf_defect": 3,
+    "wilf_ratio": 0.85,
+    "is_symmetric": false
+  },
+  {
+    "genus": 13,
+    "frobenius": 16,
+    "conductor": 17,
+    "multiplicity": 6,
+    "embedding_dimension": 5,
+    "minimal_generators": [
+      6,
+      11,
+      19,
+      20,
+      21
+    ],
+    "num_elements_below_f": 4,
+    "wilf_defect": 3,
+    "wilf_ratio": 0.85,
+    "is_symmetric": false
+  },
+  {
+    "genus": 13,
+    "frobenius": 16,
+    "conductor": 17,
+    "multiplicity": 5,
+    "embedding_dimension": 5,
+    "minimal_generators": [
+      5,
+      17,
+      18,
+      19,
+      21
+    ],
+    "num_elements_below_f": 4,
+    "wilf_defect": 3,
+    "wilf_ratio": 0.85,
+    "is_symmetric": false
+  },
+  {
+    "genus": 24,
+    "frobenius": 33,
+    "conductor": 34,
+    "multiplicity": 9,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      9,
+      17,
+      20,
+      21
+    ],
+    "num_elements_below_f": 10,
+    "wilf_defect": 6,
+    "wilf_ratio": 0.85,
+    "is_symmetric": false
+  },
+  {
+    "genus": 17,
+    "frobenius": 27,
+    "conductor": 28,
+    "multiplicity": 6,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      6,
+      11,
+      20
+    ],
+    "num_elements_below_f": 11,
+    "wilf_defect": 5,
+    "wilf_ratio": 0.8484848484848485,
+    "is_symmetric": false
+  },
+  {
+    "genus": 17,
+    "frobenius": 27,
+    "conductor": 28,
+    "multiplicity": 7,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      7,
+      8,
+      26
+    ],
+    "num_elements_below_f": 11,
+    "wilf_defect": 5,
+    "wilf_ratio": 0.8484848484848485,
+    "is_symmetric": false
+  },
+  {
+    "genus": 20,
+    "frobenius": 32,
+    "conductor": 33,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      18,
+      19
+    ],
+    "num_elements_below_f": 13,
+    "wilf_defect": 6,
+    "wilf_ratio": 0.8461538461538461,
+    "is_symmetric": false
+  },
+  {
+    "genus": 23,
+    "frobenius": 37,
+    "conductor": 38,
+    "multiplicity": 8,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      8,
+      11,
+      23
+    ],
+    "num_elements_below_f": 15,
+    "wilf_defect": 7,
+    "wilf_ratio": 0.8444444444444444,
+    "is_symmetric": false
+  },
+  {
+    "genus": 19,
+    "frobenius": 26,
+    "conductor": 27,
+    "multiplicity": 10,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      10,
+      11,
+      17,
+      18
+    ],
+    "num_elements_below_f": 8,
+    "wilf_defect": 5,
+    "wilf_ratio": 0.84375,
+    "is_symmetric": false
+  },
+  {
+    "genus": 26,
+    "frobenius": 42,
+    "conductor": 43,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      23,
+      24
+    ],
+    "num_elements_below_f": 17,
+    "wilf_defect": 8,
+    "wilf_ratio": 0.8431372549019608,
+    "is_symmetric": false
+  },
+  {
+    "genus": 16,
+    "frobenius": 20,
+    "conductor": 21,
+    "multiplicity": 8,
+    "embedding_dimension": 5,
+    "minimal_generators": [
+      8,
+      13,
+      14,
+      23,
+      25
+    ],
+    "num_elements_below_f": 5,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.84,
+    "is_symmetric": false
+  },
+  {
+    "genus": 13,
+    "frobenius": 14,
+    "conductor": 15,
+    "multiplicity": 9,
+    "embedding_dimension": 9,
+    "minimal_generators": [
+      9,
+      15,
+      16,
+      17,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "num_elements_below_f": 2,
+    "wilf_defect": 3,
+    "wilf_ratio": 0.8333333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 14,
+    "frobenius": 19,
+    "conductor": 20,
+    "multiplicity": 9,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      9,
+      11,
+      12,
+      14
+    ],
+    "num_elements_below_f": 6,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8333333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 16,
+    "frobenius": 19,
+    "conductor": 20,
+    "multiplicity": 7,
+    "embedding_dimension": 6,
+    "minimal_generators": [
+      7,
+      13,
+      22,
+      23,
+      24,
+      25
+    ],
+    "num_elements_below_f": 4,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8333333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 14,
+    "frobenius": 19,
+    "conductor": 20,
+    "multiplicity": 7,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      7,
+      11,
+      13,
+      23
+    ],
+    "num_elements_below_f": 6,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8333333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 8,
+    "frobenius": 9,
+    "conductor": 10,
+    "multiplicity": 6,
+    "embedding_dimension": 6,
+    "minimal_generators": [
+      6,
+      10,
+      11,
+      13,
+      14,
+      15
+    ],
+    "num_elements_below_f": 2,
+    "wilf_defect": 2,
+    "wilf_ratio": 0.8333333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 12,
+    "frobenius": 14,
+    "conductor": 15,
+    "multiplicity": 6,
+    "embedding_dimension": 6,
+    "minimal_generators": [
+      6,
+      15,
+      16,
+      17,
+      19,
+      20
+    ],
+    "num_elements_below_f": 3,
+    "wilf_defect": 3,
+    "wilf_ratio": 0.8333333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 16,
+    "frobenius": 19,
+    "conductor": 20,
+    "multiplicity": 6,
+    "embedding_dimension": 6,
+    "minimal_generators": [
+      6,
+      20,
+      21,
+      22,
+      23,
+      25
+    ],
+    "num_elements_below_f": 4,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8333333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 14,
+    "frobenius": 19,
+    "conductor": 20,
+    "multiplicity": 5,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      5,
+      12,
+      21,
+      23
+    ],
+    "num_elements_below_f": 6,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8333333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 14,
+    "frobenius": 19,
+    "conductor": 20,
+    "multiplicity": 5,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      5,
+      11,
+      23,
+      24
+    ],
+    "num_elements_below_f": 6,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8333333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 12,
+    "frobenius": 19,
+    "conductor": 20,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      11,
+      13
+    ],
+    "num_elements_below_f": 8,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8333333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 12,
+    "frobenius": 19,
+    "conductor": 20,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      11,
+      12
+    ],
+    "num_elements_below_f": 8,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8333333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 12,
+    "frobenius": 19,
+    "conductor": 20,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      8,
+      22
+    ],
+    "num_elements_below_f": 8,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8333333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 7,
+    "frobenius": 9,
+    "conductor": 10,
+    "multiplicity": 5,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      5,
+      7,
+      11,
+      13
+    ],
+    "num_elements_below_f": 3,
+    "wilf_defect": 2,
+    "wilf_ratio": 0.8333333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 7,
+    "frobenius": 9,
+    "conductor": 10,
+    "multiplicity": 5,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      5,
+      6,
+      13,
+      14
+    ],
+    "num_elements_below_f": 3,
+    "wilf_defect": 2,
+    "wilf_ratio": 0.8333333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 9,
+    "frobenius": 14,
+    "conductor": 15,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      6,
+      19
+    ],
+    "num_elements_below_f": 6,
+    "wilf_defect": 3,
+    "wilf_ratio": 0.8333333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 6,
+    "frobenius": 9,
+    "conductor": 10,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      6,
+      8
+    ],
+    "num_elements_below_f": 4,
+    "wilf_defect": 2,
+    "wilf_ratio": 0.8333333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 6,
+    "frobenius": 9,
+    "conductor": 10,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      6,
+      7
+    ],
+    "num_elements_below_f": 4,
+    "wilf_defect": 2,
+    "wilf_ratio": 0.8333333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 7,
+    "frobenius": 9,
+    "conductor": 10,
+    "multiplicity": 4,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      4,
+      10,
+      11,
+      13
+    ],
+    "num_elements_below_f": 3,
+    "wilf_defect": 2,
+    "wilf_ratio": 0.8333333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 14,
+    "frobenius": 19,
+    "conductor": 20,
+    "multiplicity": 4,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      4,
+      18,
+      21,
+      23
+    ],
+    "num_elements_below_f": 6,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8333333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 14,
+    "frobenius": 19,
+    "conductor": 20,
+    "multiplicity": 4,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      4,
+      17,
+      22,
+      23
+    ],
+    "num_elements_below_f": 6,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8333333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 9,
+    "frobenius": 14,
+    "conductor": 15,
+    "multiplicity": 4,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      4,
+      9,
+      15
+    ],
+    "num_elements_below_f": 6,
+    "wilf_defect": 3,
+    "wilf_ratio": 0.8333333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 3,
+    "frobenius": 4,
+    "conductor": 5,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      5,
+      7
+    ],
+    "num_elements_below_f": 2,
+    "wilf_defect": 1,
+    "wilf_ratio": 0.8333333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 12,
+    "frobenius": 19,
+    "conductor": 20,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      17,
+      22
+    ],
+    "num_elements_below_f": 8,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8333333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 9,
+    "frobenius": 14,
+    "conductor": 15,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      13,
+      17
+    ],
+    "num_elements_below_f": 6,
+    "wilf_defect": 3,
+    "wilf_ratio": 0.8333333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 3,
+    "frobenius": 4,
+    "conductor": 5,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      5,
+      7
+    ],
+    "num_elements_below_f": 2,
+    "wilf_defect": 1,
+    "wilf_ratio": 0.8333333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 9,
+    "frobenius": 14,
+    "conductor": 15,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      13,
+      17
+    ],
+    "num_elements_below_f": 6,
+    "wilf_defect": 3,
+    "wilf_ratio": 0.8333333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 12,
+    "frobenius": 19,
+    "conductor": 20,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      17,
+      22
+    ],
+    "num_elements_below_f": 8,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8333333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 9,
+    "frobenius": 14,
+    "conductor": 15,
+    "multiplicity": 4,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      4,
+      9,
+      15
+    ],
+    "num_elements_below_f": 6,
+    "wilf_defect": 3,
+    "wilf_ratio": 0.8333333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 6,
+    "frobenius": 9,
+    "conductor": 10,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      6,
+      7
+    ],
+    "num_elements_below_f": 4,
+    "wilf_defect": 2,
+    "wilf_ratio": 0.8333333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 6,
+    "frobenius": 9,
+    "conductor": 10,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      6,
+      8
+    ],
+    "num_elements_below_f": 4,
+    "wilf_defect": 2,
+    "wilf_ratio": 0.8333333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 9,
+    "frobenius": 14,
+    "conductor": 15,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      6,
+      19
+    ],
+    "num_elements_below_f": 6,
+    "wilf_defect": 3,
+    "wilf_ratio": 0.8333333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 12,
+    "frobenius": 19,
+    "conductor": 20,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      8,
+      22
+    ],
+    "num_elements_below_f": 8,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8333333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 12,
+    "frobenius": 19,
+    "conductor": 20,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      11,
+      12
+    ],
+    "num_elements_below_f": 8,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8333333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 12,
+    "frobenius": 19,
+    "conductor": 20,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      11,
+      13
+    ],
+    "num_elements_below_f": 8,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8333333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 18,
+    "frobenius": 29,
+    "conductor": 30,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      16,
+      17
+    ],
+    "num_elements_below_f": 12,
+    "wilf_defect": 6,
+    "wilf_ratio": 0.8333333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 18,
+    "frobenius": 29,
+    "conductor": 30,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      16,
+      18
+    ],
+    "num_elements_below_f": 12,
+    "wilf_defect": 6,
+    "wilf_ratio": 0.8333333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 24,
+    "frobenius": 39,
+    "conductor": 40,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      21,
+      22
+    ],
+    "num_elements_below_f": 16,
+    "wilf_defect": 8,
+    "wilf_ratio": 0.8333333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 24,
+    "frobenius": 39,
+    "conductor": 40,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      21,
+      23
+    ],
+    "num_elements_below_f": 16,
+    "wilf_defect": 8,
+    "wilf_ratio": 0.8333333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 18,
+    "frobenius": 29,
+    "conductor": 30,
+    "multiplicity": 7,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      7,
+      9,
+      24
+    ],
+    "num_elements_below_f": 12,
+    "wilf_defect": 6,
+    "wilf_ratio": 0.8333333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 27,
+    "frobenius": 44,
+    "conductor": 45,
+    "multiplicity": 8,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      8,
+      13,
+      25
+    ],
+    "num_elements_below_f": 18,
+    "wilf_defect": 9,
+    "wilf_ratio": 0.8333333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 7,
+    "frobenius": 9,
+    "conductor": 10,
+    "multiplicity": 4,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      4,
+      10,
+      11,
+      13
+    ],
+    "num_elements_below_f": 3,
+    "wilf_defect": 2,
+    "wilf_ratio": 0.8333333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 14,
+    "frobenius": 19,
+    "conductor": 20,
+    "multiplicity": 4,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      4,
+      17,
+      22,
+      23
+    ],
+    "num_elements_below_f": 6,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8333333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 14,
+    "frobenius": 19,
+    "conductor": 20,
+    "multiplicity": 4,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      4,
+      18,
+      21,
+      23
+    ],
+    "num_elements_below_f": 6,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8333333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 7,
+    "frobenius": 9,
+    "conductor": 10,
+    "multiplicity": 5,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      5,
+      6,
+      13,
+      14
+    ],
+    "num_elements_below_f": 3,
+    "wilf_defect": 2,
+    "wilf_ratio": 0.8333333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 7,
+    "frobenius": 9,
+    "conductor": 10,
+    "multiplicity": 5,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      5,
+      7,
+      11,
+      13
+    ],
+    "num_elements_below_f": 3,
+    "wilf_defect": 2,
+    "wilf_ratio": 0.8333333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 14,
+    "frobenius": 19,
+    "conductor": 20,
+    "multiplicity": 5,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      5,
+      12,
+      21,
+      23
+    ],
+    "num_elements_below_f": 6,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8333333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 14,
+    "frobenius": 19,
+    "conductor": 20,
+    "multiplicity": 7,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      7,
+      11,
+      13,
+      23
+    ],
+    "num_elements_below_f": 6,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8333333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 14,
+    "frobenius": 19,
+    "conductor": 20,
+    "multiplicity": 9,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      9,
+      11,
+      12,
+      14
+    ],
+    "num_elements_below_f": 6,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8333333333333334,
+    "is_symmetric": false
+  },
+  {
+    "genus": 28,
+    "frobenius": 46,
+    "conductor": 47,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      24,
+      27
+    ],
+    "num_elements_below_f": 19,
+    "wilf_defect": 10,
+    "wilf_ratio": 0.8245614035087719,
+    "is_symmetric": false
+  },
+  {
+    "genus": 28,
+    "frobenius": 46,
+    "conductor": 47,
+    "multiplicity": 9,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      9,
+      11,
+      30
+    ],
+    "num_elements_below_f": 19,
+    "wilf_defect": 10,
+    "wilf_ratio": 0.8245614035087719,
+    "is_symmetric": false
+  },
+  {
+    "genus": 25,
+    "frobenius": 41,
+    "conductor": 42,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      22,
+      23
+    ],
+    "num_elements_below_f": 17,
+    "wilf_defect": 9,
+    "wilf_ratio": 0.8235294117647058,
+    "is_symmetric": false
+  },
+  {
+    "genus": 22,
+    "frobenius": 36,
+    "conductor": 37,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      19,
+      22
+    ],
+    "num_elements_below_f": 15,
+    "wilf_defect": 8,
+    "wilf_ratio": 0.8222222222222222,
+    "is_symmetric": false
+  },
+  {
+    "genus": 16,
+    "frobenius": 22,
+    "conductor": 23,
+    "multiplicity": 5,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      5,
+      13,
+      24,
+      27
+    ],
+    "num_elements_below_f": 7,
+    "wilf_defect": 5,
+    "wilf_ratio": 0.8214285714285714,
+    "is_symmetric": false
+  },
+  {
+    "genus": 16,
+    "frobenius": 22,
+    "conductor": 23,
+    "multiplicity": 4,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      4,
+      21,
+      23,
+      26
+    ],
+    "num_elements_below_f": 7,
+    "wilf_defect": 5,
+    "wilf_ratio": 0.8214285714285714,
+    "is_symmetric": false
+  },
+  {
+    "genus": 16,
+    "frobenius": 22,
+    "conductor": 23,
+    "multiplicity": 4,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      4,
+      19,
+      25,
+      26
+    ],
+    "num_elements_below_f": 7,
+    "wilf_defect": 5,
+    "wilf_ratio": 0.8214285714285714,
+    "is_symmetric": false
+  },
+  {
+    "genus": 19,
+    "frobenius": 31,
+    "conductor": 32,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      17,
+      18
+    ],
+    "num_elements_below_f": 13,
+    "wilf_defect": 7,
+    "wilf_ratio": 0.8205128205128205,
+    "is_symmetric": false
+  },
+  {
+    "genus": 19,
+    "frobenius": 31,
+    "conductor": 32,
+    "multiplicity": 6,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      6,
+      11,
+      26
+    ],
+    "num_elements_below_f": 13,
+    "wilf_defect": 7,
+    "wilf_ratio": 0.8205128205128205,
+    "is_symmetric": false
+  },
+  {
+    "genus": 19,
+    "frobenius": 31,
+    "conductor": 32,
+    "multiplicity": 8,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      8,
+      9,
+      21
+    ],
+    "num_elements_below_f": 13,
+    "wilf_defect": 7,
+    "wilf_ratio": 0.8205128205128205,
+    "is_symmetric": false
+  },
+  {
+    "genus": 16,
+    "frobenius": 17,
+    "conductor": 18,
+    "multiplicity": 11,
+    "embedding_dimension": 11,
+    "minimal_generators": [
+      11,
+      18,
+      19,
+      20,
+      21,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28
+    ],
+    "num_elements_below_f": 2,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8181818181818182,
+    "is_symmetric": false
+  },
+  {
+    "genus": 16,
+    "frobenius": 26,
+    "conductor": 27,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      14,
+      17
+    ],
+    "num_elements_below_f": 11,
+    "wilf_defect": 6,
+    "wilf_ratio": 0.8181818181818182,
+    "is_symmetric": false
+  },
+  {
+    "genus": 16,
+    "frobenius": 26,
+    "conductor": 27,
+    "multiplicity": 4,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      4,
+      15,
+      25
+    ],
+    "num_elements_below_f": 11,
+    "wilf_defect": 6,
+    "wilf_ratio": 0.8181818181818182,
+    "is_symmetric": false
+  },
+  {
+    "genus": 16,
+    "frobenius": 26,
+    "conductor": 27,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      22,
+      29
+    ],
+    "num_elements_below_f": 11,
+    "wilf_defect": 6,
+    "wilf_ratio": 0.8181818181818182,
+    "is_symmetric": false
+  },
+  {
+    "genus": 16,
+    "frobenius": 26,
+    "conductor": 27,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      22,
+      29
+    ],
+    "num_elements_below_f": 11,
+    "wilf_defect": 6,
+    "wilf_ratio": 0.8181818181818182,
+    "is_symmetric": false
+  },
+  {
+    "genus": 16,
+    "frobenius": 26,
+    "conductor": 27,
+    "multiplicity": 4,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      4,
+      15,
+      25
+    ],
+    "num_elements_below_f": 11,
+    "wilf_defect": 6,
+    "wilf_ratio": 0.8181818181818182,
+    "is_symmetric": false
+  },
+  {
+    "genus": 16,
+    "frobenius": 26,
+    "conductor": 27,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      14,
+      17
+    ],
+    "num_elements_below_f": 11,
+    "wilf_defect": 6,
+    "wilf_ratio": 0.8181818181818182,
+    "is_symmetric": false
+  },
+  {
+    "genus": 13,
+    "frobenius": 21,
+    "conductor": 22,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      12,
+      13
+    ],
+    "num_elements_below_f": 9,
+    "wilf_defect": 5,
+    "wilf_ratio": 0.8148148148148148,
+    "is_symmetric": false
+  },
+  {
+    "genus": 13,
+    "frobenius": 21,
+    "conductor": 22,
+    "multiplicity": 4,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      4,
+      11,
+      25
+    ],
+    "num_elements_below_f": 9,
+    "wilf_defect": 5,
+    "wilf_ratio": 0.8148148148148148,
+    "is_symmetric": false
+  },
+  {
+    "genus": 13,
+    "frobenius": 21,
+    "conductor": 22,
+    "multiplicity": 4,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      4,
+      11,
+      25
+    ],
+    "num_elements_below_f": 9,
+    "wilf_defect": 5,
+    "wilf_ratio": 0.8148148148148148,
+    "is_symmetric": false
+  },
+  {
+    "genus": 13,
+    "frobenius": 21,
+    "conductor": 22,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      12,
+      13
+    ],
+    "num_elements_below_f": 9,
+    "wilf_defect": 5,
+    "wilf_ratio": 0.8148148148148148,
+    "is_symmetric": false
+  },
+  {
+    "genus": 26,
+    "frobenius": 43,
+    "conductor": 44,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      22,
+      24
+    ],
+    "num_elements_below_f": 18,
+    "wilf_defect": 10,
+    "wilf_ratio": 0.8148148148148148,
+    "is_symmetric": false
+  },
+  {
+    "genus": 26,
+    "frobenius": 43,
+    "conductor": 44,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      22,
+      26
+    ],
+    "num_elements_below_f": 18,
+    "wilf_defect": 10,
+    "wilf_ratio": 0.8148148148148148,
+    "is_symmetric": false
+  },
+  {
+    "genus": 26,
+    "frobenius": 43,
+    "conductor": 44,
+    "multiplicity": 9,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      9,
+      13,
+      19
+    ],
+    "num_elements_below_f": 18,
+    "wilf_defect": 10,
+    "wilf_ratio": 0.8148148148148148,
+    "is_symmetric": false
+  },
+  {
+    "genus": 11,
+    "frobenius": 12,
+    "conductor": 13,
+    "multiplicity": 8,
+    "embedding_dimension": 8,
+    "minimal_generators": [
+      8,
+      13,
+      14,
+      15,
+      17,
+      18,
+      19,
+      20
+    ],
+    "num_elements_below_f": 2,
+    "wilf_defect": 3,
+    "wilf_ratio": 0.8125,
+    "is_symmetric": false
+  },
+  {
+    "genus": 9,
+    "frobenius": 12,
+    "conductor": 13,
+    "multiplicity": 5,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      5,
+      8,
+      14,
+      17
+    ],
+    "num_elements_below_f": 4,
+    "wilf_defect": 3,
+    "wilf_ratio": 0.8125,
+    "is_symmetric": false
+  },
+  {
+    "genus": 9,
+    "frobenius": 12,
+    "conductor": 13,
+    "multiplicity": 5,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      5,
+      8,
+      14,
+      17
+    ],
+    "num_elements_below_f": 4,
+    "wilf_defect": 3,
+    "wilf_ratio": 0.8125,
+    "is_symmetric": false
+  },
+  {
+    "genus": 18,
+    "frobenius": 25,
+    "conductor": 26,
+    "multiplicity": 9,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      9,
+      11,
+      17,
+      21
+    ],
+    "num_elements_below_f": 8,
+    "wilf_defect": 6,
+    "wilf_ratio": 0.8125,
+    "is_symmetric": false
+  },
+  {
+    "genus": 18,
+    "frobenius": 25,
+    "conductor": 26,
+    "multiplicity": 9,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      9,
+      14,
+      15,
+      17
+    ],
+    "num_elements_below_f": 8,
+    "wilf_defect": 6,
+    "wilf_ratio": 0.8125,
+    "is_symmetric": false
+  },
+  {
+    "genus": 14,
+    "frobenius": 16,
+    "conductor": 17,
+    "multiplicity": 7,
+    "embedding_dimension": 7,
+    "minimal_generators": [
+      7,
+      17,
+      18,
+      19,
+      20,
+      22,
+      23
+    ],
+    "num_elements_below_f": 3,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8095238095238095,
+    "is_symmetric": false
+  },
+  {
+    "genus": 10,
+    "frobenius": 16,
+    "conductor": 17,
+    "multiplicity": 6,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      6,
+      7,
+      11
+    ],
+    "num_elements_below_f": 7,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8095238095238095,
+    "is_symmetric": false
+  },
+  {
+    "genus": 10,
+    "frobenius": 16,
+    "conductor": 17,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      9,
+      12
+    ],
+    "num_elements_below_f": 7,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8095238095238095,
+    "is_symmetric": false
+  },
+  {
+    "genus": 10,
+    "frobenius": 16,
+    "conductor": 17,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      7,
+      18
+    ],
+    "num_elements_below_f": 7,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8095238095238095,
+    "is_symmetric": false
+  },
+  {
+    "genus": 10,
+    "frobenius": 16,
+    "conductor": 17,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      14,
+      19
+    ],
+    "num_elements_below_f": 7,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8095238095238095,
+    "is_symmetric": false
+  },
+  {
+    "genus": 10,
+    "frobenius": 16,
+    "conductor": 17,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      14,
+      19
+    ],
+    "num_elements_below_f": 7,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8095238095238095,
+    "is_symmetric": false
+  },
+  {
+    "genus": 10,
+    "frobenius": 16,
+    "conductor": 17,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      7,
+      18
+    ],
+    "num_elements_below_f": 7,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8095238095238095,
+    "is_symmetric": false
+  },
+  {
+    "genus": 10,
+    "frobenius": 16,
+    "conductor": 17,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      9,
+      12
+    ],
+    "num_elements_below_f": 7,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8095238095238095,
+    "is_symmetric": false
+  },
+  {
+    "genus": 20,
+    "frobenius": 33,
+    "conductor": 34,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      17,
+      19
+    ],
+    "num_elements_below_f": 14,
+    "wilf_defect": 8,
+    "wilf_ratio": 0.8095238095238095,
+    "is_symmetric": false
+  },
+  {
+    "genus": 20,
+    "frobenius": 33,
+    "conductor": 34,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      17,
+      21
+    ],
+    "num_elements_below_f": 14,
+    "wilf_defect": 8,
+    "wilf_ratio": 0.8095238095238095,
+    "is_symmetric": false
+  },
+  {
+    "genus": 10,
+    "frobenius": 16,
+    "conductor": 17,
+    "multiplicity": 6,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      6,
+      7,
+      11
+    ],
+    "num_elements_below_f": 7,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8095238095238095,
+    "is_symmetric": false
+  },
+  {
+    "genus": 20,
+    "frobenius": 33,
+    "conductor": 34,
+    "multiplicity": 6,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      6,
+      13,
+      22
+    ],
+    "num_elements_below_f": 14,
+    "wilf_defect": 8,
+    "wilf_ratio": 0.8095238095238095,
+    "is_symmetric": false
+  },
+  {
+    "genus": 20,
+    "frobenius": 33,
+    "conductor": 34,
+    "multiplicity": 8,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      8,
+      13,
+      14
+    ],
+    "num_elements_below_f": 14,
+    "wilf_defect": 8,
+    "wilf_ratio": 0.8095238095238095,
+    "is_symmetric": false
+  },
+  {
+    "genus": 20,
+    "frobenius": 33,
+    "conductor": 34,
+    "multiplicity": 9,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      9,
+      10,
+      16
+    ],
+    "num_elements_below_f": 14,
+    "wilf_defect": 8,
+    "wilf_ratio": 0.8095238095238095,
+    "is_symmetric": false
+  },
+  {
+    "genus": 27,
+    "frobenius": 45,
+    "conductor": 46,
+    "multiplicity": 6,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      6,
+      17,
+      25
+    ],
+    "num_elements_below_f": 19,
+    "wilf_defect": 11,
+    "wilf_ratio": 0.8070175438596491,
+    "is_symmetric": false
+  },
+  {
+    "genus": 17,
+    "frobenius": 28,
+    "conductor": 29,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      11,
+      29
+    ],
+    "num_elements_below_f": 12,
+    "wilf_defect": 7,
+    "wilf_ratio": 0.8055555555555556,
+    "is_symmetric": false
+  },
+  {
+    "genus": 34,
+    "frobenius": 57,
+    "conductor": 58,
+    "multiplicity": 8,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      8,
+      21,
+      22
+    ],
+    "num_elements_below_f": 24,
+    "wilf_defect": 14,
+    "wilf_ratio": 0.8055555555555556,
+    "is_symmetric": false
+  },
+  {
+    "genus": 34,
+    "frobenius": 57,
+    "conductor": 58,
+    "multiplicity": 10,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      10,
+      13,
+      28
+    ],
+    "num_elements_below_f": 24,
+    "wilf_defect": 14,
+    "wilf_ratio": 0.8055555555555556,
+    "is_symmetric": false
+  },
+  {
+    "genus": 31,
+    "frobenius": 44,
+    "conductor": 45,
+    "multiplicity": 15,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      15,
+      16,
+      19,
+      20
+    ],
+    "num_elements_below_f": 14,
+    "wilf_defect": 11,
+    "wilf_ratio": 0.8035714285714286,
+    "is_symmetric": false
+  },
+  {
+    "genus": 31,
+    "frobenius": 44,
+    "conductor": 45,
+    "multiplicity": 15,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      15,
+      17,
+      18,
+      23
+    ],
+    "num_elements_below_f": 14,
+    "wilf_defect": 11,
+    "wilf_ratio": 0.8035714285714286,
+    "is_symmetric": false
+  },
+  {
+    "genus": 31,
+    "frobenius": 52,
+    "conductor": 53,
+    "multiplicity": 6,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      6,
+      19,
+      29
+    ],
+    "num_elements_below_f": 22,
+    "wilf_defect": 13,
+    "wilf_ratio": 0.803030303030303,
+    "is_symmetric": false
+  },
+  {
+    "genus": 31,
+    "frobenius": 52,
+    "conductor": 53,
+    "multiplicity": 8,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      8,
+      15,
+      27
+    ],
+    "num_elements_below_f": 22,
+    "wilf_defect": 13,
+    "wilf_ratio": 0.803030303030303,
+    "is_symmetric": false
+  },
+  {
+    "genus": 14,
+    "frobenius": 15,
+    "conductor": 16,
+    "multiplicity": 10,
+    "embedding_dimension": 10,
+    "minimal_generators": [
+      10,
+      16,
+      17,
+      18,
+      19,
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "num_elements_below_f": 2,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 15,
+    "frobenius": 19,
+    "conductor": 20,
+    "multiplicity": 10,
+    "embedding_dimension": 5,
+    "minimal_generators": [
+      10,
+      11,
+      13,
+      14,
+      29
+    ],
+    "num_elements_below_f": 5,
+    "wilf_defect": 5,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 12,
+    "frobenius": 15,
+    "conductor": 16,
+    "multiplicity": 8,
+    "embedding_dimension": 5,
+    "minimal_generators": [
+      8,
+      10,
+      11,
+      17,
+      23
+    ],
+    "num_elements_below_f": 4,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 12,
+    "frobenius": 15,
+    "conductor": 16,
+    "multiplicity": 8,
+    "embedding_dimension": 5,
+    "minimal_generators": [
+      8,
+      9,
+      11,
+      21,
+      23
+    ],
+    "num_elements_below_f": 4,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 14,
+    "frobenius": 23,
+    "conductor": 24,
+    "multiplicity": 8,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      8,
+      9,
+      11
+    ],
+    "num_elements_below_f": 10,
+    "wilf_defect": 6,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 11,
+    "frobenius": 15,
+    "conductor": 16,
+    "multiplicity": 8,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      8,
+      9,
+      11,
+      12
+    ],
+    "num_elements_below_f": 5,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 11,
+    "frobenius": 15,
+    "conductor": 16,
+    "multiplicity": 8,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      8,
+      9,
+      10,
+      13
+    ],
+    "num_elements_below_f": 5,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 11,
+    "frobenius": 15,
+    "conductor": 16,
+    "multiplicity": 7,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      7,
+      9,
+      10,
+      22
+    ],
+    "num_elements_below_f": 5,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 12,
+    "frobenius": 15,
+    "conductor": 16,
+    "multiplicity": 6,
+    "embedding_dimension": 5,
+    "minimal_generators": [
+      6,
+      10,
+      17,
+      19,
+      21
+    ],
+    "num_elements_below_f": 4,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 11,
+    "frobenius": 15,
+    "conductor": 16,
+    "multiplicity": 6,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      6,
+      10,
+      11,
+      19
+    ],
+    "num_elements_below_f": 5,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 9,
+    "frobenius": 11,
+    "conductor": 12,
+    "multiplicity": 6,
+    "embedding_dimension": 5,
+    "minimal_generators": [
+      6,
+      8,
+      13,
+      15,
+      17
+    ],
+    "num_elements_below_f": 3,
+    "wilf_defect": 3,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 9,
+    "frobenius": 11,
+    "conductor": 12,
+    "multiplicity": 6,
+    "embedding_dimension": 5,
+    "minimal_generators": [
+      6,
+      7,
+      15,
+      16,
+      17
+    ],
+    "num_elements_below_f": 3,
+    "wilf_defect": 3,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 14,
+    "frobenius": 23,
+    "conductor": 24,
+    "multiplicity": 6,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      6,
+      7,
+      29
+    ],
+    "num_elements_below_f": 10,
+    "wilf_defect": 6,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 6,
+    "frobenius": 7,
+    "conductor": 8,
+    "multiplicity": 5,
+    "embedding_dimension": 5,
+    "minimal_generators": [
+      5,
+      8,
+      9,
+      11,
+      12
+    ],
+    "num_elements_below_f": 2,
+    "wilf_defect": 2,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 9,
+    "frobenius": 11,
+    "conductor": 12,
+    "multiplicity": 5,
+    "embedding_dimension": 5,
+    "minimal_generators": [
+      5,
+      12,
+      13,
+      14,
+      16
+    ],
+    "num_elements_below_f": 3,
+    "wilf_defect": 3,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 15,
+    "frobenius": 19,
+    "conductor": 20,
+    "multiplicity": 5,
+    "embedding_dimension": 5,
+    "minimal_generators": [
+      5,
+      18,
+      21,
+      22,
+      24
+    ],
+    "num_elements_below_f": 5,
+    "wilf_defect": 5,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 15,
+    "frobenius": 19,
+    "conductor": 20,
+    "multiplicity": 5,
+    "embedding_dimension": 5,
+    "minimal_generators": [
+      5,
+      17,
+      21,
+      23,
+      24
+    ],
+    "num_elements_below_f": 5,
+    "wilf_defect": 5,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 15,
+    "frobenius": 19,
+    "conductor": 20,
+    "multiplicity": 5,
+    "embedding_dimension": 5,
+    "minimal_generators": [
+      5,
+      16,
+      22,
+      23,
+      24
+    ],
+    "num_elements_below_f": 5,
+    "wilf_defect": 5,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 14,
+    "frobenius": 23,
+    "conductor": 24,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      12,
+      16
+    ],
+    "num_elements_below_f": 10,
+    "wilf_defect": 6,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 14,
+    "frobenius": 23,
+    "conductor": 24,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      12,
+      14
+    ],
+    "num_elements_below_f": 10,
+    "wilf_defect": 6,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 7,
+    "frobenius": 11,
+    "conductor": 12,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      7,
+      8
+    ],
+    "num_elements_below_f": 5,
+    "wilf_defect": 3,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 11,
+    "frobenius": 15,
+    "conductor": 16,
+    "multiplicity": 4,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      4,
+      14,
+      17,
+      19
+    ],
+    "num_elements_below_f": 5,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 11,
+    "frobenius": 15,
+    "conductor": 16,
+    "multiplicity": 4,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      4,
+      13,
+      18,
+      19
+    ],
+    "num_elements_below_f": 5,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 14,
+    "frobenius": 23,
+    "conductor": 24,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      19,
+      26
+    ],
+    "num_elements_below_f": 10,
+    "wilf_defect": 6,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 7,
+    "frobenius": 11,
+    "conductor": 12,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      10,
+      14
+    ],
+    "num_elements_below_f": 5,
+    "wilf_defect": 3,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 7,
+    "frobenius": 11,
+    "conductor": 12,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      10,
+      14
+    ],
+    "num_elements_below_f": 5,
+    "wilf_defect": 3,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 14,
+    "frobenius": 23,
+    "conductor": 24,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      19,
+      26
+    ],
+    "num_elements_below_f": 10,
+    "wilf_defect": 6,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 7,
+    "frobenius": 11,
+    "conductor": 12,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      7,
+      8
+    ],
+    "num_elements_below_f": 5,
+    "wilf_defect": 3,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 14,
+    "frobenius": 23,
+    "conductor": 24,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      12,
+      14
+    ],
+    "num_elements_below_f": 10,
+    "wilf_defect": 6,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 14,
+    "frobenius": 23,
+    "conductor": 24,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      12,
+      16
+    ],
+    "num_elements_below_f": 10,
+    "wilf_defect": 6,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 28,
+    "frobenius": 47,
+    "conductor": 48,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      23,
+      26
+    ],
+    "num_elements_below_f": 20,
+    "wilf_defect": 12,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 28,
+    "frobenius": 47,
+    "conductor": 48,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      23,
+      29
+    ],
+    "num_elements_below_f": 20,
+    "wilf_defect": 12,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 28,
+    "frobenius": 47,
+    "conductor": 48,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      24,
+      26
+    ],
+    "num_elements_below_f": 20,
+    "wilf_defect": 12,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 14,
+    "frobenius": 23,
+    "conductor": 24,
+    "multiplicity": 6,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      6,
+      7,
+      29
+    ],
+    "num_elements_below_f": 10,
+    "wilf_defect": 6,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 14,
+    "frobenius": 23,
+    "conductor": 24,
+    "multiplicity": 8,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      8,
+      9,
+      11
+    ],
+    "num_elements_below_f": 10,
+    "wilf_defect": 6,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 21,
+    "frobenius": 35,
+    "conductor": 36,
+    "multiplicity": 8,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      8,
+      13,
+      15
+    ],
+    "num_elements_below_f": 15,
+    "wilf_defect": 9,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 28,
+    "frobenius": 47,
+    "conductor": 48,
+    "multiplicity": 8,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      8,
+      17,
+      19
+    ],
+    "num_elements_below_f": 20,
+    "wilf_defect": 12,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 35,
+    "frobenius": 59,
+    "conductor": 60,
+    "multiplicity": 8,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      8,
+      21,
+      23
+    ],
+    "num_elements_below_f": 25,
+    "wilf_defect": 15,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 42,
+    "frobenius": 71,
+    "conductor": 72,
+    "multiplicity": 8,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      8,
+      25,
+      27
+    ],
+    "num_elements_below_f": 30,
+    "wilf_defect": 18,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 56,
+    "frobenius": 95,
+    "conductor": 96,
+    "multiplicity": 14,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      14,
+      20,
+      29
+    ],
+    "num_elements_below_f": 40,
+    "wilf_defect": 24,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 11,
+    "frobenius": 15,
+    "conductor": 16,
+    "multiplicity": 4,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      4,
+      13,
+      18,
+      19
+    ],
+    "num_elements_below_f": 5,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 11,
+    "frobenius": 15,
+    "conductor": 16,
+    "multiplicity": 4,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      4,
+      14,
+      17,
+      19
+    ],
+    "num_elements_below_f": 5,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 11,
+    "frobenius": 15,
+    "conductor": 16,
+    "multiplicity": 6,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      6,
+      10,
+      11,
+      19
+    ],
+    "num_elements_below_f": 5,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 11,
+    "frobenius": 15,
+    "conductor": 16,
+    "multiplicity": 7,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      7,
+      9,
+      10,
+      22
+    ],
+    "num_elements_below_f": 5,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 11,
+    "frobenius": 15,
+    "conductor": 16,
+    "multiplicity": 8,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      8,
+      9,
+      10,
+      13
+    ],
+    "num_elements_below_f": 5,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 11,
+    "frobenius": 15,
+    "conductor": 16,
+    "multiplicity": 8,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      8,
+      9,
+      11,
+      12
+    ],
+    "num_elements_below_f": 5,
+    "wilf_defect": 4,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 22,
+    "frobenius": 31,
+    "conductor": 32,
+    "multiplicity": 8,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      8,
+      17,
+      18,
+      21
+    ],
+    "num_elements_below_f": 10,
+    "wilf_defect": 8,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 22,
+    "frobenius": 31,
+    "conductor": 32,
+    "multiplicity": 8,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      8,
+      17,
+      19,
+      20
+    ],
+    "num_elements_below_f": 10,
+    "wilf_defect": 8,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 33,
+    "frobenius": 47,
+    "conductor": 48,
+    "multiplicity": 15,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      15,
+      18,
+      19,
+      25
+    ],
+    "num_elements_below_f": 15,
+    "wilf_defect": 12,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 6,
+    "frobenius": 7,
+    "conductor": 8,
+    "multiplicity": 5,
+    "embedding_dimension": 5,
+    "minimal_generators": [
+      5,
+      8,
+      9,
+      11,
+      12
+    ],
+    "num_elements_below_f": 2,
+    "wilf_defect": 2,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 9,
+    "frobenius": 11,
+    "conductor": 12,
+    "multiplicity": 5,
+    "embedding_dimension": 5,
+    "minimal_generators": [
+      5,
+      12,
+      13,
+      14,
+      16
+    ],
+    "num_elements_below_f": 3,
+    "wilf_defect": 3,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 9,
+    "frobenius": 11,
+    "conductor": 12,
+    "multiplicity": 6,
+    "embedding_dimension": 5,
+    "minimal_generators": [
+      6,
+      7,
+      15,
+      16,
+      17
+    ],
+    "num_elements_below_f": 3,
+    "wilf_defect": 3,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 9,
+    "frobenius": 11,
+    "conductor": 12,
+    "multiplicity": 6,
+    "embedding_dimension": 5,
+    "minimal_generators": [
+      6,
+      8,
+      13,
+      15,
+      17
+    ],
+    "num_elements_below_f": 3,
+    "wilf_defect": 3,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 18,
+    "frobenius": 23,
+    "conductor": 24,
+    "multiplicity": 12,
+    "embedding_dimension": 5,
+    "minimal_generators": [
+      12,
+      13,
+      15,
+      17,
+      18
+    ],
+    "num_elements_below_f": 6,
+    "wilf_defect": 6,
+    "wilf_ratio": 0.8,
+    "is_symmetric": false
+  },
+  {
+    "genus": 57,
+    "frobenius": 97,
+    "conductor": 98,
+    "multiplicity": 16,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      16,
+      22,
+      23
+    ],
+    "num_elements_below_f": 41,
+    "wilf_defect": 25,
+    "wilf_ratio": 0.7967479674796748,
+    "is_symmetric": false
+  },
+  {
+    "genus": 24,
+    "frobenius": 34,
+    "conductor": 35,
+    "multiplicity": 12,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      12,
+      14,
+      15,
+      23
+    ],
+    "num_elements_below_f": 11,
+    "wilf_defect": 9,
+    "wilf_ratio": 0.7954545454545454,
+    "is_symmetric": false
+  },
+  {
+    "genus": 18,
+    "frobenius": 30,
+    "conductor": 31,
+    "multiplicity": 4,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      4,
+      17,
+      27
+    ],
+    "num_elements_below_f": 13,
+    "wilf_defect": 8,
+    "wilf_ratio": 0.7948717948717948,
+    "is_symmetric": false
+  },
+  {
+    "genus": 18,
+    "frobenius": 30,
+    "conductor": 31,
+    "multiplicity": 7,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      7,
+      12,
+      13
+    ],
+    "num_elements_below_f": 13,
+    "wilf_defect": 8,
+    "wilf_ratio": 0.7948717948717948,
+    "is_symmetric": false
+  },
+  {
+    "genus": 29,
+    "frobenius": 49,
+    "conductor": 50,
+    "multiplicity": 8,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      8,
+      18,
+      19
+    ],
+    "num_elements_below_f": 21,
+    "wilf_defect": 13,
+    "wilf_ratio": 0.7936507936507936,
+    "is_symmetric": false
+  },
+  {
+    "genus": 29,
+    "frobenius": 49,
+    "conductor": 50,
+    "multiplicity": 10,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      10,
+      11,
+      24
+    ],
+    "num_elements_below_f": 21,
+    "wilf_defect": 13,
+    "wilf_ratio": 0.7936507936507936,
+    "is_symmetric": false
+  },
+  {
+    "genus": 29,
+    "frobenius": 49,
+    "conductor": 50,
+    "multiplicity": 10,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      10,
+      11,
+      26
+    ],
+    "num_elements_below_f": 21,
+    "wilf_defect": 13,
+    "wilf_ratio": 0.7936507936507936,
+    "is_symmetric": false
+  },
+  {
+    "genus": 16,
+    "frobenius": 18,
+    "conductor": 19,
+    "multiplicity": 8,
+    "embedding_dimension": 8,
+    "minimal_generators": [
+      8,
+      19,
+      20,
+      21,
+      22,
+      23,
+      25,
+      26
+    ],
+    "num_elements_below_f": 3,
+    "wilf_defect": 5,
+    "wilf_ratio": 0.7916666666666666,
+    "is_symmetric": false
+  },
+  {
+    "genus": 13,
+    "frobenius": 18,
+    "conductor": 19,
+    "multiplicity": 8,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      8,
+      11,
+      12,
+      13
+    ],
+    "num_elements_below_f": 6,
+    "wilf_defect": 5,
+    "wilf_ratio": 0.7916666666666666,
+    "is_symmetric": false
+  },
+  {
+    "genus": 15,
+    "frobenius": 18,
+    "conductor": 19,
+    "multiplicity": 7,
+    "embedding_dimension": 6,
+    "minimal_generators": [
+      7,
+      12,
+      20,
+      22,
+      23,
+      25
+    ],
+    "num_elements_below_f": 4,
+    "wilf_defect": 5,
+    "wilf_ratio": 0.7916666666666666,
+    "is_symmetric": false
+  },
+  {
+    "genus": 13,
+    "frobenius": 18,
+    "conductor": 19,
+    "multiplicity": 5,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      5,
+      11,
+      19,
+      23
+    ],
+    "num_elements_below_f": 6,
+    "wilf_defect": 5,
+    "wilf_ratio": 0.7916666666666666,
+    "is_symmetric": false
+  },
+  {
+    "genus": 11,
+    "frobenius": 18,
+    "conductor": 19,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      7,
+      23
+    ],
+    "num_elements_below_f": 8,
+    "wilf_defect": 5,
+    "wilf_ratio": 0.7916666666666666,
+    "is_symmetric": false
+  },
+  {
+    "genus": 13,
+    "frobenius": 18,
+    "conductor": 19,
+    "multiplicity": 4,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      4,
+      17,
+      19,
+      22
+    ],
+    "num_elements_below_f": 6,
+    "wilf_defect": 5,
+    "wilf_ratio": 0.7916666666666666,
+    "is_symmetric": false
+  },
+  {
+    "genus": 13,
+    "frobenius": 18,
+    "conductor": 19,
+    "multiplicity": 4,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      4,
+      15,
+      21,
+      22
+    ],
+    "num_elements_below_f": 6,
+    "wilf_defect": 5,
+    "wilf_ratio": 0.7916666666666666,
+    "is_symmetric": false
+  },
+  {
+    "genus": 11,
+    "frobenius": 18,
+    "conductor": 19,
+    "multiplicity": 4,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      4,
+      11,
+      17
+    ],
+    "num_elements_below_f": 8,
+    "wilf_defect": 5,
+    "wilf_ratio": 0.7916666666666666,
+    "is_symmetric": false
+  },
+  {
+    "genus": 11,
+    "frobenius": 18,
+    "conductor": 19,
+    "multiplicity": 4,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      4,
+      11,
+      17
+    ],
+    "num_elements_below_f": 8,
+    "wilf_defect": 5,
+    "wilf_ratio": 0.7916666666666666,
+    "is_symmetric": false
+  },
+  {
+    "genus": 11,
+    "frobenius": 18,
+    "conductor": 19,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      7,
+      23
+    ],
+    "num_elements_below_f": 8,
+    "wilf_defect": 5,
+    "wilf_ratio": 0.7916666666666666,
+    "is_symmetric": false
+  },
+  {
+    "genus": 22,
+    "frobenius": 37,
+    "conductor": 38,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      18,
+      21
+    ],
+    "num_elements_below_f": 16,
+    "wilf_defect": 10,
+    "wilf_ratio": 0.7916666666666666,
+    "is_symmetric": false
+  },
+  {
+    "genus": 22,
+    "frobenius": 37,
+    "conductor": 38,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      18,
+      24
+    ],
+    "num_elements_below_f": 16,
+    "wilf_defect": 10,
+    "wilf_ratio": 0.7916666666666666,
+    "is_symmetric": false
+  },
+  {
+    "genus": 22,
+    "frobenius": 37,
+    "conductor": 38,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      19,
+      21
+    ],
+    "num_elements_below_f": 16,
+    "wilf_defect": 10,
+    "wilf_ratio": 0.7916666666666666,
+    "is_symmetric": false
+  },
+  {
+    "genus": 22,
+    "frobenius": 37,
+    "conductor": 38,
+    "multiplicity": 7,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      7,
+      11,
+      27
+    ],
+    "num_elements_below_f": 16,
+    "wilf_defect": 10,
+    "wilf_ratio": 0.7916666666666666,
+    "is_symmetric": false
+  },
+  {
+    "genus": 22,
+    "frobenius": 37,
+    "conductor": 38,
+    "multiplicity": 8,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      8,
+      9,
+      30
+    ],
+    "num_elements_below_f": 16,
+    "wilf_defect": 10,
+    "wilf_ratio": 0.7916666666666666,
+    "is_symmetric": false
+  },
+  {
+    "genus": 33,
+    "frobenius": 56,
+    "conductor": 57,
+    "multiplicity": 12,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      12,
+      13,
+      21
+    ],
+    "num_elements_below_f": 24,
+    "wilf_defect": 15,
+    "wilf_ratio": 0.7916666666666666,
+    "is_symmetric": false
+  },
+  {
+    "genus": 13,
+    "frobenius": 18,
+    "conductor": 19,
+    "multiplicity": 4,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      4,
+      15,
+      21,
+      22
+    ],
+    "num_elements_below_f": 6,
+    "wilf_defect": 5,
+    "wilf_ratio": 0.7916666666666666,
+    "is_symmetric": false
+  },
+  {
+    "genus": 13,
+    "frobenius": 18,
+    "conductor": 19,
+    "multiplicity": 4,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      4,
+      17,
+      19,
+      22
+    ],
+    "num_elements_below_f": 6,
+    "wilf_defect": 5,
+    "wilf_ratio": 0.7916666666666666,
+    "is_symmetric": false
+  },
+  {
+    "genus": 13,
+    "frobenius": 18,
+    "conductor": 19,
+    "multiplicity": 5,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      5,
+      11,
+      19,
+      23
+    ],
+    "num_elements_below_f": 6,
+    "wilf_defect": 5,
+    "wilf_ratio": 0.7916666666666666,
+    "is_symmetric": false
+  },
+  {
+    "genus": 13,
+    "frobenius": 18,
+    "conductor": 19,
+    "multiplicity": 8,
+    "embedding_dimension": 4,
+    "minimal_generators": [
+      8,
+      11,
+      12,
+      13
+    ],
+    "num_elements_below_f": 6,
+    "wilf_defect": 5,
+    "wilf_ratio": 0.7916666666666666,
+    "is_symmetric": false
+  },
+  {
+    "genus": 26,
+    "frobenius": 44,
+    "conductor": 45,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      21,
+      28
+    ],
+    "num_elements_below_f": 19,
+    "wilf_defect": 12,
+    "wilf_ratio": 0.7894736842105263,
+    "is_symmetric": false
+  },
+  {
+    "genus": 26,
+    "frobenius": 44,
+    "conductor": 45,
+    "multiplicity": 7,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      7,
+      13,
+      25
+    ],
+    "num_elements_below_f": 19,
+    "wilf_defect": 12,
+    "wilf_ratio": 0.7894736842105263,
+    "is_symmetric": false
+  },
+  {
+    "genus": 15,
+    "frobenius": 25,
+    "conductor": 26,
+    "multiplicity": 8,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      8,
+      10,
+      11
+    ],
+    "num_elements_below_f": 11,
+    "wilf_defect": 7,
+    "wilf_ratio": 0.7878787878787878,
+    "is_symmetric": false
+  },
+  {
+    "genus": 15,
+    "frobenius": 25,
+    "conductor": 26,
+    "multiplicity": 7,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      7,
+      10,
+      12
+    ],
+    "num_elements_below_f": 11,
+    "wilf_defect": 7,
+    "wilf_ratio": 0.7878787878787878,
+    "is_symmetric": false
+  },
+  {
+    "genus": 15,
+    "frobenius": 25,
+    "conductor": 26,
+    "multiplicity": 7,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      7,
+      8,
+      19
+    ],
+    "num_elements_below_f": 11,
+    "wilf_defect": 7,
+    "wilf_ratio": 0.7878787878787878,
+    "is_symmetric": false
+  },
+  {
+    "genus": 15,
+    "frobenius": 25,
+    "conductor": 26,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      20,
+      28
+    ],
+    "num_elements_below_f": 11,
+    "wilf_defect": 7,
+    "wilf_ratio": 0.7878787878787878,
+    "is_symmetric": false
+  },
+  {
+    "genus": 15,
+    "frobenius": 25,
+    "conductor": 26,
+    "multiplicity": 3,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      3,
+      20,
+      28
+    ],
+    "num_elements_below_f": 11,
+    "wilf_defect": 7,
+    "wilf_ratio": 0.7878787878787878,
+    "is_symmetric": false
+  },
+  {
+    "genus": 30,
+    "frobenius": 51,
+    "conductor": 52,
+    "multiplicity": 5,
+    "embedding_dimension": 3,
+    "minimal_generators": [
+      5,
+      24,
+      28
+    ],
+    "num_elements_below_f": 22,
+    "wilf_defect": 14,
+    "wilf_ratio": 0.7878787878787878,
+    "is_symmetric": false
+  }
+]

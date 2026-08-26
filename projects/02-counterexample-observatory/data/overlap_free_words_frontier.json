@@ -1,0 +1,1008 @@
+{
+  "timestamp": "2026-08-26T01:20:00+02:00",
+  "max_length": 30,
+  "total_words_tested": 2540,
+  "sequence_exact_concordance": true,
+  "levels": [
+    {
+      "length": 1,
+      "count": 2,
+      "oeis_a007416_expected": 2,
+      "is_exact_match": true,
+      "sample_words": [
+        {
+          "length": 1,
+          "binary_string": "0",
+          "is_thue_morse_factor": true
+        },
+        {
+          "length": 1,
+          "binary_string": "1",
+          "is_thue_morse_factor": true
+        }
+      ],
+      "elapsed_us": 3
+    },
+    {
+      "length": 2,
+      "count": 4,
+      "oeis_a007416_expected": 4,
+      "is_exact_match": true,
+      "sample_words": [
+        {
+          "length": 2,
+          "binary_string": "00",
+          "is_thue_morse_factor": true
+        },
+        {
+          "length": 2,
+          "binary_string": "01",
+          "is_thue_morse_factor": true
+        },
+        {
+          "length": 2,
+          "binary_string": "10",
+          "is_thue_morse_factor": true
+        },
+        {
+          "length": 2,
+          "binary_string": "11",
+          "is_thue_morse_factor": true
+        }
+      ],
+      "elapsed_us": 2
+    },
+    {
+      "length": 3,
+      "count": 6,
+      "oeis_a007416_expected": 6,
+      "is_exact_match": true,
+      "sample_words": [
+        {
+          "length": 3,
+          "binary_string": "001",
+          "is_thue_morse_factor": true
+        },
+        {
+          "length": 3,
+          "binary_string": "010",
+          "is_thue_morse_factor": true
+        },
+        {
+          "length": 3,
+          "binary_string": "011",
+          "is_thue_morse_factor": true
+        },
+        {
+          "length": 3,
+          "binary_string": "100",
+          "is_thue_morse_factor": true
+        },
+        {
+          "length": 3,
+          "binary_string": "101",
+          "is_thue_morse_factor": true
+        }
+      ],
+      "elapsed_us": 2
+    },
+    {
+      "length": 4,
+      "count": 10,
+      "oeis_a007416_expected": 10,
+      "is_exact_match": true,
+      "sample_words": [
+        {
+          "length": 4,
+          "binary_string": "0010",
+          "is_thue_morse_factor": true
+        },
+        {
+          "length": 4,
+          "binary_string": "0011",
+          "is_thue_morse_factor": true
+        },
+        {
+          "length": 4,
+          "binary_string": "0100",
+          "is_thue_morse_factor": true
+        },
+        {
+          "length": 4,
+          "binary_string": "0101",
+          "is_thue_morse_factor": true
+        },
+        {
+          "length": 4,
+          "binary_string": "0110",
+          "is_thue_morse_factor": true
+        }
+      ],
+      "elapsed_us": 2
+    },
+    {
+      "length": 5,
+      "count": 14,
+      "oeis_a007416_expected": 14,
+      "is_exact_match": true,
+      "sample_words": [
+        {
+          "length": 5,
+          "binary_string": "00100",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 5,
+          "binary_string": "00101",
+          "is_thue_morse_factor": true
+        },
+        {
+          "length": 5,
+          "binary_string": "00110",
+          "is_thue_morse_factor": true
+        },
+        {
+          "length": 5,
+          "binary_string": "01001",
+          "is_thue_morse_factor": true
+        },
+        {
+          "length": 5,
+          "binary_string": "01011",
+          "is_thue_morse_factor": true
+        }
+      ],
+      "elapsed_us": 7
+    },
+    {
+      "length": 6,
+      "count": 20,
+      "oeis_a007416_expected": 20,
+      "is_exact_match": true,
+      "sample_words": [
+        {
+          "length": 6,
+          "binary_string": "001001",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 6,
+          "binary_string": "001011",
+          "is_thue_morse_factor": true
+        },
+        {
+          "length": 6,
+          "binary_string": "001100",
+          "is_thue_morse_factor": true
+        },
+        {
+          "length": 6,
+          "binary_string": "001101",
+          "is_thue_morse_factor": true
+        },
+        {
+          "length": 6,
+          "binary_string": "010010",
+          "is_thue_morse_factor": true
+        }
+      ],
+      "elapsed_us": 7
+    },
+    {
+      "length": 7,
+      "count": 24,
+      "oeis_a007416_expected": 24,
+      "is_exact_match": true,
+      "sample_words": [
+        {
+          "length": 7,
+          "binary_string": "0010011",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 7,
+          "binary_string": "0010110",
+          "is_thue_morse_factor": true
+        },
+        {
+          "length": 7,
+          "binary_string": "0011001",
+          "is_thue_morse_factor": true
+        },
+        {
+          "length": 7,
+          "binary_string": "0011010",
+          "is_thue_morse_factor": true
+        },
+        {
+          "length": 7,
+          "binary_string": "0011011",
+          "is_thue_morse_factor": false
+        }
+      ],
+      "elapsed_us": 10
+    },
+    {
+      "length": 8,
+      "count": 30,
+      "oeis_a007416_expected": 30,
+      "is_exact_match": true,
+      "sample_words": [
+        {
+          "length": 8,
+          "binary_string": "00100110",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 8,
+          "binary_string": "00101100",
+          "is_thue_morse_factor": true
+        },
+        {
+          "length": 8,
+          "binary_string": "00101101",
+          "is_thue_morse_factor": true
+        },
+        {
+          "length": 8,
+          "binary_string": "00110010",
+          "is_thue_morse_factor": true
+        },
+        {
+          "length": 8,
+          "binary_string": "00110011",
+          "is_thue_morse_factor": false
+        }
+      ],
+      "elapsed_us": 11
+    },
+    {
+      "length": 9,
+      "count": 36,
+      "oeis_a007416_expected": 36,
+      "is_exact_match": true,
+      "sample_words": [
+        {
+          "length": 9,
+          "binary_string": "001001100",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 9,
+          "binary_string": "001001101",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 9,
+          "binary_string": "001011001",
+          "is_thue_morse_factor": true
+        },
+        {
+          "length": 9,
+          "binary_string": "001011010",
+          "is_thue_morse_factor": true
+        },
+        {
+          "length": 9,
+          "binary_string": "001100100",
+          "is_thue_morse_factor": false
+        }
+      ],
+      "elapsed_us": 13
+    },
+    {
+      "length": 10,
+      "count": 44,
+      "oeis_a007416_expected": 44,
+      "is_exact_match": true,
+      "sample_words": [
+        {
+          "length": 10,
+          "binary_string": "0010011001",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 10,
+          "binary_string": "0010011010",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 10,
+          "binary_string": "0010011011",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 10,
+          "binary_string": "0010110010",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 10,
+          "binary_string": "0010110011",
+          "is_thue_morse_factor": true
+        }
+      ],
+      "elapsed_us": 17
+    },
+    {
+      "length": 11,
+      "count": 48,
+      "oeis_a007416_expected": 48,
+      "is_exact_match": true,
+      "sample_words": [
+        {
+          "length": 11,
+          "binary_string": "00100110010",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 11,
+          "binary_string": "00100110100",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 11,
+          "binary_string": "00101100100",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 11,
+          "binary_string": "00101100101",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 11,
+          "binary_string": "00101100110",
+          "is_thue_morse_factor": true
+        }
+      ],
+      "elapsed_us": 18
+    },
+    {
+      "length": 12,
+      "count": 60,
+      "oeis_a007416_expected": 60,
+      "is_exact_match": true,
+      "sample_words": [
+        {
+          "length": 12,
+          "binary_string": "001001100100",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 12,
+          "binary_string": "001001100101",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 12,
+          "binary_string": "001001101001",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 12,
+          "binary_string": "001011001011",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 12,
+          "binary_string": "001011001101",
+          "is_thue_morse_factor": true
+        }
+      ],
+      "elapsed_us": 17
+    },
+    {
+      "length": 13,
+      "count": 60,
+      "oeis_a007416_expected": 60,
+      "is_exact_match": true,
+      "sample_words": [
+        {
+          "length": 13,
+          "binary_string": "0010011001011",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 13,
+          "binary_string": "0010011010010",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 13,
+          "binary_string": "0010011010011",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 13,
+          "binary_string": "0010110011010",
+          "is_thue_morse_factor": true
+        },
+        {
+          "length": 13,
+          "binary_string": "0010110011011",
+          "is_thue_morse_factor": false
+        }
+      ],
+      "elapsed_us": 17
+    },
+    {
+      "length": 14,
+      "count": 62,
+      "oeis_a007416_expected": 62,
+      "is_exact_match": true,
+      "sample_words": [
+        {
+          "length": 14,
+          "binary_string": "00100110010110",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 14,
+          "binary_string": "00100110100101",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 14,
+          "binary_string": "00101100110100",
+          "is_thue_morse_factor": true
+        },
+        {
+          "length": 14,
+          "binary_string": "00101101001011",
+          "is_thue_morse_factor": true
+        },
+        {
+          "length": 14,
+          "binary_string": "00101101001100",
+          "is_thue_morse_factor": true
+        }
+      ],
+      "elapsed_us": 9
+    },
+    {
+      "length": 15,
+      "count": 72,
+      "oeis_a007416_expected": 72,
+      "is_exact_match": true,
+      "sample_words": [
+        {
+          "length": 15,
+          "binary_string": "001001100101100",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 15,
+          "binary_string": "001001100101101",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 15,
+          "binary_string": "001001101001011",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 15,
+          "binary_string": "001011001101001",
+          "is_thue_morse_factor": true
+        },
+        {
+          "length": 15,
+          "binary_string": "001011010010110",
+          "is_thue_morse_factor": true
+        }
+      ],
+      "elapsed_us": 14
+    },
+    {
+      "length": 16,
+      "count": 82,
+      "oeis_a007416_expected": 82,
+      "is_exact_match": true,
+      "sample_words": [
+        {
+          "length": 16,
+          "binary_string": "0010011001011001",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 16,
+          "binary_string": "0010011001011010",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 16,
+          "binary_string": "0010011010010110",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 16,
+          "binary_string": "0010110011010010",
+          "is_thue_morse_factor": true
+        },
+        {
+          "length": 16,
+          "binary_string": "0010110011010011",
+          "is_thue_morse_factor": true
+        }
+      ],
+      "elapsed_us": 13
+    },
+    {
+      "length": 17,
+      "count": 88,
+      "oeis_a007416_expected": 88,
+      "is_exact_match": true,
+      "sample_words": [
+        {
+          "length": 17,
+          "binary_string": "00100110010110011",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 17,
+          "binary_string": "00100110010110100",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 17,
+          "binary_string": "00100110100101100",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 17,
+          "binary_string": "00100110100101101",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 17,
+          "binary_string": "00101100110100101",
+          "is_thue_morse_factor": true
+        }
+      ],
+      "elapsed_us": 17
+    },
+    {
+      "length": 18,
+      "count": 96,
+      "oeis_a007416_expected": 96,
+      "is_exact_match": true,
+      "sample_words": [
+        {
+          "length": 18,
+          "binary_string": "001001100101100110",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 18,
+          "binary_string": "001001100101101001",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 18,
+          "binary_string": "001001101001011001",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 18,
+          "binary_string": "001001101001011010",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 18,
+          "binary_string": "001011001101001011",
+          "is_thue_morse_factor": true
+        }
+      ],
+      "elapsed_us": 17
+    },
+    {
+      "length": 19,
+      "count": 112,
+      "oeis_a007416_expected": 112,
+      "is_exact_match": true,
+      "sample_words": [
+        {
+          "length": 19,
+          "binary_string": "0010011001011001101",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 19,
+          "binary_string": "0010011001011010010",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 19,
+          "binary_string": "0010011001011010011",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 19,
+          "binary_string": "0010011010010110010",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 19,
+          "binary_string": "0010011010010110011",
+          "is_thue_morse_factor": false
+        }
+      ],
+      "elapsed_us": 22
+    },
+    {
+      "length": 20,
+      "count": 120,
+      "oeis_a007416_expected": 120,
+      "is_exact_match": true,
+      "sample_words": [
+        {
+          "length": 20,
+          "binary_string": "00100110010110011010",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 20,
+          "binary_string": "00100110010110011011",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 20,
+          "binary_string": "00100110010110100101",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 20,
+          "binary_string": "00100110010110100110",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 20,
+          "binary_string": "00100110100101100100",
+          "is_thue_morse_factor": false
+        }
+      ],
+      "elapsed_us": 21
+    },
+    {
+      "length": 21,
+      "count": 120,
+      "oeis_a007416_expected": 120,
+      "is_exact_match": true,
+      "sample_words": [
+        {
+          "length": 21,
+          "binary_string": "001001100101100110100",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 21,
+          "binary_string": "001001100101101001011",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 21,
+          "binary_string": "001001100101101001100",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 21,
+          "binary_string": "001001100101101001101",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 21,
+          "binary_string": "001001101001011001101",
+          "is_thue_morse_factor": false
+        }
+      ],
+      "elapsed_us": 23
+    },
+    {
+      "length": 22,
+      "count": 136,
+      "oeis_a007416_expected": 136,
+      "is_exact_match": true,
+      "sample_words": [
+        {
+          "length": 22,
+          "binary_string": "0010011001011001101001",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 22,
+          "binary_string": "0010011001011010010110",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 22,
+          "binary_string": "0010011001011010011001",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 22,
+          "binary_string": "0010011001011010011010",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 22,
+          "binary_string": "0010011001011010011011",
+          "is_thue_morse_factor": false
+        }
+      ],
+      "elapsed_us": 21
+    },
+    {
+      "length": 23,
+      "count": 148,
+      "oeis_a007416_expected": 148,
+      "is_exact_match": true,
+      "sample_words": [
+        {
+          "length": 23,
+          "binary_string": "00100110010110011010010",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 23,
+          "binary_string": "00100110010110011010011",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 23,
+          "binary_string": "00100110010110100101100",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 23,
+          "binary_string": "00100110010110100110010",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 23,
+          "binary_string": "00100110100101100110100",
+          "is_thue_morse_factor": false
+        }
+      ],
+      "elapsed_us": 28
+    },
+    {
+      "length": 24,
+      "count": 164,
+      "oeis_a007416_expected": 164,
+      "is_exact_match": true,
+      "sample_words": [
+        {
+          "length": 24,
+          "binary_string": "001001100101100110100101",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 24,
+          "binary_string": "001001100101100110100110",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 24,
+          "binary_string": "001001100101101001011001",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 24,
+          "binary_string": "001001100101101001100100",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 24,
+          "binary_string": "001001100101101001100101",
+          "is_thue_morse_factor": false
+        }
+      ],
+      "elapsed_us": 25
+    },
+    {
+      "length": 25,
+      "count": 152,
+      "oeis_a007416_expected": 152,
+      "is_exact_match": true,
+      "sample_words": [
+        {
+          "length": 25,
+          "binary_string": "0010011001011001101001011",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 25,
+          "binary_string": "0010011001011001101001100",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 25,
+          "binary_string": "0010011001011010010110010",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 25,
+          "binary_string": "0010011001011010010110011",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 25,
+          "binary_string": "0010011001011010011001011",
+          "is_thue_morse_factor": false
+        }
+      ],
+      "elapsed_us": 39
+    },
+    {
+      "length": 26,
+      "count": 154,
+      "oeis_a007416_expected": 154,
+      "is_exact_match": true,
+      "sample_words": [
+        {
+          "length": 26,
+          "binary_string": "00100110010110011010010110",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 26,
+          "binary_string": "00100110010110011010011001",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 26,
+          "binary_string": "00100110010110100101100100",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 26,
+          "binary_string": "00100110010110100101100101",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 26,
+          "binary_string": "00100110010110100101100110",
+          "is_thue_morse_factor": false
+        }
+      ],
+      "elapsed_us": 21
+    },
+    {
+      "length": 27,
+      "count": 148,
+      "oeis_a007416_expected": 148,
+      "is_exact_match": true,
+      "sample_words": [
+        {
+          "length": 27,
+          "binary_string": "001001100101100110100101100",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 27,
+          "binary_string": "001001100101100110100101101",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 27,
+          "binary_string": "001001100101100110100110010",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 27,
+          "binary_string": "001001100101101001011001101",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 27,
+          "binary_string": "001001101001011001101001100",
+          "is_thue_morse_factor": false
+        }
+      ],
+      "elapsed_us": 22
+    },
+    {
+      "length": 28,
+      "count": 162,
+      "oeis_a007416_expected": 162,
+      "is_exact_match": true,
+      "sample_words": [
+        {
+          "length": 28,
+          "binary_string": "0010011001011001101001011001",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 28,
+          "binary_string": "0010011001011001101001011010",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 28,
+          "binary_string": "0010011001011001101001100100",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 28,
+          "binary_string": "0010011001011001101001100101",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 28,
+          "binary_string": "0010011001011010010110011010",
+          "is_thue_morse_factor": false
+        }
+      ],
+      "elapsed_us": 21
+    },
+    {
+      "length": 29,
+      "count": 176,
+      "oeis_a007416_expected": 176,
+      "is_exact_match": true,
+      "sample_words": [
+        {
+          "length": 29,
+          "binary_string": "00100110010110011010010110010",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 29,
+          "binary_string": "00100110010110011010010110011",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 29,
+          "binary_string": "00100110010110011010010110100",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 29,
+          "binary_string": "00100110010110011010011001011",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 29,
+          "binary_string": "00100110010110100101100110100",
+          "is_thue_morse_factor": false
+        }
+      ],
+      "elapsed_us": 23
+    },
+    {
+      "length": 30,
+      "count": 190,
+      "oeis_a007416_expected": 190,
+      "is_exact_match": true,
+      "sample_words": [
+        {
+          "length": 30,
+          "binary_string": "001001100101100110100101100100",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 30,
+          "binary_string": "001001100101100110100101100101",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 30,
+          "binary_string": "001001100101100110100101100110",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 30,
+          "binary_string": "001001100101100110100101101001",
+          "is_thue_morse_factor": false
+        },
+        {
+          "length": 30,
+          "binary_string": "001001100101100110100110010110",
+          "is_thue_morse_factor": false
+        }
+      ],
+      "elapsed_us": 21
+    }
+  ]
+}

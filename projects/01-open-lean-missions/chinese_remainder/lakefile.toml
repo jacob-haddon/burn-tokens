@@ -1,0 +1,6 @@
+name = "chinese_remainder"
+version = "0.1.0"
+defaultTargets = ["ChineseRemainder"]
+
+[[lean_lib]]
+name = "ChineseRemainder"

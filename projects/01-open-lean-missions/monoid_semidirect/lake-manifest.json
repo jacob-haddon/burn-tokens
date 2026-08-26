@@ -1,0 +1,6 @@
+{"version": "1.2.0",
+ "packagesDir": ".lake/packages",
+ "packages": [],
+ "name": "monoid_semidirect",
+ "lakeDir": ".lake",
+ "fixedToolchain": false}

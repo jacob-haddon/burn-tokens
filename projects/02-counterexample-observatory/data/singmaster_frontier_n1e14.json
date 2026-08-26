@@ -1,0 +1,174 @@
+{
+  "limit": 100000000000000,
+  "elapsed_ms": 129,
+  "total_k3_pairs_evaluated": 94742,
+  "total_distinct_k3_values": 94741,
+  "max_multiplicity_found": 8,
+  "champion_values": [
+    3003
+  ],
+  "entries_with_multiplicity_ge_6": [
+    {
+      "value": 120,
+      "total_multiplicity": 6,
+      "non_trivial_count": 2,
+      "representations": [
+        {
+          "n": 120,
+          "k": 1
+        },
+        {
+          "n": 16,
+          "k": 2
+        },
+        {
+          "n": 10,
+          "k": 3
+        }
+      ]
+    },
+    {
+      "value": 210,
+      "total_multiplicity": 6,
+      "non_trivial_count": 2,
+      "representations": [
+        {
+          "n": 210,
+          "k": 1
+        },
+        {
+          "n": 21,
+          "k": 2
+        },
+        {
+          "n": 10,
+          "k": 4
+        }
+      ]
+    },
+    {
+      "value": 1540,
+      "total_multiplicity": 6,
+      "non_trivial_count": 2,
+      "representations": [
+        {
+          "n": 1540,
+          "k": 1
+        },
+        {
+          "n": 56,
+          "k": 2
+        },
+        {
+          "n": 22,
+          "k": 3
+        }
+      ]
+    },
+    {
+      "value": 3003,
+      "total_multiplicity": 8,
+      "non_trivial_count": 3,
+      "representations": [
+        {
+          "n": 3003,
+          "k": 1
+        },
+        {
+          "n": 78,
+          "k": 2
+        },
+        {
+          "n": 15,
+          "k": 5
+        },
+        {
+          "n": 14,
+          "k": 6
+        }
+      ]
+    },
+    {
+      "value": 7140,
+      "total_multiplicity": 6,
+      "non_trivial_count": 2,
+      "representations": [
+        {
+          "n": 7140,
+          "k": 1
+        },
+        {
+          "n": 120,
+          "k": 2
+        },
+        {
+          "n": 36,
+          "k": 3
+        }
+      ]
+    },
+    {
+      "value": 11628,
+      "total_multiplicity": 6,
+      "non_trivial_count": 2,
+      "representations": [
+        {
+          "n": 11628,
+          "k": 1
+        },
+        {
+          "n": 153,
+          "k": 2
+        },
+        {
+          "n": 19,
+          "k": 5
+        }
+      ]
+    },
+    {
+      "value": 24310,
+      "total_multiplicity": 6,
+      "non_trivial_count": 2,
+      "representations": [
+        {
+          "n": 24310,
+          "k": 1
+        },
+        {
+          "n": 221,
+          "k": 2
+        },
+        {
+          "n": 17,
+          "k": 8
+        }
+      ]
+    }
+  ],
+  "entries_with_multiplicity_ge_8": [
+    {
+      "value": 3003,
+      "total_multiplicity": 8,
+      "non_trivial_count": 3,
+      "representations": [
+        {
+          "n": 3003,
+          "k": 1
+        },
+        {
+          "n": 78,
+          "k": 2
+        },
+        {
+          "n": 15,
+          "k": 5
+        },
+        {
+          "n": 14,
+          "k": 6
+        }
+      ]
+    }
+  ]
+}

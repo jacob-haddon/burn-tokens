@@ -1,0 +1,6 @@
+name = "monoid_center"
+version = "0.1.0"
+defaultTargets = ["MonoidCenter"]
+
+[[lean_lib]]
+name = "MonoidCenter"
