@@ -60,7 +60,7 @@ python3 projects/02-counterexample-observatory/scripts/singmaster_independent_ve
 python3 projects/02-counterexample-observatory/scripts/golomb_verifier.py
 
 # 3. Compile and verify Chinese Remainder Theorem in Lean 4
-cd projects/01-open-lean-missions/chinese_remainder && lake build
+cd projects/03-open-lean-missions/chinese_remainder && lake build
 ```
 
 ---
