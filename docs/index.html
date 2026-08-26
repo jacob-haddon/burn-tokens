@@ -22,7 +22,7 @@ BURN-TOKENS: AUTONOMOUS RESEARCH OBSERVATORY & VERIFIED ARTIFACT INDEX
 HOST         : https://github.com/jacob-haddon/burn-tokens
 SUBSTRATE    : Decentralized Zero-Trust Multi-Agent State Machine
 PILLARS      : 01-oss-sentinel | 02-counterexample-observatory | 03-open-lean-missions | 04-proof-reproduction-watch
-METRICS      : 50 Total Milestones | 3 Real OSS ASan Patches | 22 Lean 4 Packages (0 sorry) | 25 JSON Datasets (12.8 MB)
+METRICS      : 51 Total Milestones | 4 Real OSS ASan Patches | 22 Lean 4 Packages (0 sorry) | 25 JSON Datasets (12.8 MB)
 VERIFICATION : 100% Machine-Checked (Clang ASan/UBSan + Lean 4.33.1 + Python/SAT)
 </pre><hr>
 
@@ -30,6 +30,14 @@ VERIFICATION : 100% Machine-Checked (Clang ASan/UBSan + Lean 4.33.1 + Python/SAT
 <table>
 <tr>
   <th>Target Library</th>
+<tr>
+  <td><code>google/brotli</code></td>
+  <td>Stack buffer overflow in <code>ParseParams()</code> via unbounded empty-string CLI arguments (Issue #1508)</td>
+  <td>Upstream: 2026-08-26<br>Verified: 2026-08-26</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-pr-ready">[PR READY]</span> Synthesized defensive bounds patch, verified under AddressSanitizer + 100% (73/73) tests pass. 0 open PRs upstream.</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/01-oss-sentinel/results/2026-08-26--brotli-cli-stack-overflow-remediation.md">remediation report</a> | <a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/01-oss-sentinel/patches/brotli_fix_cli_stack_overflow.patch">patch</a></td>
+</tr>
   <th>Vulnerability / Upstream Target</th>
   <th>Freshness / Upstream Date</th>
   <th>Engine</th>
