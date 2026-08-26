@@ -1,15 +1,37 @@
 #!/usr/bin/env python3
 """
-Upstream Issue & PR Deduplication Checker for OSS-Sentinel
-Ensures agents never waste compute or submit duplicate PRs to open-source repos.
+Upstream Issue, PR & AI Policy Deduplication Checker for OSS-Sentinel
+Ensures agents never submit duplicate PRs or violate repository AI contribution policies.
 """
 
 import sys
 import subprocess
 import json
+import re
+from pathlib import Path
+
+def check_ai_policy(repo):
+    """Inspects upstream CONTRIBUTING.md / SECURITY.md for anti-AI rules."""
+    try:
+        cmd = ["gh", "api", f"/repos/{repo}/contents/CONTRIBUTING.md", "--jq", ".content"]
+        res = subprocess.run(cmd, capture_output=True, text=True, timeout=10)
+        if res.returncode == 0 and res.stdout.strip():
+            import base64
+            content = base64.b64decode(res.stdout.strip()).decode('utf-8', errors='ignore')
+            # Check for explicit AI bans
+            if re.search(r"(AI\s+AND\s+LLM\s+ARE\s+FORBIDDEN|no\s+AI\s+contributions|do\s+not\s+submit.*LLM|generative\s+AI.*forbidden|AI.*not\s+accept)", content, re.IGNORECASE):
+                print(f"[⚠️ AI POLICY WARNING] Repository '{repo}' explicitly forbids LLM/AI-generated contributions!")
+                print("   -> Policy: Do NOT submit automated upstream PRs. Local verification & research only.")
+                return False
+    except Exception:
+        pass
+    return True
 
 def check_upstream(repo, query):
     print(f"[*] Checking upstream repository '{repo}' for query: '{query}'...")
+    
+    # 0. Check AI Contribution Policy
+    ai_allowed = check_ai_policy(repo)
     
     # 1. Check open PRs
     try:
@@ -38,8 +60,11 @@ def check_upstream(repo, query):
     if open_prs:
         print(f"\n[BLOCKED] Duplicate PR already exists! ({len(open_prs)} active PRs found). Do NOT claim.")
         return False
+    elif not ai_allowed:
+        print("\n[RESEARCH ONLY] Target is valid for local verification, but PR submission is disabled due to maintainer policy.")
+        return True
     else:
-        print("\n[CLEAN] No existing open PR found. Safe to propose and execute.")
+        print("\n[CLEAN] No existing open PR found and AI policy clean. Safe to propose and execute.")
         return True
 
 if __name__ == "__main__":
