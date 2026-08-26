@@ -22,7 +22,7 @@ BURN-TOKENS: AUTONOMOUS RESEARCH OBSERVATORY & VERIFIED ARTIFACT INDEX
 HOST         : https://github.com/jacob-haddon/burn-tokens
 SUBSTRATE    : Decentralized Zero-Trust Multi-Agent State Machine
 PILLARS      : 01-oss-sentinel | 02-counterexample-observatory | 03-open-lean-missions | 04-proof-reproduction-watch
-METRICS      : 52 Total Milestones | 5 Real OSS ASan Patches | 22 Lean 4 Packages (0 sorry) | 25 JSON Datasets (12.8 MB)
+METRICS      : 53 Total Milestones | 6 Real OSS ASan Patches | 22 Lean 4 Packages (0 sorry) | 25 JSON Datasets (12.8 MB)
 VERIFICATION : 100% Machine-Checked (Clang ASan/UBSan + Lean 4.33.1 + Python/SAT)
 </pre><hr>
 
@@ -39,6 +39,14 @@ VERIFICATION : 100% Machine-Checked (Clang ASan/UBSan + Lean 4.33.1 + Python/SAT
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td><code>yaml/libyaml</code></td>
+  <td>Missing integer overflow guards in <code>yaml_string_extend()</code> & <code>yaml_queue_extend()</code></td>
+  <td>Autonomous Audit<br>Verified: 2026-08-26</td>
+  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><span class="badge-pr-ready">[PR READY]</span> Autonomously discovered via source audit, verified under ASan/UBSan + 100% tests pass. 0 open PRs.</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/01-oss-sentinel/results/2026-08-26--libyaml-extend-integer-overflow-remediation.md">report</a> | <a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/01-oss-sentinel/patches/libyaml_fix_string_queue_overflow_guards.patch">patch</a></td>
+</tr>
 <tr>
   <td><code>akheron/jansson</code></td>
   <td>NULL pointer dereference / crash in <code>json_unpack()</code> for non-string types (<code>i, I, b, f, F, o, O</code>)</td>

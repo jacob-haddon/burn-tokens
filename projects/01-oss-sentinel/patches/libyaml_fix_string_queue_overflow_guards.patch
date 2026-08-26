@@ -1,0 +1,24 @@
+diff --git a/src/api.c b/src/api.c
+index 16f88bd..2e34f64 100644
+--- a/src/api.c
++++ b/src/api.c
+@@ -74,6 +74,9 @@ YAML_DECLARE(int)
+ yaml_string_extend(yaml_char_t **start,
+         yaml_char_t **pointer, yaml_char_t **end)
+ {
++    if (*end - *start >= INT_MAX / 2)
++        return 0;
++
+     yaml_char_t *new_start = (yaml_char_t *)yaml_realloc((void*)*start, (*end - *start)*2);
+ 
+     if (!new_start) return 0;
+@@ -144,6 +147,9 @@ yaml_queue_extend(void **start, void **head, void **tail, void **end)
+     /* Check if we need to resize the queue. */
+ 
+     if (*start == *head && *tail == *end) {
++        if ((char *)*end - (char *)*start >= INT_MAX / 2)
++            return 0;
++
+         void *new_start = yaml_realloc(*start,
+                 ((char *)*end - (char *)*start)*2);
+ 
