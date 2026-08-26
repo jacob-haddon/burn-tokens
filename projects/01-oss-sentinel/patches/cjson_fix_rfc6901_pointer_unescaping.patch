@@ -1,0 +1,27 @@
+diff --git a/cJSON_Utils.c b/cJSON_Utils.c
+index 8b38eb2..838b56b 100644
+--- a/cJSON_Utils.c
++++ b/cJSON_Utils.c
+@@ -374,16 +374,21 @@ static void decode_pointer_inplace(unsigned char *string)
+             }
+             else if (string[1] == '1')
+             {
+-                decoded_string[1] = '/';
++                decoded_string[0] = '/';
+             }
+             else
+             {
+                 /* invalid escape sequence */
++                *decoded_string = '\0';
+                 return;
+             }
+ 
+             string++;
+         }
++        else
++        {
++            decoded_string[0] = string[0];
++        }
+     }
+ 
+     decoded_string[0] = '\0';
