@@ -83,6 +83,26 @@ theorem rdiv_unit (x y : L) : x ≤ (x * y) // y :=
   (mul_le_iff_le_rdiv x y (x * y)).mp (le_refl (x * y))
 
 /- ========================================================================= -/
+/- MONOTONICITY OF MULTIPLICATION DERIVED FROM ADJUNCTION                    -/
+/- ========================================================================= -/
+
+/-- Multiplication is monotone in the left argument: `a ≤ b → a * c ≤ b * c`. -/
+theorem mul_mono_left (a b c : L) (h : a ≤ b) : a * c ≤ b * c := by
+  have h_unit : b ≤ (b * c) // c := rdiv_unit b c
+  have h_le : a ≤ (b * c) // c := le_trans a b ((b * c) // c) h h_unit
+  exact (mul_le_iff_le_rdiv a c (b * c)).mpr h_le
+
+/-- Multiplication is monotone in the right argument: `a ≤ b → c * a ≤ c * b`. -/
+theorem mul_mono_right (a b c : L) (h : a ≤ b) : c * a ≤ c * b := by
+  have h_unit : b ≤ c \ (c * b) := ldiv_unit c b
+  have h_le : a ≤ c \ (c * b) := le_trans a b (c \ (c * b)) h h_unit
+  exact (mul_le_iff_le_ldiv c a (c * b)).mpr h_le
+
+/-- Monotonicity of multiplication: `a1 ≤ a2 → b1 ≤ b2 → a1 * b1 ≤ a2 * b2`. -/
+theorem mul_mono (a1 a2 b1 b2 : L) (ha : a1 ≤ a2) (hb : b1 ≤ b2) : a1 * b1 ≤ a2 * b2 :=
+  le_trans (a1 * b1) (a2 * b1) (a2 * b2) (mul_mono_left a1 a2 b1 ha) (mul_mono_right b1 b2 a2 hb)
+
+/- ========================================================================= -/
 /- MONOTONICITY & VARIANCE OF RESIDUALS                                      -/
 /- ========================================================================= -/
 
@@ -94,10 +114,7 @@ theorem ldiv_mono_right (x z1 z2 : L) (h : z1 ≤ z2) : (x \ z1) ≤ (x \ z2) :=
 
 /-- Left division is contravariant in the denominator: `x1 ≤ x2 → x2 \ z ≤ x1 \ z`. -/
 theorem ldiv_anti_left (x1 x2 z : L) (h : x1 ≤ x2) : (x2 \ z) ≤ (x1 \ z) := by
-  have h1 : x1 * (x2 \ z) ≤ x2 * (x2 \ z) := by
-    have h_adj : x2 ≤ z // (x2 \ z) := (mul_le_iff_le_rdiv x2 (x2 \ z) z).mp (ldiv_counit x2 z)
-    have h_le : x1 ≤ z // (x2 \ z) := le_trans x1 x2 (z // (x2 \ z)) h h_adj
-    exact (mul_le_iff_le_rdiv x1 (x2 \ z) z).mpr h_le
+  have h1 : x1 * (x2 \ z) ≤ x2 * (x2 \ z) := mul_mono_left x1 x2 (x2 \ z) h
   have h2 : x2 * (x2 \ z) ≤ z := ldiv_counit x2 z
   have h3 : x1 * (x2 \ z) ≤ z := le_trans (x1 * (x2 \ z)) (x2 * (x2 \ z)) z h1 h2
   exact (mul_le_iff_le_ldiv x1 (x2 \ z) z).mp h3
@@ -110,10 +127,7 @@ theorem rdiv_mono_left (y z1 z2 : L) (h : z1 ≤ z2) : (z1 // y) ≤ (z2 // y) :
 
 /-- Right division is contravariant in the denominator: `y1 ≤ y2 → z // y2 ≤ z // y1`. -/
 theorem rdiv_anti_right (y1 y2 z : L) (h : y1 ≤ y2) : (z // y2) ≤ (z // y1) := by
-  have h1 : (z // y2) * y1 ≤ (z // y2) * y2 := by
-    have h_adj : y2 ≤ (z // y2) \ z := (mul_le_iff_le_ldiv (z // y2) y2 z).mp (rdiv_counit y2 z)
-    have h_le : y1 ≤ (z // y2) \ z := le_trans y1 y2 ((z // y2) \ z) h h_adj
-    exact (mul_le_iff_le_ldiv (z // y2) y1 z).mpr h_le
+  have h1 : (z // y2) * y1 ≤ (z // y2) * y2 := mul_mono_right y1 y2 (z // y2) h
   have h2 : (z // y2) * y2 ≤ z := rdiv_counit y2 z
   have h3 : (z // y2) * y1 ≤ z := le_trans ((z // y2) * y1) ((z // y2) * y2) z h1 h2
   exact (mul_le_iff_le_rdiv (z // y2) y1 z).mp h3
@@ -141,27 +155,17 @@ theorem rdiv_closure_idempotent (y z : L) : ((z // y) * y) // y = z // y := by
 /-- Associativity of residuals: `(x \ y) // z = x \ (y // z)`. -/
 theorem residual_associativity (x y z : L) : (x \ y) // z = x \ (y // z) := by
   apply le_antisymm
-  · -- (x \ y) // z ≤ x \ (y // z) ↔ x * ((x \ y) // z) ≤ y // z ↔ (x * ((x \ y) // z)) * z ≤ y
-    rw [← mul_le_iff_le_ldiv, ← mul_le_iff_le_rdiv]
+  · rw [← mul_le_iff_le_ldiv, ← mul_le_iff_le_rdiv]
     rw [mul_assoc]
     have h1 : x * (x \ y) ≤ y := ldiv_counit x y
     have h2 : ((x \ y) // z) * z ≤ x \ y := rdiv_counit z (x \ y)
-    have h3 : x * (((x \ y) // z) * z) ≤ x * (x \ y) := by
-      have h_adj : ((x \ y) // z) * z ≤ x \ y := h2
-      have h_mul : x * (((x \ y) // z) * z) ≤ x * (x \ y) := by
-        have h_sub : ((x \ y) // z) * z ≤ x \ (x * (x \ y)) :=
-          le_trans (((x \ y) // z) * z) (x \ y) (x \ (x * (x \ y))) h2 (ldiv_unit x (x \ y))
-        exact (mul_le_iff_le_ldiv x (((x \ y) // z) * z) (x * (x \ y))).mpr h_sub
-      exact h_mul
+    have h3 : x * (((x \ y) // z) * z) ≤ x * (x \ y) := mul_mono_right (((x \ y) // z) * z) (x \ y) x h2
     exact le_trans (x * (((x \ y) // z) * z)) (x * (x \ y)) y h3 h1
-  · -- x \ (y // z) ≤ (x \ y) // z ↔ (x \ (y // z)) * z ≤ x \ y ↔ x * ((x \ (y // z)) * z) ≤ y
-    rw [← mul_le_iff_le_rdiv, ← mul_le_iff_le_ldiv]
+  · rw [← mul_le_iff_le_rdiv, ← mul_le_iff_le_ldiv]
     rw [← mul_assoc]
     have h1 : (x * (x \ (y // z))) * z ≤ (y // z) * z := by
       have h_counit : x * (x \ (y // z)) ≤ y // z := ldiv_counit x (y // z)
-      have h_sub : x * (x \ (y // z)) ≤ ((y // z) * z) // z :=
-        le_trans (x * (x \ (y // z))) (y // z) (((y // z) * z) // z) h_counit (rdiv_unit (y // z) z)
-      exact (mul_le_iff_le_rdiv (x * (x \ (y // z))) z ((y // z) * z)).mpr h_sub
+      exact mul_mono_left (x * (x \ (y // z))) (y // z) z h_counit
     have h2 : (y // z) * z ≤ y := rdiv_counit z y
     exact le_trans ((x * (x \ (y // z))) * z) ((y // z) * z) y h1 h2
 
@@ -194,31 +198,23 @@ then left division by `x` coincides with multiplication by `x_inv`: `x \ z = x_i
 theorem invertible_ldiv (x x_inv z : L) (h1 : x * x_inv = 1) (h2 : x_inv * x = 1) :
     (x \ z) = x_inv * z := by
   apply le_antisymm
-  · -- x \ z ≤ x_inv * z ↔ x * (x \ z) ≤ z
-    have h_counit : x * (x \ z) ≤ z := ldiv_counit x z
-    have h_mono : x_inv * (x * (x \ z)) ≤ x_inv * z := by
-      have h_sub : x * (x \ z) ≤ x_inv \ (x_inv * z) :=
-        le_trans (x * (x \ z)) z (x_inv \ (x_inv * z)) h_counit (ldiv_unit x_inv z)
-      exact (mul_le_iff_le_ldiv x_inv (x * (x \ z)) (x_inv * z)).mpr h_sub
+  · have h_counit : x * (x \ z) ≤ z := ldiv_counit x z
+    have h_mono : x_inv * (x * (x \ z)) ≤ x_inv * z := mul_mono_right (x * (x \ z)) z x_inv h_counit
     rw [← mul_assoc, h2, one_mul] at h_mono
     exact h_mono
-  · -- x_inv * z ≤ x \ z ↔ x * (x_inv * z) ≤ z
-    rw [← mul_le_iff_le_ldiv, mul_assoc, h1, one_mul]
+  · rw [← mul_le_iff_le_ldiv, ← mul_assoc, h1, one_mul]
+    exact le_refl z
 
 /-- If `x` has a two-sided inverse `x_inv`,
 then right division by `x` coincides with multiplication by `x_inv`: `z // x = z * x_inv`. -/
 theorem invertible_rdiv (x x_inv z : L) (h1 : x * x_inv = 1) (h2 : x_inv * x = 1) :
     (z // x) = z * x_inv := by
   apply le_antisymm
-  · -- z // x ≤ z * x_inv ↔ (z // x) * x ≤ z
-    have h_counit : (z // x) * x ≤ z := rdiv_counit x z
-    have h_mono : ((z // x) * x) * x_inv ≤ z * x_inv := by
-      have h_sub : (z // x) * x ≤ (z * x_inv) // x_inv :=
-        le_trans ((z // x) * x) z ((z * x_inv) // x_inv) h_counit (rdiv_unit z x_inv)
-      exact (mul_le_iff_le_rdiv ((z // x) * x) x_inv (z * x_inv)).mpr h_sub
+  · have h_counit : (z // x) * x ≤ z := rdiv_counit x z
+    have h_mono : ((z // x) * x) * x_inv ≤ z * x_inv := mul_mono_left ((z // x) * x) z x_inv h_counit
     rw [mul_assoc, h1, mul_one] at h_mono
     exact h_mono
-  · -- z * x_inv ≤ z // x ↔ (z * x_inv) * x ≤ z
-    rw [← mul_le_iff_le_rdiv, ← mul_assoc, h2, mul_one]
+  · rw [← mul_le_iff_le_rdiv, mul_assoc, h2, mul_one]
+    exact le_refl z
 
 end ResiduatedLattice
