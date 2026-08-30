@@ -69,17 +69,20 @@ theorem idempotent_mul (e f : G) (he : IsIdempotent e) (hf : IsIdempotent f) :
 theorem idempotent_conj (x : G) (f : G) (hf : IsIdempotent f) :
     IsIdempotent (x * f * x⁻¹) := by
   dsimp [IsIdempotent]
-  have hcomm : (x⁻¹ * x) * f = f * (x⁻¹ * x) :=
-    idempotents_comm (x⁻¹ * x) f (idempotent_right x) hf
-  have h1 : (x * f * x⁻¹) * (x * f * x⁻¹) = (x * f) * (x⁻¹ * (x * (f * x⁻¹))) := by
-    rw [mul_assoc (x * f * x⁻¹), mul_assoc (x * f) x⁻¹, mul_assoc x f x⁻¹]
-  have h2 : x⁻¹ * (x * (f * x⁻¹)) = (x⁻¹ * x) * (f * x⁻¹) := (mul_assoc x⁻¹ x (f * x⁻¹)).symm
-  have h3 : (x⁻¹ * x) * (f * x⁻¹) = ((x⁻¹ * x) * f) * x⁻¹ := (mul_assoc (x⁻¹ * x) f x⁻¹).symm
-  have h4 : (f * (x⁻¹ * x)) * x⁻¹ = f * ((x⁻¹ * x) * x⁻¹) := mul_assoc f (x⁻¹ * x) x⁻¹
-  have h5 : (x⁻¹ * x) * x⁻¹ = x⁻¹ := inv_mul_inv x
-  have h6 : (x * f) * (f * x⁻¹) = x * ((f * f) * x⁻¹) := by
-    rw [mul_assoc (x * f), mul_assoc x f, ← mul_assoc f f x⁻¹]
-  rw [h1, h2, h3, hcomm, h4, h5, h6, hf, ← mul_assoc]
+  have hcomm : f * (x⁻¹ * x) = (x⁻¹ * x) * f :=
+    idempotents_comm f (x⁻¹ * x) hf (idempotent_right x)
+  calc (x * f * x⁻¹) * (x * f * x⁻¹)
+    _ = (x * f * x⁻¹ * x) * (f * x⁻¹) := (mul_assoc (x * f * x⁻¹) x (f * x⁻¹)).symm
+    _ = (x * f * (x⁻¹ * x)) * (f * x⁻¹) := by rw [mul_assoc (x * f) x⁻¹ x]
+    _ = (x * (f * (x⁻¹ * x))) * (f * x⁻¹) := by rw [mul_assoc x f (x⁻¹ * x)]
+    _ = (x * ((x⁻¹ * x) * f)) * (f * x⁻¹) := by rw [hcomm]
+    _ = ((x * (x⁻¹ * x)) * f) * (f * x⁻¹) := by rw [← mul_assoc x (x⁻¹ * x) f]
+    _ = ((x * x⁻¹ * x) * f) * (f * x⁻¹)   := by rw [← mul_assoc x x⁻¹ x]
+    _ = (x * f) * (f * x⁻¹)               := by rw [mul_inv_self]
+    _ = x * (f * (f * x⁻¹))               := mul_assoc x f (f * x⁻¹)
+    _ = x * ((f * f) * x⁻¹)               := by rw [← mul_assoc f f x⁻¹]
+    _ = x * (f * x⁻¹)                     := by rw [hf]
+    _ = x * f * x⁻¹                       := (mul_assoc x f x⁻¹).symm
 
 /- ========================================================================= -/
 /- VAGNER-PRESTON NATURAL PARTIAL ORDER                                     -/
@@ -91,9 +94,8 @@ def NaturalLe (x y : G) : Prop :=
   ∃ e : G, IsIdempotent e ∧ x = e * y
 
 /-- Natural partial order is reflexive: `x ≤ x`. -/
-theorem naturalLe_refl (x : G) : NaturalLe x x := by
-  refine ⟨x * x⁻¹, idempotent_left x, ?_⟩
-  rw [← mul_assoc, mul_inv_self]
+theorem naturalLe_refl (x : G) : NaturalLe x x :=
+  ⟨x * x⁻¹, idempotent_left x, (mul_inv_self x).symm⟩
 
 /-- Natural partial order is transitive: `x ≤ y ∧ y ≤ z → x ≤ z`. -/
 theorem naturalLe_trans (x y z : G) (hxy : NaturalLe x y) (hyz : NaturalLe y z) :
@@ -126,7 +128,8 @@ theorem naturalLe_mul_compat (x y u v : G) (h1 : NaturalLe x y) (h2 : NaturalLe 
     _ = e * (((y * f * y⁻¹) * y) * v) := by rw [← mul_assoc (y * f * y⁻¹) y v]
     _ = e * ((y * f) * v)             := by rw [hmid]
     _ = (e * y) * (f * v)             := by
-      rw [mul_assoc y f v, ← mul_assoc e y (f * v), mul_assoc e (y * (f * v))]
+      rw [mul_assoc y f v, ← mul_assoc e y (f * v), mul_assoc e y (f * v),
+          ← mul_assoc e (y * f) v, mul_assoc e y f]
 
 /- ========================================================================= -/
 /- MINIMUM GROUP CONGRUENCE                                                 -/
