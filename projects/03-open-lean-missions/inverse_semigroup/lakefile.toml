@@ -1,0 +1,6 @@
+name = "inverse_semigroup"
+version = "0.1.0"
+defaultTargets = ["InverseSemigroup"]
+
+[[lean_lib]]
+name = "InverseSemigroup"
