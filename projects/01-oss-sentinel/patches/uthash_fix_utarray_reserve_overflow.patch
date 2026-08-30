@@ -1,0 +1,29 @@
+--- a/src/utarray.h
++++ b/src/utarray.h
+@@ -91,9 +91,18 @@
+ 
+ #define utarray_reserve(a,by) do {                                            \
++  if ((a)->i > (unsigned)-1 - (by)) {                                         \
++    utarray_oom();                                                            \
++  }                                                                           \
+   if (((a)->i+(by)) > (a)->n) {                                               \
+     char *utarray_tmp;                                                        \
+-    while (((a)->i+(by)) > (a)->n) { (a)->n = ((a)->n ? (2*(a)->n) : 8); }    \
+-    utarray_tmp=(char*)realloc((a)->d, (a)->n*(a)->icd.sz);                   \
++    while (((a)->i+(by)) > (a)->n) {                                          \
++      if ((a)->n > (unsigned)-1 / 2) {                                        \
++        (a)->n = ((a)->i + (by));                                             \
++        break;                                                                \
++      }                                                                       \
++      (a)->n = ((a)->n ? (2*(a)->n) : 8);                                     \
++    }                                                                         \
++    if ((a)->icd.sz > 0 && (size_t)(a)->n > (size_t)-1 / (a)->icd.sz) {       \
++      utarray_oom();                                                          \
++    }                                                                         \
++    utarray_tmp=(char*)realloc((a)->d, (size_t)(a)->n*(a)->icd.sz);           \
+     if (utarray_tmp == NULL) {                                                \
+       utarray_oom();                                                          \
+     }                                                                         \
+     (a)->d=utarray_tmp;                                                       \
+   }                                                                           \
+ } while(0)
