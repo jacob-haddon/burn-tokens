@@ -48,43 +48,38 @@ theorem idempotents_comm (e f : G) (he : IsIdempotent e) (hf : IsIdempotent f) :
 /-- For any element `x`, `x * x⁻¹` is an idempotent (the domain/left idempotent). -/
 theorem idempotent_left (x : G) : IsIdempotent (x * x⁻¹) := by
   dsimp [IsIdempotent]
-  have h : (x * x⁻¹ * x) * x⁻¹ = x * x⁻¹ := by rw [mul_inv_self]
-  rw [← mul_assoc (x * x⁻¹ * x), mul_assoc x, mul_inv_self]
+  rw [← mul_assoc (x * x⁻¹) x x⁻¹, mul_inv_self]
 
 /-- For any element `x`, `x⁻¹ * x` is an idempotent (the codomain/right idempotent). -/
 theorem idempotent_right (x : G) : IsIdempotent (x⁻¹ * x) := by
   dsimp [IsIdempotent]
-  rw [← mul_assoc (x⁻¹ * x * x⁻¹), mul_assoc x⁻¹, inv_mul_inv]
+  rw [← mul_assoc (x⁻¹ * x) x⁻¹ x, inv_mul_inv]
 
 /-- Product of two commuting idempotents is an idempotent. -/
 theorem idempotent_mul (e f : G) (he : IsIdempotent e) (hf : IsIdempotent f) :
     IsIdempotent (e * f) := by
   dsimp [IsIdempotent]
-  calc (e * f) * (e * f)
-    _ = e * (f * (e * f)) := by rw [mul_assoc]
-    _ = e * ((f * e) * f) := by rw [← mul_assoc f e f]
-    _ = e * ((e * f) * f) := by rw [idempotents_comm f e hf he]
-    _ = e * (e * (f * f)) := by rw [mul_assoc e f f]
-    _ = (e * e) * (f * f) := by rw [← mul_assoc]
-    _ = e * f             := by rw [he, hf]
+  have h1 : (e * f) * (e * f) = e * (f * (e * f)) := mul_assoc e f (e * f)
+  have h2 : f * (e * f) = (f * e) * f := (mul_assoc f e f).symm
+  have h3 : f * e = e * f := idempotents_comm f e hf he
+  have h4 : (e * f) * f = e * (f * f) := mul_assoc e f f
+  rw [h1, h2, h3, h4, hf, ← mul_assoc, he]
 
 /-- Conjugation of an idempotent by any element is an idempotent. -/
 theorem idempotent_conj (x : G) (f : G) (hf : IsIdempotent f) :
     IsIdempotent (x * f * x⁻¹) := by
   dsimp [IsIdempotent]
-  have h_mid : (x⁻¹ * (x * f * x⁻¹)) = (x⁻¹ * x) * f * x⁻¹ := by
-    rw [← mul_assoc x⁻¹ (x * f) x⁻¹, mul_assoc x⁻¹ x f]
-  calc (x * f * x⁻¹) * (x * f * x⁻¹)
-    _ = (x * f) * (x⁻¹ * (x * f * x⁻¹)) := by rw [mul_assoc (x * f) x⁻¹, mul_assoc (x * f)]
-    _ = (x * f) * ((x⁻¹ * x) * f * x⁻¹) := by rw [h_mid]
-    _ = (x * f) * ((f * (x⁻¹ * x)) * x⁻¹) := by rw [idempotents_comm (x⁻¹ * x) f (idempotent_right x) hf]
-    _ = x * (f * (f * ((x⁻¹ * x) * x⁻¹))) := by
-      rw [mul_assoc (x * f), ← mul_assoc f (f * (x⁻¹ * x)) x⁻¹, mul_assoc f f (x⁻¹ * x),
-          mul_assoc f (f * (x⁻¹ * x)), mul_assoc (x * f), mul_assoc f, mul_assoc (x * f)]
-    _ = x * ((f * f) * (x⁻¹ * x * x⁻¹)) := by
-      rw [← mul_assoc (f * f), ← mul_assoc f f, mul_assoc]
-    _ = x * (f * x⁻¹) := by rw [hf, inv_mul_inv]
-    _ = x * f * x⁻¹   := by rw [← mul_assoc]
+  have hcomm : (x⁻¹ * x) * f = f * (x⁻¹ * x) :=
+    idempotents_comm (x⁻¹ * x) f (idempotent_right x) hf
+  have h1 : (x * f * x⁻¹) * (x * f * x⁻¹) = (x * f) * (x⁻¹ * (x * (f * x⁻¹))) := by
+    rw [mul_assoc (x * f * x⁻¹), mul_assoc (x * f) x⁻¹, mul_assoc x f x⁻¹]
+  have h2 : x⁻¹ * (x * (f * x⁻¹)) = (x⁻¹ * x) * (f * x⁻¹) := (mul_assoc x⁻¹ x (f * x⁻¹)).symm
+  have h3 : (x⁻¹ * x) * (f * x⁻¹) = ((x⁻¹ * x) * f) * x⁻¹ := (mul_assoc (x⁻¹ * x) f x⁻¹).symm
+  have h4 : (f * (x⁻¹ * x)) * x⁻¹ = f * ((x⁻¹ * x) * x⁻¹) := mul_assoc f (x⁻¹ * x) x⁻¹
+  have h5 : (x⁻¹ * x) * x⁻¹ = x⁻¹ := inv_mul_inv x
+  have h6 : (x * f) * (f * x⁻¹) = x * ((f * f) * x⁻¹) := by
+    rw [mul_assoc (x * f), mul_assoc x f, ← mul_assoc f f x⁻¹]
+  rw [h1, h2, h3, hcomm, h4, h5, h6, hf, ← mul_assoc]
 
 /- ========================================================================= -/
 /- VAGNER-PRESTON NATURAL PARTIAL ORDER                                     -/
@@ -98,7 +93,7 @@ def NaturalLe (x y : G) : Prop :=
 /-- Natural partial order is reflexive: `x ≤ x`. -/
 theorem naturalLe_refl (x : G) : NaturalLe x x := by
   refine ⟨x * x⁻¹, idempotent_left x, ?_⟩
-  rw [mul_assoc, mul_inv_self]
+  rw [← mul_assoc, mul_inv_self]
 
 /-- Natural partial order is transitive: `x ≤ y ∧ y ≤ z → x ≤ z`. -/
 theorem naturalLe_trans (x y z : G) (hxy : NaturalLe x y) (hyz : NaturalLe y z) :
@@ -116,16 +111,22 @@ theorem naturalLe_mul_compat (x y u v : G) (h1 : NaturalLe x y) (h2 : NaturalLe 
   rcases h2 with ⟨f, hf, rfl⟩
   have h_conj : IsIdempotent (y * f * y⁻¹) := idempotent_conj y f hf
   refine ⟨e * (y * f * y⁻¹), idempotent_mul e (y * f * y⁻¹) he h_conj, ?_⟩
+  have hcomm : f * (y⁻¹ * y) = (y⁻¹ * y) * f :=
+    idempotents_comm f (y⁻¹ * y) hf (idempotent_right y)
+  have hmid : (y * f * y⁻¹) * y = y * f := by
+    calc (y * f * y⁻¹) * y
+      _ = (y * f) * (y⁻¹ * y) := mul_assoc (y * f) y⁻¹ y
+      _ = y * (f * (y⁻¹ * y)) := mul_assoc y f (y⁻¹ * y)
+      _ = y * ((y⁻¹ * y) * f) := by rw [hcomm]
+      _ = (y * (y⁻¹ * y)) * f := (mul_assoc y (y⁻¹ * y) f).symm
+      _ = (y * y⁻¹ * y) * f   := by rw [← mul_assoc y y⁻¹ y]
+      _ = y * f               := by rw [mul_inv_self]
   calc e * (y * f * y⁻¹) * (y * v)
-    _ = e * ((y * f * y⁻¹) * y * v) := by rw [mul_assoc e, mul_assoc (y * f * y⁻¹) y v]
-    _ = e * (y * f * (y⁻¹ * y) * v) := by rw [← mul_assoc (y * f) y⁻¹ y, mul_assoc (y * f)]
-    _ = e * (y * ((y⁻¹ * y) * f) * v) := by
-      rw [mul_assoc y f (y⁻¹ * y), idempotents_comm f (y⁻¹ * y) hf (idempotent_right y)]
-    _ = e * ((y * y⁻¹ * y) * f * v)   := by
-      rw [← mul_assoc y (y⁻¹ * y) f, mul_assoc y y⁻¹ y, mul_assoc]
-    _ = e * (y * f * v)               := by rw [mul_inv_self]
+    _ = e * ((y * f * y⁻¹) * (y * v)) := mul_assoc e (y * f * y⁻¹) (y * v)
+    _ = e * (((y * f * y⁻¹) * y) * v) := by rw [← mul_assoc (y * f * y⁻¹) y v]
+    _ = e * ((y * f) * v)             := by rw [hmid]
     _ = (e * y) * (f * v)             := by
-      rw [← mul_assoc e y (f * v), mul_assoc y f v, mul_assoc e (y * (f * v))]
+      rw [mul_assoc y f v, ← mul_assoc e y (f * v), mul_assoc e (y * (f * v))]
 
 /- ========================================================================= -/
 /- MINIMUM GROUP CONGRUENCE                                                 -/
@@ -151,51 +152,37 @@ theorem sigma_trans (x y z : G) (hxy : SigmaRel x y) (hyz : SigmaRel y z) :
   rcases hxy with ⟨e, he, h1⟩
   rcases hyz with ⟨f, hf, h2⟩
   refine ⟨e * f, idempotent_mul e f he hf, ?_⟩
-  calc (e * f) * x
-    _ = e * (f * x) := by rw [mul_assoc]
-    _ = (f * e) * x := by rw [idempotents_comm e f he hf]
-    _ = f * (e * x) := by rw [mul_assoc]
-    _ = f * (e * y) := by rw [h1]
-    _ = (f * e) * y := by rw [← mul_assoc]
-    _ = (e * f) * y := by rw [idempotents_comm f e hf he]
-    _ = e * (f * y) := by rw [mul_assoc]
-    _ = e * (f * z) := by rw [h2]
-    _ = (e * f) * z := by rw [← mul_assoc]
+  have hcomm : e * f = f * e := idempotents_comm e f he hf
+  have he_assoc : (e * f) * x = f * (e * x) := by
+    rw [hcomm, mul_assoc]
+  have hf_assoc : (e * f) * z = e * (f * z) := mul_assoc e f z
+  have h_mid : f * (e * y) = e * (f * y) := by
+    rw [← mul_assoc, ← hcomm, mul_assoc]
+  rw [he_assoc, h1, h_mid, h2, ← hf_assoc]
 
 /-- `σ` is a right congruence: `x σ y → x * u σ y * u`. -/
 theorem sigma_mul_right (x y u : G) (h : SigmaRel x y) : SigmaRel (x * u) (y * u) := by
   rcases h with ⟨e, he, hxy⟩
   refine ⟨e, he, ?_⟩
-  calc e * (x * u)
-    _ = (e * x) * u := by rw [← mul_assoc]
-    _ = (e * y) * u := by rw [hxy]
-    _ = e * (y * u) := by rw [mul_assoc]
+  rw [← mul_assoc, hxy, mul_assoc]
 
 /-- `σ` is a left congruence: `u σ v → x * u σ x * v`. -/
 theorem sigma_mul_left (x u v : G) (h : SigmaRel u v) : SigmaRel (x * u) (x * v) := by
   rcases h with ⟨f, hf, huv⟩
   refine ⟨x * f * x⁻¹, idempotent_conj x f hf, ?_⟩
-  have h1 : (x * f * x⁻¹) * (x * u) = x * (f * u) := by
-    calc (x * f * x⁻¹) * (x * u)
-      _ = (x * f) * (x⁻¹ * (x * u)) := by rw [mul_assoc (x * f) x⁻¹, mul_assoc (x * f)]
-      _ = (x * f) * ((x⁻¹ * x) * u) := by rw [← mul_assoc x⁻¹ x u]
-      _ = x * (f * ((x⁻¹ * x) * u)) := by rw [mul_assoc x f]
-      _ = x * ((f * (x⁻¹ * x)) * u) := by rw [← mul_assoc f (x⁻¹ * x) u]
-      _ = x * (((x⁻¹ * x) * f) * u) := by rw [idempotents_comm f (x⁻¹ * x) hf (idempotent_right x)]
-      _ = (x * (x⁻¹ * x)) * (f * u) := by rw [mul_assoc (x⁻¹ * x) f u, ← mul_assoc x (x⁻¹ * x) (f * u)]
-      _ = (x * x⁻¹ * x) * (f * u)   := by rw [← mul_assoc x x⁻¹ x]
-      _ = x * (f * u)               := by rw [mul_inv_self]
-  have h2 : (x * f * x⁻¹) * (x * v) = x * (f * v) := by
-    calc (x * f * x⁻¹) * (x * v)
-      _ = (x * f) * (x⁻¹ * (x * v)) := by rw [mul_assoc (x * f) x⁻¹, mul_assoc (x * f)]
-      _ = (x * f) * ((x⁻¹ * x) * v) := by rw [← mul_assoc x⁻¹ x v]
-      _ = x * (f * ((x⁻¹ * x) * v)) := by rw [mul_assoc x f]
-      _ = x * ((f * (x⁻¹ * x)) * v) := by rw [← mul_assoc f (x⁻¹ * x) v]
-      _ = x * (((x⁻¹ * x) * f) * v) := by rw [idempotents_comm f (x⁻¹ * x) hf (idempotent_right x)]
-      _ = (x * (x⁻¹ * x)) * (f * v) := by rw [mul_assoc (x⁻¹ * x) f v, ← mul_assoc x (x⁻¹ * x) (f * v)]
-      _ = (x * x⁻¹ * x) * (f * v)   := by rw [← mul_assoc x x⁻¹ x]
-      _ = x * (f * v)               := by rw [mul_inv_self]
-  rw [h1, h2, huv]
+  have hcomm : f * (x⁻¹ * x) = (x⁻¹ * x) * f :=
+    idempotents_comm f (x⁻¹ * x) hf (idempotent_right x)
+  have h_eval (w : G) : (x * f * x⁻¹) * (x * w) = x * (f * w) := by
+    calc (x * f * x⁻¹) * (x * w)
+      _ = (x * f * x⁻¹ * x) * w := (mul_assoc (x * f * x⁻¹) x w).symm
+      _ = (x * f * (x⁻¹ * x)) * w := by rw [mul_assoc (x * f) x⁻¹ x]
+      _ = (x * (f * (x⁻¹ * x))) * w := by rw [mul_assoc x f (x⁻¹ * x)]
+      _ = (x * ((x⁻¹ * x) * f)) * w := by rw [hcomm]
+      _ = ((x * (x⁻¹ * x)) * f) * w := by rw [← mul_assoc x (x⁻¹ * x) f]
+      _ = ((x * x⁻¹ * x) * f) * w   := by rw [← mul_assoc x x⁻¹ x]
+      _ = (x * f) * w               := by rw [mul_inv_self]
+      _ = x * (f * w)               := mul_assoc x f w
+  rw [h_eval u, huv, ← h_eval v]
 
 /-- `σ` is compatible with multiplication (congruence relation):
     `x σ y ∧ u σ v → x * u σ y * v`. -/
@@ -207,14 +194,12 @@ theorem sigma_mul_compat (x y u v : G) (h1 : SigmaRel x y) (h2 : SigmaRel u v) :
 theorem idempotents_sigma_equiv (e f : G) (he : IsIdempotent e) (hf : IsIdempotent f) :
     SigmaRel e f := by
   refine ⟨e * f, idempotent_mul e f he hf, ?_⟩
-  calc (e * f) * e
-    _ = (f * e) * e := by rw [idempotents_comm e f he hf]
-    _ = f * (e * e) := by rw [mul_assoc]
-    _ = f * e       := by rw [he]
-    _ = e * f       := by rw [idempotents_comm f e hf he]
-  calc (e * f) * f
-    _ = e * (f * f) := by rw [mul_assoc]
-    _ = e * f       := by rw [hf]
+  have hcomm : e * f = f * e := idempotents_comm e f he hf
+  have he1 : (e * f) * e = e * f := by
+    rw [hcomm, mul_assoc, he]
+  have hf1 : (e * f) * f = e * f := by
+    rw [mul_assoc, hf]
+  rw [he1, hf1]
 
 /-- The element `x * x⁻¹` is `σ`-equivalent to any idempotent `e` (Group inverse identity). -/
 theorem mul_inv_sigma_idempotent (x : G) (e : G) (he : IsIdempotent e) :
@@ -230,8 +215,6 @@ theorem inv_mul_sigma_mul_inv (x : G) :
 theorem sigma_left_id (x y : G) : SigmaRel (x * x⁻¹ * y) y := by
   refine ⟨x * x⁻¹, idempotent_left x, ?_⟩
   have h : (x * x⁻¹) * (x * x⁻¹) = x * x⁻¹ := idempotent_left x
-  calc (x * x⁻¹) * (x * x⁻¹ * y)
-    _ = ((x * x⁻¹) * (x * x⁻¹)) * y := by rw [mul_assoc]
-    _ = (x * x⁻¹) * y               := by rw [h]
+  rw [← mul_assoc, h]
 
 end InverseSemigroup
