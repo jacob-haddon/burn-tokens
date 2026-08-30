@@ -104,16 +104,16 @@ theorem naturalLe_refl (x : G) : NaturalLe x x :=
 theorem naturalLe_trans (x y z : G) (hxy : NaturalLe x y) (hyz : NaturalLe y z) :
     NaturalLe x z := by
   rcases hxy with ⟨e, he, rfl⟩
-  rcases h2 with ⟨f, hf, rfl⟩
+  rcases hyz with ⟨f, hf, rfl⟩
   refine ⟨e * f, idempotent_mul e f he hf, ?_⟩
   rw [mul_assoc]
 
 /-- Natural partial order is compatible with multiplication:
     `x ≤ y ∧ u ≤ v → x * u ≤ y * v`. -/
-theorem naturalLe_mul_compat (x y u v : G) (h1 : NaturalLe x y) (h2 : NaturalLe u v) :
+theorem naturalLe_mul_compat (x y u v : G) (hxy : NaturalLe x y) (huv : NaturalLe u v) :
     NaturalLe (x * u) (y * v) := by
-  rcases h1 with ⟨e, he, rfl⟩
-  rcases h2 with ⟨f, hf, rfl⟩
+  rcases hxy with ⟨e, he, rfl⟩
+  rcases huv with ⟨f, hf, rfl⟩
   have h_conj : IsIdempotent (y * f * y⁻¹) := idempotent_conj y f hf
   refine ⟨e * (y * f * y⁻¹), idempotent_mul e (y * f * y⁻¹) he h_conj, ?_⟩
   have hcomm : f * (y⁻¹ * y) = (y⁻¹ * y) * f :=
@@ -127,13 +127,8 @@ theorem naturalLe_mul_compat (x y u v : G) (h1 : NaturalLe x y) (h2 : NaturalLe 
       _ = (y * y⁻¹ * y) * f   := by rw [← mul_assoc y y⁻¹ y]
       _ = y * f               := by rw [mul_inv_self]
   have h_mid : e * (y * f * y⁻¹) * (y * v) = (e * y) * (f * v) := by
-    calc e * (y * f * y⁻¹) * (y * v)
-      _ = e * ((y * f * y⁻¹) * (y * v)) := mul_assoc e (y * f * y⁻¹) (y * v)
-      _ = e * (((y * f * y⁻¹) * y) * v) := by rw [← mul_assoc (y * f * y⁻¹) y v]
-      _ = e * ((y * f) * v)             := by rw [hmid]
-      _ = (e * y) * (f * v)             := by
-        rw [mul_assoc y f v, ← mul_assoc e y (f * v), mul_assoc e y (f * v),
-            ← mul_assoc e (y * f) v, mul_assoc e y f]
+    rw [mul_assoc e (y * f * y⁻¹) (y * v), ← mul_assoc (y * f * y⁻¹) y v, hmid,
+        mul_assoc y f v, ← mul_assoc e y (f * v)]
   rw [h_mid]
 
 /- ========================================================================= -/
