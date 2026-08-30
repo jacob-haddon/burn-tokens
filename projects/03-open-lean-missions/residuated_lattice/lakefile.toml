@@ -1,0 +1,6 @@
+name = "residuated_lattice"
+version = "0.1.0"
+defaultTargets = ["ResiduatedLattice"]
+
+[[lean_lib]]
+name = "ResiduatedLattice"
