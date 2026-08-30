@@ -71,7 +71,10 @@ theorem idempotent_conj (x : G) (f : G) (hf : IsIdempotent f) :
   dsimp [IsIdempotent]
   have hcomm : f * (x⁻¹ * x) = (x⁻¹ * x) * f :=
     idempotents_comm f (x⁻¹ * x) hf (idempotent_right x)
+  have h0 : (x * f * x⁻¹) * (x * f * x⁻¹) = (x * f * x⁻¹) * (x * (f * x⁻¹)) := by
+    rw [mul_assoc x f x⁻¹]
   calc (x * f * x⁻¹) * (x * f * x⁻¹)
+    _ = (x * f * x⁻¹) * (x * (f * x⁻¹)) := h0
     _ = (x * f * x⁻¹ * x) * (f * x⁻¹) := (mul_assoc (x * f * x⁻¹) x (f * x⁻¹)).symm
     _ = (x * f * (x⁻¹ * x)) * (f * x⁻¹) := by rw [mul_assoc (x * f) x⁻¹ x]
     _ = (x * (f * (x⁻¹ * x))) * (f * x⁻¹) := by rw [mul_assoc x f (x⁻¹ * x)]
@@ -101,7 +104,7 @@ theorem naturalLe_refl (x : G) : NaturalLe x x :=
 theorem naturalLe_trans (x y z : G) (hxy : NaturalLe x y) (hyz : NaturalLe y z) :
     NaturalLe x z := by
   rcases hxy with ⟨e, he, rfl⟩
-  rcases hyz with ⟨f, hf, rfl⟩
+  rcases h2 with ⟨f, hf, rfl⟩
   refine ⟨e * f, idempotent_mul e f he hf, ?_⟩
   rw [mul_assoc]
 
@@ -123,13 +126,15 @@ theorem naturalLe_mul_compat (x y u v : G) (h1 : NaturalLe x y) (h2 : NaturalLe 
       _ = (y * (y⁻¹ * y)) * f := (mul_assoc y (y⁻¹ * y) f).symm
       _ = (y * y⁻¹ * y) * f   := by rw [← mul_assoc y y⁻¹ y]
       _ = y * f               := by rw [mul_inv_self]
-  calc e * (y * f * y⁻¹) * (y * v)
-    _ = e * ((y * f * y⁻¹) * (y * v)) := mul_assoc e (y * f * y⁻¹) (y * v)
-    _ = e * (((y * f * y⁻¹) * y) * v) := by rw [← mul_assoc (y * f * y⁻¹) y v]
-    _ = e * ((y * f) * v)             := by rw [hmid]
-    _ = (e * y) * (f * v)             := by
-      rw [mul_assoc y f v, ← mul_assoc e y (f * v), mul_assoc e y (f * v),
-          ← mul_assoc e (y * f) v, mul_assoc e y f]
+  have h_mid : e * (y * f * y⁻¹) * (y * v) = (e * y) * (f * v) := by
+    calc e * (y * f * y⁻¹) * (y * v)
+      _ = e * ((y * f * y⁻¹) * (y * v)) := mul_assoc e (y * f * y⁻¹) (y * v)
+      _ = e * (((y * f * y⁻¹) * y) * v) := by rw [← mul_assoc (y * f * y⁻¹) y v]
+      _ = e * ((y * f) * v)             := by rw [hmid]
+      _ = (e * y) * (f * v)             := by
+        rw [mul_assoc y f v, ← mul_assoc e y (f * v), mul_assoc e y (f * v),
+            ← mul_assoc e (y * f) v, mul_assoc e y f]
+  rw [h_mid]
 
 /- ========================================================================= -/
 /- MINIMUM GROUP CONGRUENCE                                                 -/
