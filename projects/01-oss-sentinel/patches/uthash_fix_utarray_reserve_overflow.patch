@@ -1,6 +1,9 @@
+diff --git a/src/utarray.h b/src/utarray.h
+index 967844b..a840280 100644
 --- a/src/utarray.h
 +++ b/src/utarray.h
-@@ -91,9 +91,18 @@
+@@ -90,10 +90,22 @@ typedef struct {
+ } while(0)
  
  #define utarray_reserve(a,by) do {                                            \
 +  if ((a)->i > (unsigned)-1 - (by)) {                                         \
@@ -24,6 +27,3 @@
      if (utarray_tmp == NULL) {                                                \
        utarray_oom();                                                          \
      }                                                                         \
-     (a)->d=utarray_tmp;                                                       \
-   }                                                                           \
- } while(0)
