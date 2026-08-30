@@ -22,8 +22,8 @@ BURN-TOKENS: AUTONOMOUS RESEARCH OBSERVATORY & VERIFIED ARTIFACT INDEX
 HOST         : https://github.com/jacob-haddon/burn-tokens
 SUBSTRATE    : Decentralized Zero-Trust Multi-Agent State Machine
 PILLARS      : 01-oss-sentinel | 02-counterexample-observatory | 03-open-lean-missions | 04-proof-reproduction-watch
-METRICS      : 55 Total Milestones | 23 Lean 4 Packages | 7 Real OSS Patches | 22 Lean 4 Packages (0 sorry) | 25 JSON Datasets (12.8 MB)
-VERIFICATION : 100% Machine-Checked (Clang ASan/UBSan + Lean 4.33.1 + Python/SAT)
+METRICS      : 56 Total Milestones | 24 Lean 4 Packages (0 sorry) | 7 Real OSS Patches | 25 JSON Datasets (12.8 MB)
+VERIFICATION : 100% Machine-Checked (Clang ASan/UBSan + Lean 4.33.1 on omarchy-1 + Python/SAT)
 </pre><hr>
 
 <h2>01. OPEN-SOURCE SECURITY & VULNERABILITY REPAIRS (01-OSS-SENTINEL)</h2>
@@ -39,14 +39,6 @@ VERIFICATION : 100% Machine-Checked (Clang ASan/UBSan + Lean 4.33.1 + Python/SAT
 </tr>
 </thead>
 <tbody>
-<tr>
-  <td><code>arXiv:2501.12999</code></td>
-  <td>Inverse Semigroups, Vagner-Preston Partial Order & Minimum Group Congruence</td>
-  <td>Lawson-Margolis (2025)<br>Verified: 2026-08-30</td>
-  <td><code>Lean 4 (Worker: omarchy-1)</code></td>
-  <td><span class="badge-verified">[VERIFIED]</span> Machine-checked in Lean 4 (17 theorems, 0 sorry, 0 custom axioms). Proves canonical partial order & minimum group congruence.</td>
-  <td><a href="https://github.com/jacob-haddon/burn-tokens/blob/master/projects/03-open-lean-missions/results/2026-08-30--inverse-semigroups-minimum-group-congruence-lean4.md">report</a> | <a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/inverse_semigroup">lean4 pkg</a></td>
-</tr>
 <tr>
   <td><code>troydhanson/uthash</code></td>
   <td>Unsigned integer overflow & infinite loop in <code>utarray_reserve()</code> on boundary capacities</td>
@@ -106,7 +98,7 @@ VERIFICATION : 100% Machine-Checked (Clang ASan/UBSan + Lean 4.33.1 + Python/SAT
 </tbody>
 </table><hr>
 
-<h2>02. MACHINE-CHECKED LEAN 4 FORMAL PACKAGES (22 PACKAGES | 0 SORRY)</h2>
+<h2>02. MACHINE-CHECKED LEAN 4 FORMAL PACKAGES (24 PACKAGES | 0 SORRY)</h2>
 <table>
 <thead>
 <tr>
@@ -120,10 +112,26 @@ VERIFICATION : 100% Machine-Checked (Clang ASan/UBSan + Lean 4.33.1 + Python/SAT
 </thead>
 <tbody>
 <tr>
+  <td><code>residuated_lattice</code></td>
+  <td>Residuated posets, quantale Galois adjunctions, closure idempotence & invertible residual collapse (Galatos-Jipsen 2025)</td>
+  <td>arXiv: 2025-02-06<br>Verified: 2026-08-30</td>
+  <td><code>Lean 4 (Worker: omarchy-1)</code></td>
+  <td><span class="badge-clean">[FORMALIZED]</span> 0 sorry, [propext]</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/residuated_lattice">source</a></td>
+</tr>
+<tr>
+  <td><code>inverse_semigroup</code></td>
+  <td>Inverse semigroups, Vagner-Preston natural partial order, compatibility & minimum group congruence (Lawson-Margolis 2025)</td>
+  <td>arXiv: 2025-01-20<br>Verified: 2026-08-30</td>
+  <td><code>Lean 4 (Worker: omarchy-1)</code></td>
+  <td><span class="badge-clean">[FORMALIZED]</span> 0 sorry, 0 axioms (Constructive)</td>
+  <td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/inverse_semigroup">source</a></td>
+</tr>
+<tr>
   <td><code>frobenius_modular_lattice</code></td>
   <td>Frobenius reciprocity, modular Galois connections & lattice isomorphisms (GJM 2025)</td>
   <td>arXiv: 2025-02-07<br>Verified: 2026-08-26</td>
-  <td><code>Gemini 3.7 Flash High</code></td>
+  <td><code>Lean 4 (Worker: omarchy-1)</code></td>
   <td><span class="badge-clean">[FORMALIZED]</span> 0 sorry, [propext]</td>
   <td><a href="https://github.com/jacob-haddon/burn-tokens/tree/master/projects/03-open-lean-missions/frobenius_modular_lattice">source</a></td>
 </tr>
